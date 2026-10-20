@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b2c">
+  <meta name="description" content="공포·탐욕 지수, 주식 포트폴리오, 섹터별 PER·PBR 비교, 장기 배당 관리 및 공식 PDF 기반 수출입-산업활동 시차 분석 투자 대시보드">
+  <title>FOLIO v5 — 포트폴리오 · 무역산업 시차 분석</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/sections.css">
+<link rel="stylesheet" href="./assets/upgrade.css">
+<link rel="stylesheet" href="./assets/macro.css">
+  <script defer src="./data/catalog.js"></script>
+  <script defer src="./data/market.js"></script>
+<script defer src="./data/macro.js"></script>
+<script defer src="./data/reports.js"></script>
+
+  <script defer src="./assets/app.js"></script>
+  <script defer src="./assets/sections.js"></script>
+<script defer src="./assets/upgrade.js"></script>
+<script defer src="./assets/macro.js"></script>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#portfolio" aria-label="Folio 홈">
+      <span class="brand-icon"><svg viewBox="0 0 38 38" fill="none" aria-hidden="true"><path d="M8 26L15 13L21 22L28 9" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 31H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".42"/></svg></span>
+      <span>folio<span class="brand-period">.</span><small>PERSONAL INVESTING</small></span>
+    </a>
+    <div class="sidebar-section">WORKSPACE</div>
+    <nav class="nav" aria-label="주요 메뉴">
+      <button class="nav-link active" data-page="portfolio" type="button" aria-current="page"><span class="nav-icon">◫</span><span>나의 포트폴리오</span></button>
+      <button class="nav-link" data-page="sector" type="button"><span class="nav-icon">▤</span><span>섹터 비교 · 재무제표</span></button>
+      <button class="nav-link" data-page="projects" type="button"><span class="nav-icon">◎</span><span>장기 프로젝트 · 배당</span></button>
+      <button class="nav-link" data-page="reports" type="button"><span class="nav-icon">▣</span><span>무역·산업 분석 · PDF</span></button>
+    </nav>
+    <div class="sidebar-note">
+      <span class="sidebar-note-icon">✦</span>
+      <strong>매일 종가 자동 갱신</strong>
+      <p>GitHub Actions를 연결하면 한국·미국 시장 마감 후 자동으로 업데이트합니다.</p>
+      <span class="small-status" id="sidebarDataStatus">데이터 연결 확인 중</span>
+    </div>
+    <div class="sidebar-bottom">FOLIO RESEARCH <span>v5.0</span></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="topbar-left"><button class="hamburger" id="mobileMenu" aria-label="메뉴 열기" type="button">☰</button><span class="breadcrumb">내 워크스페이스 <span class="slash">/</span> <strong id="activePageName">나의 포트폴리오</strong></span></div>
+      <div class="topbar-right"><span class="data-led" aria-hidden="true"></span><span id="headerUpdated">마지막 갱신: 확인 중</span><button class="outline-btn slim" id="headerAdd" type="button">+ 종목 추가</button></div>
+    </header>
+
+    <div class="content tab-page active" id="page-portfolio" data-page-view="portfolio">
+      <section class="page-heading">
+        <div><div class="eyebrow">MY FINANCIAL OVERVIEW <span class="eyebrow-dot">·</span> <span id="calendarYear">—</span></div><h1>나의 투자 대시보드 <span class="heading-star">✳</span></h1><p>시장 심리부터 보유 종목 수익률까지, 한눈에 확인하세요.</p></div>
+        <div class="clock-tile"><span>기준 시간 · KST</span><strong id="todayKST">—</strong></div>
+      </section>
+
+      <section class="hero-grid" aria-label="시장 공포·탐욕 지수 및 시장 지수">
+        <article class="fear-card">
+          <div class="fear-top"><span class="hero-label"><span class="small-ring"></span> MARKET SENTIMENT</span><a href="https://edition.cnn.com/markets/fear-and-greed" target="_blank" rel="noopener noreferrer" class="hero-external">CNN 원본 보기 ↗</a></div>
+          <div class="fear-content">
+            <div class="fear-left">
+              <h2>공포 · 탐욕 지수</h2>
+              <p class="fear-sub">CNN Fear &amp; Greed Index · 미국 주식시장 심리</p>
+              <div class="fear-score-row"><strong id="fearScore">—</strong><span id="fearRating" class="fear-rating">데이터 준비 중</span></div>
+              <span id="fearTimestamp" class="fear-caption">자동 업데이트를 실행하면 지수를 표시합니다.</span>
+            </div>
+            <div class="gauge-panel">
+              <svg class="gauge" viewBox="0 0 360 220" role="img" aria-label="공포 탐욕 지수 게이지">
+                <defs><linearGradient id="sentiment" x1="0%" y1="0" x2="100%" y2="0"><stop offset="0" stop-color="#ee637a"/><stop offset=".28" stop-color="#f3a257"/><stop offset=".53" stop-color="#e9cc73"/><stop offset=".78" stop-color="#93d6a9"/><stop offset="1" stop-color="#4fd5a9"/></linearGradient></defs>
+                <path d="M36 186 A144 144 0 0 1 324 186" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="18" stroke-linecap="round" />
+                <path d="M36 186 A144 144 0 0 1 324 186" fill="none" stroke="url(#sentiment)" stroke-width="15" stroke-linecap="round" />
+                <line id="fearNeedle" x1="180" y1="186" x2="180" y2="96" stroke="#f7fbfd" stroke-width="3" stroke-linecap="round" opacity="0" />
+                <circle cx="180" cy="186" r="9" fill="#fafbff" id="fearNeedleDot" opacity="0"/><circle cx="180" cy="186" r="4" fill="#17263b" opacity="0" id="fearNeedleInset"/>
+                <text x="26" y="210" class="gauge-edge">극도의 공포</text><text x="264" y="210" class="gauge-edge">극도의 탐욕</text>
+              </svg>
+            </div>
+          </div>
+          <div class="fear-footer"><div><span>전 거래일</span><strong id="fearYesterday">—</strong></div><div><span>1주 전</span><strong id="fearLastWeek">—</strong></div><div><span>1개월 전</span><strong id="fearLastMonth">—</strong></div><div><span>3개월 전</span><strong id="fearLastThreeMonths">—</strong></div><div class="fear-footer-source">시장은 언제나 움직입니다 <span>↗</span></div></div><div class="fear-rich" id="fearBreakdown">
+  <div class="fear-blurb">미국 주식시장 심리를 7개 지표로 합산한 0~100점 지수입니다. 낮을수록 공포, 높을수록 탐욕에 가깝습니다.</div>
+  <div class="fear-key">😱 극도의 공포 0–24 <span>·</span> 😰 공포 25–44 <span>·</span> 😐 중립 45–55 <span>·</span> 🙂 탐욕 56–74 <span>·</span> 🤑 극도의 탐욕 75–100</div>
+  <button id="fearDetailsToggle" class="fear-toggle" type="button" aria-expanded="true">7개 구성지표와 히스토리 <span>⌃</span></button>
+  <div id="fearDetailsBody" class="fear-details-body">
+    <div class="fear-detail-panel">
+      <h3>7개 구성 지표 <small>미수집 값은 —로 표시</small></h3>
+      <div id="fearIndicators" class="fear-indicator-list"></div>
+    </div>
+    <div class="fear-detail-panel">
+      <div class="fear-history-head"><div><h3>공포·탐욕 히스토리</h3><small>전체 지수와 S&amp;P 500 종가 · 미국시장 기준</small></div><div class="fear-history-period" id="fearHistoryPeriods"><button class="on" data-days="90" type="button">3개월</button><button data-days="30" type="button">1개월</button><button data-days="365" type="button">1년</button></div></div>
+      <div id="fearHistoryChart" class="fear-history-chart"></div>
+      <div class="fear-history-legend"><span class="legend-fear">━ 공포·탐욕 0–100</span><span class="legend-sp500">━ S&amp;P 500 · 우측 축</span></div>
+    </div>
+    <div class="fear-detail-panel fear-explain"><h3>7개 지표는 무엇인가요?</h3>
+      <div class="fear-explain-grid"><div><b>시장 모멘텀</b><span>S&amp;P 500과 125일 이동평균 비교</span></div><div><b>주가 강도</b><span>52주 신고가·신저가 비율</span></div><div><b>시장 폭</b><span>상승·하락 종목의 거래량 흐름</span></div><div><b>풋/콜 옵션</b><span>옵션 시장의 방어적 수요</span></div><div><b>안전자산 선호</b><span>주식과 국채의 상대 수익률</span></div><div><b>시장 변동성</b><span>VIX와 변동성 추세</span></div><div><b>정크본드 수요</b><span>고위험 채권 스프레드</span></div></div>
+      <p>※ CNN 지수는 <b>미국 시장(S&amp;P 500)</b> 기준이며, 첨부 이미지의 KOSPI 기반 국내 공포지수와 계산 대상·방법이 다릅니다. 화면에 임의의 공포 점수는 넣지 않습니다.</p>
+    </div>
+  </div>
+</div>
+</article>
+        <article class="market-card">
+          <div class="section-overline">MARKET PULSE <span class="tiny-green-dot"></span></div>
+          <h2>주요 지수</h2><p>각 시장의 최근 확인된 종가</p>
+          <div class="market-indices" id="marketIndices"></div>
+          <div class="fx-strip"><span>USD / KRW</span><strong id="fxRate">—</strong><span id="fxDate">환율 미수집</span></div>
+        </article>
+      </section>
+
+
+      <!-- 2026 official economic schedule / policy decisions -->
+      <section class="econ-layout" aria-label="주요 경제일정과 한국 미국 기준금리">
+        <article class="panel econ-calendar">
+          <div class="panel-heading"><div><div class="section-overline">ECONOMIC CALENDAR · KST</div><h2>다가오는 경제지표 발표</h2><p>금리 결정 · 소비자물가 · 산업활동 · 고용지표</p></div><a class="econ-source" href="https://www.bok.or.kr/eng/main/contents.do?menuNo=400020" target="_blank" rel="noopener noreferrer">공식 일정 확인 ↗</a></div>
+          <div class="econ-cal-filters"><select id="econCalRegion" aria-label="발표 국가"><option value="ALL">한국 + 미국</option><option value="KR">한국</option><option value="US">미국</option></select><select id="econCalKind" aria-label="발표 분류"><option value="ALL">전체 발표</option><option value="RATE">기준금리</option><option value="CPI">소비자물가</option><option value="INDUSTRY">산업활동</option><option value="EMPLOYMENT">고용</option></select><button id="econShowPast" type="button" class="econ-subtle-btn">지난 발표 보기</button></div>
+          <div id="econCalendarList" class="econ-events"></div><div class="econ-fine" id="econCalendarNote"></div>
+        </article>
+        <article class="panel econ-rates">
+          <div class="panel-heading"><div><div class="section-overline">CENTRAL BANK WATCH</div><h2>한국 · 미국 정책금리</h2><p>확정 발표치와 향후 예상치 구분</p></div><span id="econRateUpdated" class="econ-asof">공식 자료 기준</span></div>
+          <div class="econ-rate-cards"><div class="econ-rate-card"><div>🇰🇷 한국은행</div><strong id="econKrRate">—</strong><small id="econKrSince">확인 중</small></div><div class="econ-rate-card"><div>🇺🇸 미국 연준</div><strong id="econUsRate">—</strong><small id="econUsSince">확인 중</small></div></div>
+          <div id="econRateChart" class="econ-mini-chart" role="img" aria-label="한국 미국 기준금리 변경 이력 그래프"></div>
+          <div class="econ-rate-footer"><span>미국은 목표금리 <b>범위</b>, 한국은 <b>단일 기준금리</b></span><button id="econOpenRateTable" class="econ-subtle-btn" type="button">결정 이력 전체 ↓</button></div>
+        </article>
+      </section>
+      <section id="econRateHistoryPanel" class="panel econ-history-panel" hidden><div class="panel-heading"><div><div class="section-overline">POLICY DECISION HISTORY</div><h2>금리 발표 기록 · 예상치 / 결과</h2><p>과거 실제 결정 및 다음 회의 예상값은 출처별로 구분됩니다.</p></div><button id="econForecastOpen" class="outline-btn slim" type="button">+ 회의 예상치 입력</button></div><div class="econ-table-scroll"><table class="econ-table"><thead><tr><th>발표일</th><th>국가</th><th>발표/결정</th><th>예상치</th><th>실제 결과</th><th>출처</th></tr></thead><tbody id="econRateHistoryBody"></tbody></table></div><p class="econ-fine">* 예상치는 수집 출처가 확인된 경우에만 표시합니다. FOMC 점도표의 연말 전망은 특정 회의의 예상치가 아니므로 별도로 표시합니다.</p><div id="econFedProjection" class="econ-projection"></div></section>
+      <section class="panel econ-cpi-strip"><div class="econ-cpi-head"><div><div class="section-overline">INFLATION WATCH</div><h2>소비자물가 · 전월 vs 전년동월</h2></div><button class="econ-subtle-btn" id="econGoReports" type="button">보고서 분석하기 ↗</button></div><div class="econ-cpi-content"><div id="econCpiStats" class="econ-cpi-cards"></div><div id="econCpiMiniChart" class="econ-cpi-line"></div></div><div class="econ-fine">전년동월비가 일반적으로 말하는 물가상승률이며, 전월비는 단기 가격변화를 나타냅니다. 서로 다른 수치를 혼용하지 않습니다.</div></section>
+      <section class="metrics-row" aria-label="포트폴리오 합계">
+        <article class="metric-card"><div class="metric-top"><span>총 평가 금액</span><span class="metric-icon">↗</span></div><strong id="totalValue">—</strong><small id="totalValueHelp">보유 종목을 추가해 주세요</small></article>
+        <article class="metric-card"><div class="metric-top"><span>총 매수 금액</span><span class="metric-icon">₩</span></div><strong id="totalCost">—</strong><small>수량 × 매수 평균 단가</small></article>
+        <article class="metric-card"><div class="metric-top"><span>총 평가 손익</span><span class="metric-icon">↗</span></div><strong id="totalPnl">—</strong><small id="totalPnlDetail">보유 수익금 합계</small></article>
+        <article class="metric-card"><div class="metric-top"><span>투자 수익률</span><span class="metric-icon">%</span></div><strong id="totalReturn">—</strong><small id="totalReturnHelp">평가 손익 / 매수 금액</small></article>
+      </section>
+      <p class="coverage-note" id="coverageNote" hidden></p>
+
+      <section class="analysis-grid" id="allocations">
+        <article class="panel"><div class="panel-heading"><div><div class="section-overline">ASSET ALLOCATION</div><h2>포트폴리오 비중</h2><p>현재 평가금액 기준 섹터 구성</p></div><span class="panel-subtag">SECTORS</span></div>
+          <div class="allocation-flex"><div class="donut-outer"><div id="donut" class="donut" role="img" aria-label="섹터별 자산 구성"><div class="donut-middle"><strong id="donutCount">0</strong><span>보유 종목</span></div></div></div><div id="sectorLegend" class="sector-legend"></div></div>
+        </article>
+        <article class="panel"><div class="panel-heading"><div><div class="section-overline">PERFORMANCE BREAKDOWN</div><h2>종목별 평가 손익</h2><p>개별 종목 손익의 차이를 비교해요</p></div><span class="panel-subtag">GAIN / LOSS</span></div>
+          <div id="pnlBars" class="pnl-bars"></div>
+          <div class="pnl-bottom"><span class="legend-swatch gain"></span> 수익 <span class="legend-swatch loss"></span> 손실 <span class="pnl-label-right">매수평단 대비</span></div>
+        </article>
+      </section>
+
+      <section class="holdings panel" id="holdings">
+        <div class="holdings-heading"><div><div class="section-overline">YOUR POSITIONS</div><h2>보유 종목 <span id="holdingsCount" class="count-pill">0</span></h2><p>종목 이름을 누르면 상세 재무정보를 확인할 수 있습니다.</p></div><div class="holdings-actions"><button class="outline-btn" type="button" id="downloadCsv">↓ CSV 내보내기</button><button class="primary-btn" type="button" id="addHolding">+ 종목 추가</button></div></div>
+        <div class="table-toolbar"><div class="segment" id="regionFilter"><button type="button" data-filter="ALL" class="on">전체</button><button type="button" data-filter="KR">국내</button><button type="button" data-filter="US">미국</button></div><label class="search-box"><span>⌕</span><input id="holdingsSearch" type="search" placeholder="종목명 · 코드 · 섹터 검색" aria-label="보유 종목 검색"></label></div>
+        <div class="table-wrap"><table class="holdings-table"><thead><tr><th>종목명 <span>↕</span></th><th>섹터</th><th>코드</th><th class="num">현재주가 · 종가</th><th class="num">매수평단</th><th>주가추이 · 3개월</th><th class="num">수량</th><th class="num">매수금액 합계</th><th class="num">초기 비중</th><th class="num">현재 잔고</th><th class="num">현재 비중</th><th class="num">수익금</th><th class="num">수익률</th><th></th></tr></thead><tbody id="holdingsTbody"></tbody><tfoot id="holdingsFooter"></tfoot></table></div>
+        <div class="table-footnote">* 종가는 실시간 주가가 아닙니다. 미국 주식 원화 환산은 입력한 매수환율과 조회 환율을 사용합니다. 배당·수수료·세금은 손익 계산에서 제외됩니다.</div>
+      </section>
+
+      <section class="under-grid" id="settings">
+        <article class="panel info-panel"><div class="panel-heading"><div><div class="section-overline">DATA & PRIVACY</div><h2>자동 갱신 현황</h2></div><span class="info-icon">☁</span></div><div id="syncSummary" class="sync-summary">데이터 상태 확인 중</div><p>시세와 재무정보는 GitHub Actions로 수집한 정적 데이터입니다. 개인 보유 내역은 이 브라우저에만 저장됩니다.</p><a class="text-link" href="https://github.com/settings/repositories" target="_blank" rel="noopener noreferrer">GitHub 저장소 관리 ↗</a></article>
+        <article class="panel backup-panel"><div class="panel-heading"><div><div class="section-overline">SAFE STORAGE</div><h2>내 포트폴리오 백업</h2></div><span class="info-icon">⇪</span></div><p>브라우저를 바꾸거나 데이터를 삭제하면 보유 기록이 사라질 수 있습니다. JSON 백업을 주기적으로 저장하세요.</p><div class="backup-buttons"><button id="backupExport" class="outline-btn" type="button">↓ JSON 백업</button><button id="backupImportBtn" class="outline-btn" type="button">↑ 백업 불러오기</button><input id="backupImport" type="file" accept=".json,application/json" hidden></div></article>
+      </section>
+      <footer class="footer"><span>© <span id="footerYear">2026</span> FOLIO. Your personal investing workspace.</span><span>정보 제공용 · 투자 조언 아님 · 시세 지연 가능</span></footer>
+    </div>
+
+    <!-- 2. Sector / Peer Fundamentals -->
+    <div class="content tab-page" id="page-sector" data-page-view="sector" hidden>
+      <section class="page-heading sector-heading">
+        <div><div class="eyebrow">EQUITY RESEARCH <span class="eyebrow-dot">·</span> PEER VALUATION</div><h1>섹터별 기업가치 비교 <span class="heading-star">✳</span></h1><p>같은 시장 · 같은 업종의 PER, PBR, ROE와 재무실적을 비교해보세요.</p></div>
+        <div class="research-date"><span class="small-green-dot"></span> 재무자료 기준 <strong id="sectorAsOf">업데이트 전</strong></div>
+      </section>
+      <section class="sector-filter-card panel" aria-label="비교 조건">
+        <div class="section-overline">PEER GROUP FILTERS</div>
+        <div class="sector-filter-controls">
+          <label>거래 시장<select id="sectorMarket"><option value="KR">한국 KRX / KOSDAQ</option><option value="US">미국 NYSE / NASDAQ</option></select></label>
+          <label>비교 섹터<select id="sectorSelect" aria-label="비교할 섹터"></select></label>
+          <label>분석 지표<select id="sectorMetric"><option value="pe">PER · 주가수익비율</option><option value="pb">PBR · 주가순자산비율</option><option value="roe">ROE · 자기자본이익률</option><option value="profit_margin">순이익률</option></select></label>
+          <div class="filter-summary"><span>비교 가능한 기업</span><strong id="sectorPeerCount">—</strong></div>
+        </div>
+        <div id="sectorCoverage" class="sector-coverage">자동 수집된 재무지표가 있는 기업만 그래프에 표시됩니다.</div>
+      </section>
+      <section class="benchmark-metrics" aria-label="섹터 주요 통계">
+        <article class="benchmark-card"><span>섹터 PER 중앙값</span><strong id="medianPe">—</strong><small id="medianPeCount">자료 없음</small></article>
+        <article class="benchmark-card"><span>섹터 PBR 중앙값</span><strong id="medianPb">—</strong><small id="medianPbCount">자료 없음</small></article>
+        <article class="benchmark-card"><span>섹터 ROE 중앙값</span><strong id="medianRoe">—</strong><small id="medianRoeCount">자료 없음</small></article>
+        <article class="benchmark-card"><span>재무지표 수집률</span><strong id="sectorCoveragePct">—</strong><small id="sectorCoverageCount">전체 추적 종목 기준</small></article>
+      </section>
+      <section class="panel sector-overview-panel" aria-label="섹터 간 PER PBR 비교">
+        <div class="panel-heading"><div><div class="section-overline">SECTOR VALUATION MAP</div><h2>섹터 간 PER · PBR 비교</h2><p>섹터별 기업들의 지표 중앙값을 비교합니다. 업종을 누르면 해당 기업들로 상세 비교가 전환됩니다.</p></div><span id="sectorMapMetricLabel" class="panel-subtag">PER MEDIAN</span></div>
+        <div class="sector-overview-layout"><div class="sector-overview-chart"><div class="sector-map-heading">선택한 지표 · 섹터 중앙값</div><div id="sectorOverviewBars" class="sector-map-bars"></div></div>
+        <div class="sector-overview-table-wrap"><table class="sector-map-table"><thead><tr><th>섹터</th><th class="num">기업 수</th><th class="num">PER 중앙값</th><th class="num">PBR 중앙값</th><th class="num">ROE 중앙값</th><th class="num">유효 표본</th></tr></thead><tbody id="sectorOverviewTbody"></tbody></table></div></div>
+        <p class="chart-footnote">* 각 기업을 동일 가중치로 계산한 단순 중앙값입니다. 표본 1개인 섹터는 대표성이 부족하며, 수익성과 성장성이 다른 업종 사이에서는 PER/PBR 단순 순위로 투자 가치를 판단할 수 없습니다.</p>
+      </section>
+<section class="panel peer-trio-panel" aria-label="동일 섹터 세 기업 비교">
+  <div class="panel-heading"><div><div class="section-overline">THREE COMPANY DEEP DIVE</div><h2>핵심 3개 기업 재무 비교</h2><p>같은 섹터에서 세 기업을 선택해 PER·PBR·ROE·순이익을 바로 비교해보세요.</p></div><span class="panel-subtag">3-PEER VIEW</span></div>
+  <div class="trio-selectors"><label>기업 A<select id="peerSelect0"></select></label><label>기업 B<select id="peerSelect1"></select></label><label>기업 C<select id="peerSelect2"></select></label></div>
+  <div id="peerTrioCards" class="peer-trio-cards"></div>
+</section>
+<section class="panel scatter-panel" aria-label="PER PBR 분포">
+  <div class="panel-heading"><div><div class="section-overline">VALUATION SCATTER PLOT</div><h2>PER × PBR 분포</h2><p>왼쪽 아래로 갈수록 이익·순자산 대비 낮은 배수입니다. 점을 누르면 상세 재무정보가 열립니다.</p></div><label class="scatter-scope">기업 범위<select id="scatterScope"><option value="market">선택 시장 전체</option><option value="sector">선택 섹터만</option></select></label></div>
+  <div id="scatterInfo" class="scatter-info"></div><div class="scatter-plot-wrap"><div id="pePbScatter" class="scatter-chart" role="group" aria-label="기업별 PBR 가로축 PER 세로축 분포"></div></div>
+  <p class="chart-footnote">* 유효한 양수 PER·PBR을 가진 기업만 표시됩니다. PBR=1배 보조선을 표시합니다. 적자기업은 PER이 없을 수 있습니다. 점을 누르면 재무제표가 열립니다.</p>
+</section>
+
+      <section class="research-grid">
+        <article class="panel valuation-panel">
+          <div class="panel-heading"><div><div class="section-overline">RELATIVE VALUATION</div><h2 id="metricChartTitle">PER 비교</h2><p id="metricChartSubtitle">동일 업종의 기업별 밸류에이션</p></div><span class="panel-subtag">PEER COMPARISON</span></div>
+          <div id="sectorBars" class="sector-bars" aria-live="polite"><div class="empty-helper">데이터를 수집하면 비교 그래프를 표시합니다.</div></div>
+          <div class="chart-footnote" id="sectorBarNote">기업을 선택하면 상세 재무제표를 확인할 수 있습니다.</div>
+        </article>
+        <article class="panel research-guide">
+          <div class="section-overline">VALUATION NOTES</div><h2>이 지표는 어떻게 볼까요?</h2>
+          <div id="sectorMetricGuide" class="guide-feature"></div>
+          <div id="sectorInsight" class="guide-insight">섹터와 지표를 선택하세요.</div>
+          <div class="guide-divider"></div>
+          <div class="research-definitions">
+            <div><strong>PER</strong><span>주가 ÷ 주당순이익</span></div>
+            <div><strong>PBR</strong><span>주가 ÷ 주당순자산</span></div>
+            <div><strong>ROE</strong><span>순이익 ÷ 자기자본</span></div>
+          </div>
+          <p class="guide-caution">낮은 PER·PBR만으로 저평가를 뜻하지 않습니다. 적자, 일회성 이익, 산업 특성, 성장률 및 회계기준을 함께 확인하세요.</p>
+        </article>
+      </section>
+      <section class="panel peer-table-panel">
+        <div class="holdings-heading peer-table-heading"><div><div class="section-overline">COMPANY FUNDAMENTALS</div><h2>동일 업종 재무제표 비교 <span class="count-pill" id="peerTableCount">0</span></h2><p>기업명을 누르면 상세 재무정보 · 연도별 매출과 순이익을 볼 수 있습니다.</p></div><label class="peer-sort">정렬 기준<select id="sectorSort"><option value="name">기업명순</option><option value="pe_asc">PER 낮은순</option><option value="pb_asc">PBR 낮은순</option><option value="roe_desc">ROE 높은순</option><option value="revenue_desc">매출 큰순</option><option value="profit_desc">순이익 큰순</option></select></label></div>
+        <div class="table-wrap"><table class="peer-table"><thead><tr><th>기업명 / 코드</th><th class="num">최근 종가</th><th class="num">PER</th><th class="num">PBR</th><th class="num">ROE</th><th class="num">EPS</th><th class="num">매출액 · TTM</th><th class="num">순이익 · TTM</th><th class="num">재무 갱신일</th></tr></thead><tbody id="sectorTbody"></tbody></table></div>
+        <div class="table-footnote">* PER, PBR은 유효한 양수만 중앙값·그래프에 포함합니다. ROE는 적자기업의 음수도 포함합니다. 매출·순이익은 해당 기업 표시 통화(KRW/USD) 기준이며 통화 간 절대값 순위는 시장별로만 계산됩니다. 종가일과 재무제표 기준일은 다를 수 있습니다.</div>
+      </section>
+      <footer class="footer"><span>FOLIO · PEER VALUATION</span><span>제공처: Yahoo Finance (비공식) · 결측치·갱신 지연 가능 · 투자 권유 아님</span></footer>
+    </div>
+
+    <!-- 3. Long-term Investing Projects -->
+    <div class="content tab-page" id="page-projects" data-page-view="projects" hidden>
+      <section class="page-heading sector-heading">
+        <div><div class="eyebrow">LONG-TERM INVESTING <span class="eyebrow-dot">·</span> GOAL TRACKER</div><h1>장기 투자 프로젝트 <span class="heading-star">✳</span></h1><p>10년 투자 목표부터 매달 적립 현황까지, 포트폴리오와 별도로 관리합니다.</p></div>
+        <button id="addProject" class="primary-btn project-add" type="button">+ 새 프로젝트</button>
+      </section>
+      <section class="project-intro"><div class="project-intro-text"><span class="hero-label">BUILD THE FUTURE</span><h2>긴 시간의 투자,<br>눈에 보이는 목표로.</h2><p>목표 금액과 마감일을 정하고 월별 투자액을 기록하세요.<br>수익률을 가정하지 않고 원금 기준 진행 상황을 보여드립니다.</p></div><div class="project-illustration" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-dot"></div><span class="orbit-arrow">↗</span></div></section>
+      <section class="project-kpis">
+        <article class="benchmark-card"><span>전체 목표 금액</span><strong id="projectTotalTarget">—</strong><small>모든 프로젝트 합산</small></article>
+        <article class="benchmark-card"><span>누적 투자 원금</span><strong id="projectTotalInvested">—</strong><small>직접 기록한 월별 투자액</small></article>
+        <article class="benchmark-card"><span>목표까지 남은 금액</span><strong id="projectTotalRemaining">—</strong><small>수익금·배당 제외</small></article>
+        <article class="benchmark-card"><span>진행 중인 계획</span><strong id="projectTotalCount">0개</strong><small>장기 프로젝트 수</small></article>
+      </section>
+      <div class="projects-heading-row"><div><div class="section-overline">MY ROADMAP</div><h2>나의 장기 목표</h2><p>프로젝트마다 목표와 투자 기록을 독립적으로 관리합니다.</p></div><button id="addProjectInline" class="outline-btn" type="button">+ 목표 만들기</button></div>
+      <div id="projectGrid" class="project-grid"></div>
+      <section id="projectDetailPanel" class="panel project-detail-panel" hidden>
+        <div class="project-detail-top"><div><div class="section-overline">MONTHLY CONTRIBUTION LOG</div><h2 id="projectDetailName">프로젝트 투자 기록</h2><p id="projectDetailSubtitle"></p></div><div class="project-detail-actions"><button id="editSelectedProject" type="button" class="outline-btn">목표 수정</button><button id="addContribution" type="button" class="primary-btn">+ 투자액 기록</button></div></div>
+        <div class="project-detail-columns"><div><div class="project-subheading">최근 12개월 납입 현황</div><div class="monthly-bars" id="projectMonthlyChart"></div><div id="projectRequired" class="monthly-hint"></div></div><div><div class="project-subheading">투자 기록 내역</div><div class="contribution-scroll"><table class="contribution-table"><thead><tr><th>월</th><th class="num">투자 금액</th><th>메모</th><th></th></tr></thead><tbody id="projectEntries"></tbody></table></div><p class="project-privacy-note">이 기록은 브라우저에만 저장됩니다. JSON 백업을 해주세요.</p></div></div>
+      </section>
+<section id="dividendDesk" class="dividend-desk">
+  <div class="dividend-head"><div><div class="eyebrow">DIVIDEND INCOME · CASH FLOW</div><h2>나의 배당 현금흐름</h2><p>주당 배당금, 월별 예상 배당, 세전·세후 실제 입금액을 나누어 관리합니다.</p></div><div class="dividend-head-actions"><label class="div-year-label">기준 연도<select id="divYear"></select></label><button class="outline-btn" id="exportDivCsv" type="button">↓ 배당 내역 CSV</button></div></div>
+  <div class="div-kpis">
+    <article class="benchmark-card"><span>올해 예상 세전 배당금</span><strong id="divEstimatedGross">—</strong><small>배당 지급월 기준 · 원화 환산</small></article>
+    <article class="benchmark-card"><span>올해 예상 세후 배당금</span><strong id="divEstimatedNet">—</strong><small>원천징수율 적용 · 추정</small></article>
+    <article class="benchmark-card"><span>실제 배당 원천징수세·비용</span><strong id="divWithheld">—</strong><small>입력한 실수령 기록 기준</small></article>
+    <article class="benchmark-card dividend-net"><span>통장 실제 입금액</span><strong id="divBankActual">—</strong><small>직접 확인한 입금액만</small></article>
+  </div>
+  <div class="panel div-panel"><div class="panel-heading"><div><div class="section-overline">DIVIDEND PLANNER</div><h2>배당 종목 · 주당 지급금</h2><p>보유 수량은 포트폴리오에서 자동으로 가져옵니다. 주당 배당금과 지급월은 직접 입력해 주세요.</p></div><button id="addDivPlan" class="primary-btn" type="button">+ 배당 종목 설정</button></div>
+    <div class="table-wrap"><table class="div-table"><thead><tr><th>종목명</th><th>주당 배당금 (1회)</th><th class="num">수량</th><th>배당 지급월</th><th class="num">예상 세전 · 연간</th><th class="num">예상 세후 · 연간</th><th class="num">예상 원천세율</th><th></th></tr></thead><tbody id="divPlanBody"></tbody></table></div>
+    <p class="div-caption">국내 일반 주식 배당은 15.4%, 일반적인 미국 주식 배당은 현지 15%를 <b>예시 기본값</b>으로 사용합니다. ETF·계좌유형·종합과세 등에 따라 다르므로 변경 가능합니다.</p>
+  </div>
+  <div class="panel div-panel"><div class="panel-heading"><div><div class="section-overline">MONTHLY CASH FLOW</div><h2>월별 예상 vs 실제 배당 입금</h2><p>막대 그래프는 예상 세후와 실제 통장 입금액을 비교합니다.</p></div><span id="divYearBadge" class="panel-subtag">YEAR</span></div>
+    <div id="divMonthlyChart" class="div-monthly-chart"></div><div class="div-chart-legend"><span><i class="div-dot forecast"></i> 예상 세후</span><span><i class="div-dot actual"></i> 통장 실제 입금</span></div>
+    <div class="table-wrap"><table class="div-table div-month-table"><thead><tr><th>월</th><th class="num">예상 세전</th><th class="num">예상 세후</th><th class="num">실제 세전</th><th class="num">실제 세금 · 비용</th><th class="num">실제 통장 입금</th></tr></thead><tbody id="divMonthBody"></tbody><tfoot id="divMonthFoot"></tfoot></table></div>
+    <p class="div-caption">예상 배당은 지급액·배당월·환율이 일정하다는 가정입니다. 실제 통장 입금액은 <b>직접 확인해 등록한 금액만</b> 합산합니다.</p>
+  </div>
+  <div class="panel div-panel"><div class="panel-heading"><div><div class="section-overline">REAL DIVIDEND RECEIPTS</div><h2>실제로 받은 배당금</h2><p>입금일, 주식명, 세전 배당, 원천징수, 최종 통장 입금액을 직접 기록합니다.</p></div><button id="addDivReceipt" class="primary-btn" type="button">+ 실제 입금 기록</button></div>
+    <div class="table-wrap"><table class="div-table"><thead><tr><th>입금일 · 종목</th><th class="num">세전 (원)</th><th class="num">해외 원천징수</th><th class="num">국내 추가세·비용</th><th class="num">계산 세후</th><th class="num">실제 통장 입금</th><th></th></tr></thead><tbody id="divReceiptBody"></tbody></table></div>
+  </div>
+  <section class="panel div-tax-panel"><div class="panel-heading"><div><div class="section-overline">CAPITAL GAINS · SEPARATE TAX</div><h2>해외주식 양도소득세 간편 추정</h2><p><b>배당소득세와 다른 세금</b>입니다. 연간 실현손익으로 별도 계산합니다.</p></div><span class="panel-subtag">연도별 시뮬레이터</span></div>
+    <div class="cap-gain-grid"><label>연간 실현 매도차익 (원)<input id="cgProfit" type="number" min="0" step="1" placeholder="예: 8000000"></label><label>연간 실현 매도손실 (원)<input id="cgLoss" type="number" min="0" step="1" placeholder="예: 1000000"></label><label>관련 인정 비용 (원)<input id="cgFees" type="number" min="0" step="1" placeholder="예: 30000"></label><label>전체 매도대금 (원 · 선택)<input id="cgProceeds" type="number" min="0" step="1" placeholder="예: 30000000"></label></div>
+    <div class="cap-results"><div><span>연간 순실현손익</span><strong id="cgNetGain">—</strong></div><div><span>기본공제 후 과세표준</span><strong id="cgTaxable">—</strong></div><div><span>예상 세금 · 국세 + 지방세</span><strong id="cgTax">—</strong></div><div><span>매도대금 − 향후 예상 세금</span><strong id="cgAfter">—</strong></div></div>
+    <p id="cgExplanation" class="div-caption"></p><p class="cap-disclaimer">한국 거주 일반 개인의 통상적인 해외 상장주식 양도를 가정한 간편 추정입니다. 연 250만 원 기본공제, 소득세 20% + 지방소득세 2% 적용. 특례, 계좌유형, 손익통산, 환율·수수료, 신고의무 등에 따라 달라질 수 있습니다. 통상 매도 즉시 이 세금이 원천징수되는 것은 아니며 <b>다음 해 신고·납부</b> 대상입니다. <b>배당의 실제 입금액에서 차감하지 않습니다.</b></p>
+  </section>
+</section>
+
+      <footer class="footer"><span>FOLIO · LONG-TERM PLAN</span><span>장기 프로젝트의 진행률은 납입 원금 기준이며 예상 수익을 보장하지 않습니다.</span></footer>
+    </div>
+
+    <!-- 4. Trade + prior-month industry direction, CPI independent -->
+    <div class="content tab-page" id="page-reports" data-page-view="reports" hidden>
+      <section class="page-heading sector-heading"><div><div class="eyebrow">MACRO RESEARCH <span class="eyebrow-dot">·</span> ONE-MONTH LEAD / LAG</div><h1>수출입 × 산업활동 분석 <span class="heading-star">✳</span></h1><p>9월 무역은 8월 산업활동과, 8월 무역은 7월 산업활동과 비교합니다. 소비자물가는 별도로 관리합니다.</p></div><div class="research-date"><span class="small-green-dot"></span> 보도자료 기록 <strong id="reportCountPill">확인 중</strong></div></section>
+      <section class="report-hero-stats" id="reportTopStats"></section>
+      <section class="report-main-grid">
+        <article class="panel report-import-card"><div class="section-overline">UPLOAD OFFICIAL PDF</div><h2>매월 보고서 추가</h2><p>수출입동향 · 산업활동동향 · 소비자물가동향 PDF를 불러옵니다. 추출값을 직접 검토한 후 저장하면 기존 버전은 보존됩니다.</p><label class="report-drop" id="reportDrop"><span class="report-drop-icon">⇧</span><strong>PDF를 클릭하거나 이곳으로 드래그</strong><small>월별 PDF · 최대 25MB · 브라우저 안에서 분석</small><input type="file" id="reportFileInput" accept=".pdf,application/pdf" hidden></label><button type="button" id="reportManualEntry" class="outline-btn slim report-manual">PDF 인식이 안 될 때 · 수치 직접 입력</button><div id="reportImportStatus" class="report-import-status">기존 4월 산업활동을 포함해 7·8월 산업활동, 8·9월 수출입, 5월 물가 자료가 등록되어 있습니다.</div><p class="report-note">원본 PDF 파일은 서버에 업로드되지 않습니다. 확인한 분석 수치만 브라우저에 저장되므로 주기적으로 JSON 백업하세요.</p></article>
+        <article class="panel report-signal-card"><div class="section-overline">PAIRING RULE · 1-MONTH LAG</div><h2>분석 기준 선택</h2><div class="report-month-chooser"><label>무역 기준월 <select id="reportTradeMonthSelect"></select></label><span id="reportCoverageTag" class="report-signal-tag">쌍 확인 중</span></div><div id="reportPairIntro" class="report-direction-result"></div><div class="report-basis-controls"><label>섹터 방향성 기준 <select id="reportSectorBasis"><option value="auto">전월비 우선 · 없으면 전년비</option><option value="mom">전월비만 비교</option><option value="yoy">전년동월비만 비교</option></select></label></div><p class="report-note">각각의 수출액과 산업생산을 <b>같은 종류의 증감률끼리만</b> 부호 비교합니다. 한 달 시차 비교는 단순한 관계 탐색이며 인과성·주가 방향을 의미하지 않습니다.</p></article>
+      </section>
+      <section class="panel econ-history-panel macro-section"><div class="panel-heading"><div><div class="section-overline">TRADE MOMENTUM</div><h2>8월 → 9월 수출·수입 변화</h2><p id="reportTradeRange">선택한 무역 월과 직전 월을 비교합니다.</p></div></div><div id="reportTradeChange" class="trade-summary-strip"></div><div id="reportTradeChart" class="trade-chart"></div><div class="report-archive-tablewrap"><table class="econ-table trade-table"><thead><tr><th>수출 품목</th><th class="num">전월 수출 (억 달러)</th><th class="num">당월 수출 (억 달러)</th><th class="num">전월대비 금액변화</th><th class="num">전월대비 증감률</th><th class="num">전년동월대비</th></tr></thead><tbody id="reportTradeSectorBody"></tbody></table></div></section>
+      <section class="panel econ-history-panel macro-section"><div class="panel-heading"><div><div class="section-overline">IMPORT STRUCTURE</div><h2>수입 항목 변화</h2><p>총수입 · 에너지/비에너지 · 원유 · 반도체장비 등 보고서에 기재된 항목 비교</p></div></div><div class="report-archive-tablewrap"><table class="econ-table"><thead><tr><th>수입 항목</th><th class="num">전월 (억 달러)</th><th class="num">당월 (억 달러)</th><th class="num">전월대비</th><th class="num">당월 전년동월대비</th><th>비고</th></tr></thead><tbody id="reportImportBody"></tbody></table></div></section>
+      <section class="panel econ-history-panel macro-section"><div class="panel-heading"><div><div class="section-overline">SECTOR DIRECTION · LAGGED INDICATOR</div><h2 id="reportSectorPairTitle">9월 수출입 ↔ 8월 산업활동</h2><p>수출 금액 증가/감소와 직전 월 생산·출하 증감의 방향이 같은지 비교</p></div><span id="reportPairBadge" class="report-signal-tag"></span></div><div id="reportSectorInsight" class="report-summary-body"></div><div class="report-archive-tablewrap"><table class="econ-table trade-table"><thead><tr><th>섹터</th><th class="num">수출액 · 당월</th><th class="num">수출 증감률</th><th>직전 월 산업 지표</th><th class="num">산업 증감률</th><th>비교</th></tr></thead><tbody id="reportSectorCrossBody"></tbody></table></div><p class="report-note">같은 섹터라도 생산지수, 수출출하지수, 통관 수출액은 서로 다른 통계입니다. 연관업종 대리 지표는 직접적인 일치 판정에서 제외하고, 수출입 실적의 직전월 데이터가 없는 경우 '자료 부족' 또는 전년비 참고로 표시합니다.</p></section>
+      <section class="panel econ-history-panel macro-section"><div class="panel-heading"><div><div class="section-overline">INDUSTRIAL ACTIVITY MOMENTUM</div><h2 id="reportIndustryRange">7월 → 8월 산업활동 변화</h2><p>전월비 <b>증감률의 변화(%p)</b>를 비교하며, 7월 수정치가 있으면 우선 적용합니다.</p></div></div><div class="report-archive-tablewrap"><table class="econ-table"><thead><tr><th>산업 지표</th><th class="num">이전 월 전월비</th><th class="num">다음 월 전월비</th><th class="num">증감률 차이(%p)</th><th>흐름 · 근거</th></tr></thead><tbody id="reportIndustryChangeBody"></tbody></table></div></section>
+      <section class="panel report-export-panel macro-section"><div class="section-overline">EXPORT VOLUME &amp; UNIT PRICE</div><h2>수출 수량 · 단가 변화</h2><p>금액 증가가 판매 수량 때문인지 단가 때문인지 구분합니다. 보고서에 물량과 단가가 모두 있는 품목만 계산하며, 가격이 오른 것을 수량 증가로 해석하지 않습니다.</p><div id="reportPriceQty" class="report-price-qty"></div></section>
+      <section class="panel macro-section report-cpi-independent"><div class="panel-heading"><div><div class="section-overline">CPI · INDEPENDENT ANALYSIS</div><h2>소비자물가동향 별도 분석</h2><p>무역·산업 1개월 시차 방향성 판정에 소비자물가를 섞지 않습니다.</p></div><label class="report-cpi-chooser">물가 기준월 <select id="reportCpiMonthSelect"></select></label></div><div id="reportCpiCards" class="report-hero-stats"></div><div id="reportCpiAnalysis" class="report-summary-body"></div><div id="reportCpiSectors" class="report-sector-cards"></div></section>
+      <section class="panel report-month-panel"><div class="panel-heading"><div><div class="section-overline">MONTHLY REPORT ARCHIVE</div><h2>PDF 기준월 · 버전별 기록</h2><p>새로운 PDF를 등록하면 분석월이 늘어나며, 수정본을 추가해도 이전 파일의 수치 기록은 그대로 남습니다.</p></div><button id="reportExportJson" type="button" class="outline-btn slim">↓ 경제보고서 JSON 백업</button></div><div class="report-archive-tablewrap"><table class="econ-table"><thead><tr><th>기준월</th><th>보고서 종류</th><th>주요 지표</th><th>자료 출처</th><th>발표일</th><th>상태 / 버전</th><th>열기</th></tr></thead><tbody id="reportArchiveBody"></tbody></table></div></section>
+      <section class="panel report-provenance-panel"><div class="section-overline">RESEARCH NOTES</div><h2>데이터 해석의 기준</h2><div class="report-guidance-grid"><div><strong>발표월 ≠ 통계 기준월</strong><p>9월 수출입과 8월 산업활동은 별개의 기준월입니다. 시차 분석임을 명확히 합니다.</p></div><div><strong>전월비와 전년동월비 분리</strong><p>전월비 증감률은 계절변동에 민감합니다. 전년동월비와 같은 열에서 무작정 직접 비교하지 않습니다.</p></div><div><strong>수량 · 단가 · 통관 금액</strong><p>석유제품처럼 수량 감소와 가격 상승이 동시에 발생할 수 있습니다. 제조업 수출출하는 통관 수출액이 아닙니다.</p></div></div></section>
+      <footer class="footer"><span>FOLIO · TRADE AND INDUSTRY RESEARCH</span><span>공식 PDF 기반 · 시차 방향 탐색용 · 투자 판단을 보장하지 않습니다.</span></footer>
+    </div>
+  </main>
+</div>
+
+<div class="modal-backdrop" id="holdingModal" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><div class="section-overline">PORTFOLIO MANAGER</div><h2 id="modalTitle">종목 추가</h2></div><button class="icon-button" type="button" data-close="modal" aria-label="창 닫기">×</button></div>
+<form id="holdingForm" autocomplete="off"><div class="form-field stock-picker"><label for="stockQuery">종목 검색 <b>*</b></label><input id="stockQuery" type="text" placeholder="예: 삼성전자, SK하이닉스, NVDA, VOO" required><div id="stockSuggestions" class="suggestions" role="listbox" hidden></div><small>추천 종목을 선택하면 섹터·코드가 자동 입력됩니다.</small></div>
+<div class="field-duo"><div class="form-field"><label for="stockSector">섹터</label><input type="text" id="stockSector" placeholder="반도체" required></div><div class="form-field"><label for="stockCode">표시 코드</label><input type="text" id="stockCode" placeholder="KRX:005930" required></div></div>
+<div class="field-duo"><div class="form-field"><label for="stockSymbol">자동 조회 코드 <b>*</b></label><input type="text" id="stockSymbol" placeholder="005930.KS" required><small>한국: .KS / .KQ · 미국: AAPL</small></div><div class="form-field"><label for="stockCurrency">통화</label><select id="stockCurrency"><option value="KRW">KRW · 원화</option><option value="USD">USD · 달러</option></select></div></div>
+<div class="field-duo"><div class="form-field"><label for="stockAverage">매수평단 <b>*</b></label><input type="number" id="stockAverage" min="0.000001" step="any" placeholder="83423" required></div><div class="form-field"><label for="stockQuantity">보유 수량 <b>*</b></label><input type="number" id="stockQuantity" min="0.000001" step="any" placeholder="4" required></div></div>
+<div id="fxPurchaseField" class="form-field" hidden><label for="stockPurchaseFx">매수 당시 환율 · 원/달러</label><input type="number" id="stockPurchaseFx" min="0.000001" step="any" placeholder="예: 1370"><small>미입력 시 현재 조회 환율로 원금을 환산하며 추정치임을 표시합니다.</small></div>
+<p class="form-warning" id="stockTrackingWarning" hidden>이 종목은 자동 갱신 목록에 없습니다. GitHub의 <code>data/custom_stocks.json</code>에 종목을 등록해야 매일 종가를 받아올 수 있습니다.</p>
+<div class="modal-actions"><button type="button" class="outline-btn" data-close="modal">취소</button><button type="submit" class="primary-btn" id="saveHolding">종목 저장</button></div></form></div></div>
+
+
+<div class="modal-backdrop" id="projectModal" aria-hidden="true"><div class="modal project-modal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle"><div class="modal-head"><div><div class="section-overline">LONG-TERM GOAL</div><h2 id="projectModalTitle">프로젝트 만들기</h2></div><button type="button" class="icon-button" data-project-close="yes" aria-label="창 닫기">×</button></div>
+<form id="projectForm"><div class="form-field"><label for="projectName">프로젝트 이름 <b>*</b></label><input id="projectName" type="text" maxlength="65" placeholder="예: 10년 장기 투자 · 노후 준비" required></div>
+<div class="field-duo"><div class="form-field"><label for="projectTarget">목표 금액 · 원 <b>*</b></label><input id="projectTarget" type="number" min="1" step="1" placeholder="100000000" required></div><div class="form-field"><label for="projectMonthly">매월 투자 목표 · 원</label><input id="projectMonthly" type="number" min="0" step="1" placeholder="300000"></div></div>
+<div class="field-duo"><div class="form-field"><label for="projectDeadline">목표 시점 <b>*</b></label><input id="projectDeadline" type="month" required></div><div class="form-field"><label for="projectStart">시작 월</label><input id="projectStart" type="month"></div></div>
+<div class="form-field"><label for="projectSymbols">연결할 보유 종목 (선택)</label><input id="projectSymbols" type="text" placeholder="예: 005930.KS, NVDA"><small>티커를 쉼표로 구분하세요. 연결 종목의 현재 평가금액은 별도 참고로 표시하고, 납입 원금과 합산하지 않습니다.</small></div>
+<div class="form-field"><label for="projectMemo">목표 메모</label><textarea id="projectMemo" rows="2" maxlength="250" placeholder="이 목표가 중요한 이유, 투자 원칙 등을 적어주세요."></textarea></div>
+<div class="modal-actions"><button type="button" class="outline-btn" data-project-close="yes">취소</button><button type="submit" class="primary-btn" id="saveProject">프로젝트 저장</button></div></form></div></div>
+<div class="modal-backdrop" id="entryModal" aria-hidden="true"><div class="modal entry-modal" role="dialog" aria-modal="true" aria-labelledby="entryModalTitle"><div class="modal-head"><div><div class="section-overline">CONTRIBUTION RECORD</div><h2 id="entryModalTitle">이번 달 투자액 기록</h2></div><button type="button" class="icon-button" data-entry-close="yes" aria-label="창 닫기">×</button></div>
+<form id="entryForm"><div class="field-duo"><div class="form-field"><label for="entryMonth">투자 월 <b>*</b></label><input id="entryMonth" type="month" required></div><div class="form-field"><label for="entryAmount">투자 금액 · 원 <b>*</b></label><input id="entryAmount" type="number" min="1" step="1" placeholder="300000" required></div></div><div class="form-field"><label for="entryMemo">메모</label><input id="entryMemo" type="text" maxlength="100" placeholder="예: 월 정기매수, 추가 적립"></div><p class="small-form-help">납입 원금만 기록합니다. 평가손익은 포트폴리오에 연결한 주식의 실시간 갱신 종가를 별도로 확인하세요.</p><div class="modal-actions"><button type="button" class="outline-btn" data-entry-close="yes">취소</button><button type="submit" class="primary-btn">기록 저장</button></div></form></div></div>
+<div class="modal-backdrop" id="divPlanModal" aria-hidden="true"><div class="modal div-modal" role="dialog" aria-modal="true" aria-labelledby="divPlanTitle"><div class="modal-head"><div><div class="section-overline">DIVIDEND SCHEDULE</div><h2 id="divPlanTitle">배당 종목 설정</h2></div><button type="button" class="icon-button" data-div-close="divPlanModal" aria-label="닫기">×</button></div>
+<form id="divPlanForm"><div class="form-field"><label for="divPlanSymbol">종목 (보유주식에서 선택) *</label><select id="divPlanSymbol" required></select></div>
+<div class="field-duo"><div class="form-field"><label for="divPlanPerShare">1회 지급 주당 세전 배당금 *</label><input id="divPlanPerShare" type="number" min="0.000001" step="any" required placeholder="USD면 달러, KRW면 원"></div><div class="form-field"><label for="divPlanMonths">배당 지급월 *</label><input id="divPlanMonths" type="text" placeholder="예: 3,6,9,12" required></div></div>
+<div class="field-duo"><div class="form-field"><label for="divPlanTaxRate">예상 총 원천징수율 (%)</label><input id="divPlanTaxRate" type="number" min="0" max="100" step="any" placeholder="국내 15.4 / 미국 15"></div><div class="form-field"><label for="divPlanFx">배당 환산환율 (USD, 원/달러)</label><input id="divPlanFx" type="number" min="0" step="any" placeholder="비우면 최근 확인된 환율"></div></div>
+<p class="small-form-help">배당금은 <b>1회 지급 시 주당 세전 금액</b>입니다. 월간·분기별 금액 변동과 실제 지급일은 입력값과 다를 수 있습니다.</p>
+<div class="modal-actions"><button type="button" class="outline-btn" data-div-close="divPlanModal">취소</button><button type="submit" class="primary-btn">배당 설정 저장</button></div></form></div></div>
+<div class="modal-backdrop" id="divReceiptModal" aria-hidden="true"><div class="modal div-modal" role="dialog" aria-modal="true" aria-labelledby="divReceiptTitle"><div class="modal-head"><div><div class="section-overline">DIVIDEND RECEIPT</div><h2 id="divReceiptTitle">실제 배당 입금 기록</h2></div><button type="button" class="icon-button" data-div-close="divReceiptModal" aria-label="닫기">×</button></div>
+<form id="divReceiptForm"><div class="field-duo"><div class="form-field"><label for="divReceiptSymbol">종목 *</label><select id="divReceiptSymbol" required></select></div><div class="form-field"><label for="divReceiptDate">입금일 *</label><input type="date" id="divReceiptDate" required></div></div>
+<div class="field-duo"><div class="form-field"><label for="divReceiptGross">세전 총 배당금 · 원래 통화 *</label><input type="number" step="any" min="0.000001" id="divReceiptGross" required></div><div class="form-field"><label for="divReceiptForeignTax">해외 원천징수액 · 원래 통화</label><input type="number" min="0" step="any" id="divReceiptForeignTax" value="0"></div></div>
+<div class="field-duo"><div class="form-field"><label for="divReceiptFx">적용 환율 · 원/달러 (국내 1)</label><input type="number" min="0.000001" step="any" id="divReceiptFx" value="1" required></div><div class="form-field"><label for="divReceiptLocalTax">국내 추가 원천징수 (원)</label><input type="number" min="0" step="1" id="divReceiptLocalTax" value="0"></div></div>
+<div class="field-duo"><div class="form-field"><label for="divReceiptFee">수수료·기타 공제 (원)</label><input type="number" min="0" step="1" id="divReceiptFee" value="0"></div><div class="form-field"><label for="divReceiptBank">실제 통장 입금액 · 원화 기준 *</label><input type="number" min="0" step="1" id="divReceiptBank" required placeholder="증권사 지급내역으로 확인"></div></div>
+<p id="receiptCalcHelp" class="div-receipt-help">세전 − 원천세 − 비용을 계산해 확인할 수 있습니다.</p><p class="small-form-help">외화가 그대로 들어온 경우 원화 환산 기준을 기록한 값으로, 실제 환전·원화입금을 의미하지는 않습니다. 배당소득 외 다른 세금은 자동 공제하지 않습니다.</p>
+<div class="modal-actions"><button type="button" class="outline-btn" data-div-close="divReceiptModal">취소</button><button type="submit" class="primary-btn">실제 입금 저장</button></div></form></div></div>
+
+<div id="detailBackdrop" class="drawer-backdrop" aria-hidden="true"></div><aside id="detailDrawer" class="detail-drawer" role="dialog" aria-modal="true" aria-label="종목 재무정보" aria-hidden="true"><div class="drawer-head"><div><div class="section-overline">COMPANY INTELLIGENCE</div><div id="detailTitle" class="detail-name">종목 정보</div><div id="detailSymbol" class="detail-symbol">—</div></div><button id="closeDetail" type="button" class="icon-button" aria-label="상세 창 닫기">×</button></div><div id="detailBody" class="drawer-body"></div></aside>
+
+<div class="modal-backdrop" id="reportReviewModal" aria-hidden="true"><div class="modal report-review-modal" role="dialog" aria-modal="true" aria-labelledby="reportReviewTitle"><div class="modal-head"><div><div class="section-overline">VERIFY OFFICIAL PDF DATA</div><h2 id="reportReviewTitle">분석값 검토 후 새 버전 저장</h2></div><button id="reportReviewClose" class="icon-button" type="button" aria-label="닫기">×</button></div><form id="reportReviewForm"><div class="field-duo"><div class="form-field"><label for="reportReviewKind">보고서 종류</label><select id="reportReviewKind"><option value="TRADE">수출입동향 (금액: 억 달러)</option><option value="INDUSTRY">산업활동동향</option><option value="CPI">소비자물가동향 (별도)</option></select></div><div class="form-field"><label for="reportReviewMonth">통계 기준월</label><input id="reportReviewMonth" type="month" required></div></div><div class="field-duo"><div class="form-field"><label for="reportReviewMom" id="reviewMomLabel">전체 전월비 (%)</label><input id="reportReviewMom" type="number" step="any"></div><div class="form-field"><label for="reportReviewYoy" id="reviewYoyLabel">전체 전년동월비 (%)</label><input id="reportReviewYoy" type="number" step="any"></div></div><div class="field-duo"><div class="form-field"><label for="reportReviewSecondMom" id="reviewSecondMomLabel">제조업 전월비 (%)</label><input id="reportReviewSecondMom" type="number" step="any"></div><div class="form-field"><label for="reportReviewSecondYoy" id="reviewSecondYoyLabel">제조업 전년동월비 / 수입 전년비 (%)</label><input id="reportReviewSecondYoy" type="number" step="any"></div></div><div class="field-duo report-trade-only" id="reportTradeFields"><div class="form-field"><label for="reportReviewExportAmount">총수출액 (억 달러)</label><input id="reportReviewExportAmount" type="number" min="0" step="any"></div><div class="form-field"><label for="reportReviewImportAmount">총수입액 (억 달러)</label><input id="reportReviewImportAmount" type="number" min="0" step="any"></div></div><div class="field-duo report-industry-only" id="reportIndustryFields"><div class="form-field"><label for="reportReviewShipmentMom">제조업 수출출하지수 전월비 (%)</label><input id="reportReviewShipmentMom" type="number" step="any"></div><div class="form-field"><label for="reportReviewShipmentYoy">제조업 수출출하지수 전년비 (%)</label><input id="reportReviewShipmentYoy" type="number" step="any"></div></div><div class="form-field report-trade-only" id="reportTradeBalanceField"><label for="reportReviewBalance">무역수지 흑자/적자 (억 달러, 원문 확인)</label><input id="reportReviewBalance" type="number" step="any" placeholder="예: 498.5"></div>
+<div class="form-field report-trade-only" id="reportTradeImportField"><label for="reportReviewImportText">수입 항목별 수입액 / 전년동월비</label><textarea id="reportReviewImportText" rows="3" spellcheck="false" placeholder="에너지 | 129.6 | 38.0
+반도체장비 | 34.4 | 50.8"></textarea><small>수입항목 | 금액(억 달러) | 전년동월비(%) · 보고서에 있는 값만 입력</small></div>
+<div class="form-field report-trade-only" id="reportTradeQuantityField"><label for="reportReviewQtyText">수량·단가 기록 (해당 자료에 있을 때)</label><textarea id="reportReviewQtyText" rows="3" spellcheck="false" placeholder="석유제품 | 570 | 만 톤 | 1267 | USD/톤 | -6.9 | 84.7"></textarea><small>품목 | 수량 | 수량 단위 | 단가 | 단가 단위 | 수량 전년비(%) | 단가 전년비(%)</small></div>
+<div class="form-field"><label for="reportReviewSectorText">섹터별 지표</label><textarea id="reportReviewSectorText" rows="6" spellcheck="false"></textarea><small id="reportSectorHelp">수출입: <code>반도체 | 수출액 | 603.0 | 262.8</code> (마지막 값은 전년동월비) / 산업·물가: <code>반도체 | 생산지수 | -2.2 | </code> (전월비 / 전년비). 원본 PDF에서 반드시 확인하세요.</small></div><div class="form-field"><label for="reportReviewNotes">간단한 요약 / 분석 메모</label><textarea id="reportReviewNotes" rows="2" maxlength="8000"></textarea></div><p id="reportReviewEvidence" class="report-evidence"></p><div class="modal-actions"><button id="reportCancel" type="button" class="outline-btn">취소</button><button type="submit" class="primary-btn">확인한 내용 저장 (기존 버전 보존)</button></div></form></div></div>
+<div class="modal-backdrop" id="econForecastModal" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="forecastTitle"><div class="modal-head"><div><div class="section-overline">USER-RECORDED CONSENSUS</div><h2 id="forecastTitle">금리 결정 예상치 기록</h2></div><button id="forecastClose" type="button" class="icon-button">×</button></div><form id="forecastForm"><div class="field-duo"><div class="form-field"><label for="forecastCountry">국가</label><select id="forecastCountry"><option value="KR">한국은행</option><option value="US">미국 연준</option></select></div><div class="form-field"><label for="forecastDate">회의 발표일 · 현지 날짜</label><input type="date" id="forecastDate" required></div></div><div class="field-duo"><div class="form-field"><label for="forecastLow">예상 기준금리 / 미국 하단 (%)</label><input id="forecastLow" type="number" step="0.01" required></div><div class="form-field"><label for="forecastHigh">미국 상단 (%)</label><input id="forecastHigh" type="number" step="0.01" placeholder="한국은 공란"></div></div><div class="form-field"><label for="forecastSource">예상 출처 (기사·조사·금융기관)</label><input id="forecastSource" type="text" maxlength="180" required placeholder="예: 시장 설문, 금융기관 보고서명"></div><p class="report-note">직접 입력한 예상치이며 사이트가 자동 예측하거나 실시간 시장 컨센서스를 제공하는 것은 아닙니다.</p><div class="modal-actions"><button id="forecastCancel" type="button" class="outline-btn">취소</button><button class="primary-btn" type="submit">예상치 저장</button></div></form></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*.xlsx
+*.xls
+*.csv
+*.log
+.DS_Store
+*.backup.json
+portfolio_*.json
+public/
