@@ -39,7 +39,17 @@ jobs:
       - name: Create catalog JS
         run: python scripts/build_catalog.py
       - name: Fetch latest closing prices and fundamentals
-        run: python scripts/update_market.py
+        id: prices
+        continue-on-error: true
+        env:
+          STOOQ_API_KEY: ${{ secrets.STOOQ_API_KEY }}
+        run: python scripts/update_market.py --fundamentals-limit 2
+      - name: Show price-update result
+        if: always()
+        run: |
+          if [ '${{ steps.prices.outcome }}' = 'failure' ]; then
+            echo '::warning::Price sources unavailable. Deploying with existing prices; check quote_date and data/market.json warnings.'
+          fi
       - name: Refresh macro rates and official CPI history
         env:
           ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
