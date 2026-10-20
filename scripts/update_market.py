@@ -8,7 +8,10 @@ successful values with their original as-of dates; no invented market quotes.
 from __future__ import annotations
 
 import argparse
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import csv
+from io import StringIO
+import os
+import re
 from datetime import datetime, timedelta, timezone
 import json
 import math
@@ -41,8 +44,15 @@ def get_json(url, headers=None, timeout=18, attempts=2):
     for attempt in range(attempts):
         try:
             r = requests.get(url, headers=headers or HEADERS, timeout=timeout)
+            # A 429 is an explicit provider refusal. Retrying immediately adds load.
+            if r.status_code == 429:
+                raise RuntimeError(f'PROVIDER_RATE_LIMIT_429: {url}')
             r.raise_for_status()
             return r.json()
+        except RuntimeError as e:
+            if 'PROVIDER_RATE_LIMIT_429' in str(e):
+                raise
+            last_error = e
         except (ValueError, requests.RequestException) as e:
             last_error = e
             if attempt + 1 < attempts:
@@ -101,6 +111,98 @@ def fetch_chart(symbol, history_limit=65):
     if not res:
         raise ValueError(f'{symbol}: empty chart result')
     return parse_yahoo_chart(res[0], history_limit=history_limit)
+
+
+
+def make_daily_quote(bars, currency, source, history_limit=65, now=None):
+    """Normalize externally obtained *closed* daily bars (never invent prices)."""
+    now = now or datetime.now(timezone.utc)
+    market_tz = KST if currency == 'KRW' else ZoneInfo('America/New_York')
+    local_now = now.astimezone(market_tz)
+    # Some daily feeds also expose the unfinished current session. Be conservative.
+    too_early = (local_now.hour, local_now.minute) < ((16, 0) if currency == 'KRW' else (16, 30))
+    unique = {}
+    for item in bars:
+        try:
+            day = datetime.strptime(str(item['date']), '%Y-%m-%d').date()
+            price = safe_float(item['close'])
+            if price is None or price <= 0:
+                continue
+            if day > local_now.date() or (day == local_now.date() and too_early):
+                continue
+            unique[day.isoformat()] = {'date': day.isoformat(), 'close': round(price, 6)}
+        except (KeyError, TypeError, ValueError):
+            continue
+    rows = [unique[k] for k in sorted(unique)]
+    if not rows:
+        raise ValueError(f'{source}: no closed daily bars')
+    newest = rows[-1]
+    prev = rows[-2]['close'] if len(rows)>1 else None
+    delta = newest['close']-prev if prev else None
+    change_pct = delta/prev*100 if prev else None
+    return {'price': newest['close'], 'quote_date': newest['date'],
+            'currency': currency, 'previous_close': prev,
+            'change': round(delta, 5) if delta is not None else None,
+            'change_pct': round(change_pct, 4) if change_pct is not None else None,
+            'history': rows[-history_limit:], 'high_52w': None, 'low_52w': None,
+            'source': source}
+
+
+def fetch_naver_chart(symbol, history_limit=65):
+    """Daily Korean-market candles from Naver chart XML (unofficial, best-effort)."""
+    match = re.fullmatch(r'(\d{6})\.(?:KS|KQ)', symbol)
+    if not match:
+        raise ValueError('Naver daily chart supports only 6-digit Korean symbols')
+    code = match.group(1)
+    url = 'https://fchart.stock.naver.com/sise.nhn'
+    resp = requests.get(url, params={'symbol':code, 'timeframe':'day',
+                         'count':max(history_limit+12,80), 'requestType':'0'},
+                         headers={**HEADERS,'Referer':'https://finance.naver.com/'}, timeout=18)
+    resp.raise_for_status()
+    # Numeric item attributes are ASCII regardless of the Korean text encoding.
+    matches = re.findall(r'<item\s+data=[\'\"]([^\'\"]+)[\'\"]', resp.text, flags=re.I)
+    if not matches:
+        raise ValueError(f'{symbol}: no parseable Naver candles')
+    bars=[]
+    for item in matches:
+        parts=item.split('|')
+        if len(parts)>=5 and re.fullmatch(r'\d{8}', parts[0]):
+            d=parts[0]
+            bars.append({'date': f'{d[:4]}-{d[4:6]}-{d[6:8]}', 'close':parts[4]})
+    return make_daily_quote(bars, 'KRW', 'Naver Finance daily chart (unofficial)', history_limit)
+
+
+def fetch_stooq_chart(symbol, history_limit=65):
+    """Fallback for US tickers; may require STOOQ_API_KEY and can also rate-limit."""
+    if not re.fullmatch(r'[A-Z][A-Z0-9.\-]{0,14}', symbol):
+        raise ValueError('Unsupported Stooq symbol')
+    today=datetime.now(timezone.utc).date()
+    months=max(200, int(history_limit*1.85))
+    start=today-timedelta(days=months)
+    params={'s': symbol.lower()+'.us', 'd1': start.strftime('%Y%m%d'),
+            'd2': today.strftime('%Y%m%d'), 'i':'d'}
+    api_key=os.environ.get('STOOQ_API_KEY','').strip()
+    if api_key:
+        params['apikey']=api_key
+    response=requests.get('https://stooq.com/q/d/l/', params=params,
+                         headers={**HEADERS,'Accept':'text/csv,*/*'}, timeout=18)
+    response.raise_for_status()
+    if not response.text.lstrip().startswith('Date,Open,High,Low,Close'):
+        raise ValueError('Stooq CSV unavailable; provider may require an API key or deny CI traffic')
+    bars=[{'date':row.get('Date'), 'close':row.get('Close')}
+          for row in csv.DictReader(StringIO(response.text))]
+    return make_daily_quote(bars, 'USD', 'Stooq daily CSV (unofficial)', history_limit)
+
+
+def fetch_fx_reference():
+    """USD/KRW reference-rate fallback. This is not a broker transaction FX rate."""
+    data=get_json('https://api.frankfurter.dev/v2/rate/USD/KRW', timeout=18)
+    rate=safe_float(data.get('rate') if isinstance(data,dict) else None)
+    date=data.get('date') if isinstance(data,dict) else None
+    if not rate or not 100<rate<10000 or not isinstance(date,str) or len(date)!=10:
+        raise ValueError('Frankfurter returned no valid USD/KRW rate')
+    return {'rate':rate,'quote_date':date,
+            'source':'Frankfurter central-bank reference rates (not broker FX)'}
 
 
 CNN_COMPONENT_KEYS = (
@@ -224,30 +326,69 @@ def main():
 
     tasks = {i['symbol']: ('stocks', i['symbol']) for i in catalog}
     tasks.update({sym: ('indices', name) for name, sym in INDEX.items()})
-    tasks['KRW=X'] = ('fx', 'USD/KRW')
     count = 0
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        futures = {pool.submit(fetch_chart, sym, 265 if sym == INDEX['S&P 500'] else 65): sym for sym in tasks}
-        for future in as_completed(futures):
-            sym = futures[future]
-            section, key = tasks[sym]
+    yahoo_blocked = False
+    stooq_blocked = False
+
+    # Sequential instead of 70+ concurrent Yahoo calls. Korean stocks no longer
+    # depend on Yahoo: use Naver first, and preserve cached quotes on failure.
+    for sym, (section, key) in tasks.items():
+        data = None
+        problems = []
+        if re.fullmatch(r'\d{6}\.(?:KS|KQ)', sym):
             try:
-                data = future.result()
-                if section == 'stocks':
-                    previous = state['stocks'].get(key) or {}
-                    data['fundamentals'] = previous.get('fundamentals')
-                    state['stocks'][key] = data
-                elif section == 'indices':
-                    state['indices'][key] = data
-                else:
-                    state['fx'] = {'rate': data['price'], 'quote_date': data['quote_date'],
-                                   'source': data['source']}
-                count += 1
-                print(f'OK {sym} {data["quote_date"]} {data["price"]}', flush=True)
+                data = fetch_naver_chart(sym, 265 if section=='indices' else 65)
             except Exception as e:
-                msg = f'{sym} 종가 갱신 실패: {str(e)[:150]}'
-                state['warnings'].append(msg)
-                print('WARN', msg, flush=True)
+                problems.append('Naver: '+str(e)[:90])
+        if data is None and not yahoo_blocked:
+            try:
+                data = fetch_chart(sym, 265 if sym == INDEX['S&P 500'] else 65)
+            except Exception as e:
+                error=str(e)
+                problems.append('Yahoo: '+error[:90])
+                if '429' in error or 'Too Many Requests' in error:
+                    yahoo_blocked = True
+                    print('WARN Yahoo 429; skipping further Yahoo calls this run', flush=True)
+        if data is None and section == 'stocks' and not stooq_blocked and not sym[0].isdigit():
+            try:
+                data = fetch_stooq_chart(sym)
+            except Exception as e:
+                error=str(e)
+                problems.append('Stooq: '+error[:90])
+                if ('403' in error or '429' in error or 'API key' in error or
+                    'rate limit' in error.lower()):
+                    stooq_blocked = True
+                    print('WARN Stooq unavailable; skipping further Stooq calls this run', flush=True)
+        if data is not None:
+            if section == 'stocks':
+                previous = state['stocks'].get(key) or {}
+                previous_date = previous.get('quote_date') or ''
+                if previous_date and data['quote_date'] < previous_date:
+                    state['warnings'].append(f'{sym}: provider quote older than saved quote; kept {previous_date}')
+                    continue
+                data['fundamentals'] = previous.get('fundamentals')
+                state['stocks'][key] = data
+            else:
+                previous = state['indices'].get(key) or {}
+                if previous.get('quote_date','') <= data['quote_date']:
+                    state['indices'][key] = data
+            count += 1
+            print(f'OK {sym} {data["quote_date"]} {data["price"]} [{data["source"]}]', flush=True)
+        else:
+            msg=f'{sym} 종가 미갱신: '+('; '.join(problems) if problems else 'all providers unavailable')
+            state['warnings'].append(msg)
+            print('WARN', msg, flush=True)
+        time.sleep(0.18)
+
+    # Prefer a provider independent from Yahoo for FX; never fake market rates.
+    try:
+        fx=fetch_fx_reference()
+        if not state.get('fx') or fx['quote_date'] >= state['fx'].get('quote_date',''):
+            state['fx']=fx
+        print('OK USD/KRW', fx['quote_date'], fx['rate'], flush=True)
+    except Exception as e:
+        state['warnings'].append('USD/KRW 환율 미갱신: '+str(e)[:160])
+        print('WARN USD/KRW:',str(e)[:160],flush=True)
 
     try:
         state['fear_greed'] = fetch_fear_greed()
@@ -257,7 +398,7 @@ def main():
         state['warnings'].append(msg)
         print('WARN', msg, flush=True)
 
-    if not args.skip_fundamentals and args.fundamentals_limit > 0:
+    if not yahoo_blocked and not args.skip_fundamentals and args.fundamentals_limit > 0:
         now = datetime.now(timezone.utc)
         eligible = [p for p in catalog if p['kind'] == 'STOCK' and p['symbol'] in state['stocks']]
         def freshness(p):
@@ -277,6 +418,8 @@ def main():
                 state['warnings'].append(msg)
                 print('WARN', msg, flush=True)
             time.sleep(.4)
+    if yahoo_blocked:
+        state['warnings'].append('Yahoo Finance가 HTTP 429로 요청을 제한했습니다. 대체 제공처 데이터를 우선 사용했습니다.')
     state['updated_at'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
     serialized = json.dumps(state, ensure_ascii=False, indent=2, allow_nan=False) + '\n'
     market_path.write_text(serialized, encoding='utf-8')
