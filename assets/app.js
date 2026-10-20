@@ -296,7 +296,7 @@
       holdings=normalized;save(); if('projects' in backup)window.FOLIO_PROJECTS.importRecords(backup.projects);if('dividends' in backup)window.FOLIO_DIVIDENDS.importData(backup.dividends);if('macro' in backup)window.FOLIO_MACRO_UI.importData(backup.macro);render();toast('백업을 복원했습니다.');
     }catch(e){toast('가져오기 실패: '+(e?.message||'알 수 없는 오류'));}
   }
-  const ratios=[['PER (주가수익비율)','pe','x'],['PBR (주가순자산비율)','pb','x'],['ROE (자기자본이익률)','roe','percent'],['EPS (주당순이익)','eps','price'],['순이익 · TTM','net_income','large'],['매출액 · TTM','revenue','large'],['영업이익률','operating_margin','percent'],['순이익률','profit_margin','percent'],['시가총액','market_cap','large'],['배당수익률','dividend_yield','percent'],['현금 보유액','total_cash','large'],['총차입금','total_debt','large']];
+  const ratios=[['PER (주가수익비율)','pe','x'],['PBR (주가순자산비율)','pb','x'],['ROE (자기자본이익률)','roe','percent'],['EPS (주당순이익)','eps','price'],['순이익 · 최근자료','net_income','large'],['매출액 · 최근자료','revenue','large'],['영업이익률','operating_margin','percent'],['순이익률','profit_margin','percent'],['시가총액','market_cap','large'],['배당수익률','dividend_yield','percent'],['현금 보유액','total_cash','large'],['총차입금','total_debt','large']];
   function metricFormat(value,format,currency){
     if(!num(value))return '—';
     if(format==='percent')return (value*100).toFixed(2)+'%';
@@ -312,15 +312,16 @@
     const history=q?.history||[];
     let html=`<div class="detail-price-head"><div><strong class="detail-price-big">${fmtPrice(q?.price,h.currency)}</strong><span class="detail-quote-date">${normalDate(q?.quote_date)} 종가 · ${text(h.currency)}</span></div><div class="${q?.change_pct<0?'negative':'positive'}" style="font-weight:800;font-size:14px">${pct(q?.change_pct,true)}</div></div>`;
     html+=`<div class="detail-chart">${history.length>1?sparkline(history,430,152,true):'<div class="empty-helper">차트 데이터가 아직 없습니다.</div>'}</div>`;
-    html+=`<div class="detail-label">기업 재무지표 <span style="font-size:9px;font-weight:500;letter-spacing:0;color:#a0aeb9">TTM = 최근 12개월</span></div>`;
+    html+=`<div class="detail-label">기업 재무지표 <span style="font-size:9px;font-weight:500;letter-spacing:0;color:#a0aeb9">지표 기준 기간은 제공처별 상이</span></div>`;
     if(!financials){html+=`<div class="drawer-empty">${h.kind==='ETF'?'ETF는 기업 PER·PBR·당기순이익 등 지표가 적용되지 않거나 제공되지 않을 수 있습니다.':'재무정보가 아직 수집되지 않았습니다. Actions 실행 후 순차적으로 재무지표가 채워집니다. 자료 제공처에 따라 일부 항목은 계속 공란일 수 있습니다.'}</div>`;}
     html+='<div class="finance-grid">'+ratios.map(([label,key,format])=>`<div class="finance-metric ${['pe','pb'].includes(key)?'big':''}"><span>${text(label)}</span><strong>${metricFormat(metrics[key],format,h.currency)}</strong>${['pe','pb'].includes(key)?'<small>최근 제공된 재무자료 기준</small>':''}</div>`).join('')+'</div>';
     html+='<div class="detail-label">연간 손익계산서</div>';
     const annual=financials?.annual_income||[];
     if(annual.length){html+='<table class="annual-table"><thead><tr><th>연도</th><th>매출</th><th>영업이익</th><th>순이익</th></tr></thead><tbody>'+annual.map(y=>`<tr><td>${text(y.year)}</td><td>${shortN(y.revenue,h.currency)}</td><td>${shortN(y.operating_income,h.currency)}</td><td>${shortN(y.net_income,h.currency)}</td></tr>`).join('')+'</tbody></table>';}
     else html+='<div class="drawer-empty">연간 손익계산서 수집 자료가 없습니다.</div>';
-    html+=`<div class="finance-disclaimer">종가 기준일 ${normalDate(q?.quote_date)} · 재무정보 갱신 ${financials?.updated_at?normalDate(financials.updated_at):'—'}<br>출처: Yahoo Finance (비공식 인터페이스). 일부 지표는 TTM·최근 분기 기준으로 서로 시점이 다르며, 업데이트 지연 및 회계기준 차이가 있을 수 있습니다. 투자 판단 전 원자료를 확인하세요.</div>`;
-    html+=`<a class="finance-link" href="https://finance.yahoo.com/quote/${encodeURIComponent(symbol)}/financials/" target="_blank" rel="noopener noreferrer">Yahoo Finance 원문 재무제표 ↗</a>`;
+    html+=`<div class="finance-disclaimer">종가 기준일 ${normalDate(q?.quote_date)} · 재무정보 갱신 ${financials?.updated_at?normalDate(financials.updated_at):'—'}<br>출처: ${text(financials?.source || '재무정보 미수집')}. 일부 지표는 최근 결산연도·최근 분기 기준으로 서로 시점이 다르며, 업데이트 지연 및 회계기준 차이가 있을 수 있습니다. 투자 판단 전 원자료를 확인하세요.</div>`;
+    const sourceUrl=h.currency==='KRW'&&/^\d{6}\.(KS|KQ)$/.test(symbol)?'https://m.stock.naver.com/domestic/stock/'+symbol.slice(0,6)+'/finance':'https://finance.yahoo.com/quote/'+encodeURIComponent(symbol)+'/financials/';
+    html+=`<a class="finance-link" href="${sourceUrl}" target="_blank" rel="noopener noreferrer">재무정보 원문 확인 ↗</a>`;
     $('detailBody').innerHTML=html;
     $('detailDrawer').classList.add('open');$('detailBackdrop').classList.add('open');
     $('detailDrawer').setAttribute('aria-hidden','false');$('detailBackdrop').setAttribute('aria-hidden','false');
