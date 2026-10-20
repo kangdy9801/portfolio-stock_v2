@@ -1,0 +1,1053 @@
+{
+  "source_note": "첨부 공식 PDF 2026년 7·8월 산업활동동향, 2026년 8·9월 수출입동향, 2026년 5월 소비자물가동향에서 확인한 기준값. 연도·발표일·단위는 원문과 비교, 통관 수출액과 산업 수출출하는 서로 다른 통계. 원본 PDF 바이너리는 공개 사이트에 포함하지 않음. 종전 2026년 4월 산업활동 보도자료 기록도 과거 기록으로 유지함.",
+  "reports": [
+    {
+      "id": "seed-industry-2026-04",
+      "kind": "INDUSTRY",
+      "month": "2026-04",
+      "releaseDate": "2026-05-29",
+      "filename": "2026년 4월 산업활동동향 보도자료 (첨부)",
+      "importedAt": "2026-10-20T00:00:00Z",
+      "origin": "uploaded-pdf",
+      "verification": "verified",
+      "source": "국가데이터처 2026년 4월 산업활동동향, 2~5·12~16쪽",
+      "sourceUrl": "https://mods.go.kr",
+      "metrics": {
+        "headlineMom": -0.6,
+        "headlineYoy": 2.4,
+        "secondaryMom": -0.8,
+        "secondaryYoy": 1.6,
+        "exportShipmentMom": -3.0,
+        "exportShipmentYoy": 1.9,
+        "exportQuantityMom": null,
+        "exportQuantityYoy": null,
+        "exportPriceMom": null,
+        "exportPriceYoy": null
+      },
+      "sectors": [
+        {
+          "name": "반도체",
+          "indicator": "생산지수",
+          "mom": 3.1,
+          "yoy": 13.0,
+          "page": 12
+        },
+        {
+          "name": "자동차",
+          "indicator": "생산지수",
+          "mom": -10.0,
+          "yoy": -7.1,
+          "page": 12
+        },
+        {
+          "name": "석유정제",
+          "indicator": "생산지수",
+          "mom": -19.4,
+          "yoy": -20.5,
+          "page": 12
+        },
+        {
+          "name": "의약품",
+          "indicator": "생산지수",
+          "mom": 13.3,
+          "yoy": 12.4,
+          "page": 12
+        },
+        {
+          "name": "서비스업",
+          "indicator": "생산지수",
+          "mom": -1.0,
+          "yoy": 3.5,
+          "page": 3
+        },
+        {
+          "name": "금융·보험",
+          "indicator": "서비스업생산",
+          "mom": -7.7,
+          "yoy": 5.5,
+          "page": 3
+        },
+        {
+          "name": "소매판매",
+          "indicator": "판매액지수",
+          "mom": -3.6,
+          "yoy": 1.6,
+          "page": 4
+        },
+        {
+          "name": "설비투자",
+          "indicator": "투자지수",
+          "mom": -3.6,
+          "yoy": 8.1,
+          "page": 5
+        },
+        {
+          "name": "건설기성",
+          "indicator": "공사실적",
+          "mom": -1.4,
+          "yoy": -5.5,
+          "page": 5
+        }
+      ],
+      "notes": "반도체 생산 증가와 자동차·석유정제 감소가 동시 발생. 제조업 수출출하지수는 전월 -3.0%, 전년동월 +1.9%이며 수출 물량(톤)·수출단가(달러) 자료와 동일하지 않습니다."
+    },
+    {
+      "id": "seed-industry-2026-07",
+      "kind": "INDUSTRY",
+      "month": "2026-07",
+      "releaseDate": "2026-08-31",
+      "filename": "2026-07 산업활동동향 보도자료 (사용자 제공)",
+      "importedAt": "2026-10-20T01:00:00Z",
+      "origin": "uploaded-pdf",
+      "verification": "verified",
+      "source": "국가데이터처 2026-07 산업활동동향 (요약 p.2~7; 제조업 p.12~16)",
+      "sourceUrl": "https://mods.go.kr",
+      "metrics": {
+        "headlineMom": 0.0,
+        "headlineYoy": 3.1,
+        "secondaryMom": 0.2,
+        "secondaryYoy": 3.9,
+        "exportShipmentMom": -2.3,
+        "exportShipmentYoy": 3.1,
+        "exportQuantityMom": null,
+        "exportQuantityYoy": null,
+        "exportPriceMom": null,
+        "exportPriceYoy": null
+      },
+      "sectors": [
+        {
+          "name": "반도체",
+          "indicator": "제조업 출하",
+          "mom": -7.3,
+          "yoy": -3.4,
+          "page": 14
+        },
+        {
+          "name": "반도체",
+          "indicator": "수출출하",
+          "mom": -8.1,
+          "yoy": -4.0,
+          "page": 16
+        },
+        {
+          "name": "전자부품",
+          "indicator": "제조업 생산",
+          "mom": 20.7,
+          "yoy": 8.0,
+          "page": 12
+        },
+        {
+          "name": "전자부품",
+          "indicator": "수출출하",
+          "mom": 14.6,
+          "yoy": 4.4,
+          "page": 16
+        },
+        {
+          "name": "자동차",
+          "indicator": "제조업 생산",
+          "mom": -4.5,
+          "yoy": 10.6,
+          "page": 12
+        },
+        {
+          "name": "자동차",
+          "indicator": "수출출하",
+          "mom": null,
+          "yoy": null,
+          "page": 16
+        },
+        {
+          "name": "기계장비",
+          "indicator": "제조업 생산",
+          "mom": null,
+          "yoy": 9.6,
+          "page": 12
+        },
+        {
+          "name": "기타운송장비",
+          "indicator": "제조업 생산",
+          "mom": -5.0,
+          "yoy": 0.9,
+          "page": 12
+        },
+        {
+          "name": "1차금속",
+          "indicator": "제조업 생산",
+          "mom": 4.2,
+          "yoy": null,
+          "page": 12
+        },
+        {
+          "name": "석유정제",
+          "indicator": "제조업 출하",
+          "mom": 7.1,
+          "yoy": -4.3,
+          "page": 14
+        },
+        {
+          "name": "의약품",
+          "indicator": "제조업 생산",
+          "mom": 4.7,
+          "yoy": null,
+          "page": 12
+        },
+        {
+          "name": "의약품",
+          "indicator": "수출출하",
+          "mom": 63.3,
+          "yoy": 88.7,
+          "page": 16
+        },
+        {
+          "name": "서비스업",
+          "indicator": "서비스업 생산",
+          "mom": -1.3,
+          "yoy": 3.5,
+          "page": 3
+        },
+        {
+          "name": "금융·보험",
+          "indicator": "서비스업 생산",
+          "mom": -4.8,
+          "yoy": 10.6,
+          "page": 3
+        },
+        {
+          "name": "소매판매",
+          "indicator": "판매액 지수",
+          "mom": -2.4,
+          "yoy": -0.8,
+          "page": 4
+        },
+        {
+          "name": "설비투자",
+          "indicator": "설비투자 지수",
+          "mom": 7.5,
+          "yoy": 24.9,
+          "page": 5
+        },
+        {
+          "name": "건설기성",
+          "indicator": "건설기성",
+          "mom": -1.1,
+          "yoy": -3.2,
+          "page": 5
+        }
+      ],
+      "notes": "7월 최초 발표치: 전산업생산 0.0% 보합, 제조업 생산 +0.2%, 소매판매 -2.4%. 다음 달 보도자료에서 일부 잠정치 수정. 비교에 수정된 7월치를 우선 사용."
+    },
+    {
+      "id": "seed-industry-2026-08",
+      "kind": "INDUSTRY",
+      "month": "2026-08",
+      "releaseDate": "2026-09-30",
+      "filename": "2026-08 산업활동동향 보도자료 (사용자 제공)",
+      "importedAt": "2026-10-20T01:00:00Z",
+      "origin": "uploaded-pdf",
+      "verification": "verified",
+      "source": "국가데이터처 2026-08 산업활동동향 (요약 p.2~7; 제조업 p.12~16)",
+      "sourceUrl": "https://mods.go.kr",
+      "metrics": {
+        "headlineMom": -1.3,
+        "headlineYoy": 1.9,
+        "secondaryMom": -5.1,
+        "secondaryYoy": -2.4,
+        "exportShipmentMom": -3.2,
+        "exportShipmentYoy": -0.2,
+        "exportQuantityMom": null,
+        "exportQuantityYoy": null,
+        "exportPriceMom": null,
+        "exportPriceYoy": null
+      },
+      "sectors": [
+        {
+          "name": "반도체",
+          "indicator": "제조업 생산",
+          "mom": -2.2,
+          "yoy": null,
+          "page": 12
+        },
+        {
+          "name": "반도체",
+          "indicator": "제조업 출하",
+          "mom": 7.1,
+          "yoy": 2.5,
+          "page": 14
+        },
+        {
+          "name": "반도체",
+          "indicator": "수출출하",
+          "mom": 7.9,
+          "yoy": 3.4,
+          "page": 16
+        },
+        {
+          "name": "자동차",
+          "indicator": "제조업 생산",
+          "mom": -24.8,
+          "yoy": -29.4,
+          "page": 12
+        },
+        {
+          "name": "자동차",
+          "indicator": "수출출하",
+          "mom": -23.2,
+          "yoy": -25.4,
+          "page": 16
+        },
+        {
+          "name": "기계장비",
+          "indicator": "제조업 생산",
+          "mom": 3.1,
+          "yoy": 13.5,
+          "page": 12
+        },
+        {
+          "name": "기계장비",
+          "indicator": "수출출하",
+          "mom": null,
+          "yoy": null,
+          "page": 16
+        },
+        {
+          "name": "고무·플라스틱",
+          "indicator": "제조업 생산",
+          "mom": -11.0,
+          "yoy": -11.8,
+          "page": 12
+        },
+        {
+          "name": "컴퓨터",
+          "indicator": "수출출하",
+          "mom": 48.1,
+          "yoy": -13.4,
+          "page": 16
+        },
+        {
+          "name": "의약품",
+          "indicator": "수출출하",
+          "mom": -33.6,
+          "yoy": 38.1,
+          "page": 16
+        },
+        {
+          "name": "화학제품",
+          "indicator": "수출출하",
+          "mom": 2.8,
+          "yoy": null,
+          "page": 16
+        },
+        {
+          "name": "금속가공",
+          "indicator": "수출출하",
+          "mom": -22.4,
+          "yoy": null,
+          "page": 16
+        },
+        {
+          "name": "석유정제",
+          "indicator": "내수출하",
+          "mom": 3.6,
+          "yoy": -3.2,
+          "page": 16
+        },
+        {
+          "name": "서비스업",
+          "indicator": "서비스업 생산",
+          "mom": 0.5,
+          "yoy": 4.6,
+          "page": 3
+        },
+        {
+          "name": "정보통신",
+          "indicator": "서비스업 생산",
+          "mom": 4.7,
+          "yoy": null,
+          "page": 3
+        },
+        {
+          "name": "금융·보험",
+          "indicator": "서비스업 생산",
+          "mom": null,
+          "yoy": 9.6,
+          "page": 3
+        },
+        {
+          "name": "소매판매",
+          "indicator": "판매액 지수",
+          "mom": -1.8,
+          "yoy": -0.3,
+          "page": 4
+        },
+        {
+          "name": "설비투자",
+          "indicator": "설비투자 지수",
+          "mom": -9.5,
+          "yoy": 16.1,
+          "page": 5
+        },
+        {
+          "name": "건설기성",
+          "indicator": "건설기성",
+          "mom": 1.9,
+          "yoy": 1.3,
+          "page": 5
+        }
+      ],
+      "notes": "8월 광공업생산 -4.8%, 제조업생산 -5.1%, 자동차 생산 -24.8%. 반도체 생산 -2.2%이나 출하 +7.1%, 수출출하 +7.9%로 방향이 다름. 제조업 수출출하지수는 통관기준 수출 금액과 다름.",
+      "previousRevisions": {
+        "month": "2026-07",
+        "source": "2026년 8월 산업활동동향 p.7 (8월 공표 수정치)",
+        "metrics": {
+          "headlineMom": -0.1,
+          "headlineYoy": 3.1,
+          "secondaryMom": 0.4,
+          "secondaryYoy": 4.3,
+          "exportShipmentMom": -2.1,
+          "exportShipmentYoy": 4.1,
+          "retailMom": -2.6,
+          "investmentMom": 8.0,
+          "constructionMom": -1.0,
+          "serviceMom": -1.4
+        },
+        "sectors": [
+          {
+            "name": "자동차",
+            "indicator": "제조업 생산",
+            "mom": -4.6
+          },
+          {
+            "name": "기계장비",
+            "indicator": "제조업 생산",
+            "mom": -0.3
+          },
+          {
+            "name": "반도체",
+            "indicator": "수출출하",
+            "mom": -8.0
+          },
+          {
+            "name": "컴퓨터",
+            "indicator": "수출출하",
+            "mom": -21.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "seed-trade-2026-08",
+      "kind": "TRADE",
+      "month": "2026-08",
+      "releaseDate": "2026-09-01",
+      "filename": "2026-08 수출입동향 3보 (사용자 제공)",
+      "importedAt": "2026-10-20T01:00:00Z",
+      "origin": "uploaded-pdf",
+      "verification": "verified",
+      "source": "산업통상부 2026-08 수출입동향 (통관기준 잠정치 p.1~8)",
+      "sourceUrl": "https://www.motie.go.kr",
+      "metrics": {
+        "headlineMom": null,
+        "headlineYoy": 68.7,
+        "secondaryMom": null,
+        "secondaryYoy": 22.5,
+        "exportAmount": 982.5,
+        "importAmount": 635.1,
+        "tradeBalance": 347.5,
+        "exportShipmentMom": null,
+        "exportShipmentYoy": null,
+        "exportQuantityMom": null,
+        "exportQuantityYoy": null,
+        "exportPriceMom": null,
+        "exportPriceYoy": null
+      },
+      "sectors": [
+        {
+          "name": "반도체",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 209.0,
+          "page": 6,
+          "amount": 466.5
+        },
+        {
+          "name": "디스플레이",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -4.7,
+          "page": 6,
+          "amount": 15.7
+        },
+        {
+          "name": "무선통신기기",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 21.2,
+          "page": 6,
+          "amount": 18.8
+        },
+        {
+          "name": "컴퓨터",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 419.5,
+          "page": 6,
+          "amount": 62.4
+        },
+        {
+          "name": "자동차",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -29.8,
+          "page": 6,
+          "amount": 38.5
+        },
+        {
+          "name": "자동차부품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -9.8,
+          "page": 6,
+          "amount": 15.0
+        },
+        {
+          "name": "선박",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -45.9,
+          "page": 6,
+          "amount": 16.9
+        },
+        {
+          "name": "석유제품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 65.3,
+          "page": 6,
+          "amount": 68.4
+        },
+        {
+          "name": "석유화학",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 12.2,
+          "page": 6,
+          "amount": 38.6
+        },
+        {
+          "name": "이차전지",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 24.0,
+          "page": 6,
+          "amount": 6.0
+        },
+        {
+          "name": "일반기계",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 1.8,
+          "page": 6,
+          "amount": 35.3
+        },
+        {
+          "name": "전기기기",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 16.2,
+          "page": 6,
+          "amount": 15.0
+        },
+        {
+          "name": "철강",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 7.9,
+          "page": 6,
+          "amount": 21.1
+        },
+        {
+          "name": "비철금속",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 23.9,
+          "page": 6,
+          "amount": 14.8
+        },
+        {
+          "name": "농수산식품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 1.5,
+          "page": 6,
+          "amount": 9.8
+        },
+        {
+          "name": "화장품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 52.1,
+          "page": 6,
+          "amount": 13.1
+        },
+        {
+          "name": "생활용품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -3.4,
+          "page": 6,
+          "amount": 6.5
+        },
+        {
+          "name": "섬유",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 0.2,
+          "page": 6,
+          "amount": 7.5
+        },
+        {
+          "name": "가전",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -1.5,
+          "page": 6,
+          "amount": 5.2
+        },
+        {
+          "name": "바이오헬스",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 22.3,
+          "page": 6,
+          "amount": 14.1
+        }
+      ],
+      "imports": [
+        {
+          "name": "에너지",
+          "amount": 126.8,
+          "yoy": 15.3,
+          "page": 3
+        },
+        {
+          "name": "비에너지",
+          "amount": 508.3,
+          "yoy": 24.4,
+          "page": 3
+        },
+        {
+          "name": "원유",
+          "amount": 83.0,
+          "yoy": 21.2,
+          "quantityYoy": -3.0,
+          "priceYoy": 26.0,
+          "approx": true,
+          "page": 3
+        },
+        {
+          "name": "반도체장비",
+          "amount": 25.7,
+          "yoy": 117.3,
+          "page": 3
+        }
+      ],
+      "tradeComponents": [
+        {
+          "name": "석유제품",
+          "quantity": 599,
+          "unit": "만 톤",
+          "unitPrice": 1143,
+          "priceUnit": "USD/톤",
+          "quantityYoy": -2.2,
+          "priceYoy": 69.1,
+          "page": 8
+        },
+        {
+          "name": "석유화학",
+          "quantity": 291,
+          "unit": "만 톤",
+          "unitPrice": 1326,
+          "priceUnit": "USD/톤",
+          "quantityYoy": -7.0,
+          "priceYoy": 20.6,
+          "page": 8
+        },
+        {
+          "name": "DDR5 16Gb",
+          "unitPrice": 46.5,
+          "priceUnit": "USD",
+          "page": 7
+        },
+        {
+          "name": "NAND 128Gb",
+          "unitPrice": 30.48,
+          "priceUnit": "USD",
+          "page": 7
+        }
+      ],
+      "previousMonthApprox": {
+        "반도체": {
+          "amount": 410,
+          "approx": true,
+          "page": 1
+        },
+        "컴퓨터": {
+          "amount": 48,
+          "approx": true,
+          "page": 7
+        },
+        "선박": {
+          "amount": 33,
+          "approx": true,
+          "page": 7
+        }
+      },
+      "notes": "8월 수출 982.5억 달러, 수입 635.1억 달러. 반도체 수출은 높지만 자동차·선박은 전년동월 대비 감소. 석유제품·석유화학은 수량 감소에도 수출단가 상승으로 금액 증가."
+    },
+    {
+      "id": "seed-trade-2026-09",
+      "kind": "TRADE",
+      "month": "2026-09",
+      "releaseDate": "2026-10-01",
+      "filename": "2026-09 수출입동향 3보 (사용자 제공)",
+      "importedAt": "2026-10-20T01:00:00Z",
+      "origin": "uploaded-pdf",
+      "verification": "verified",
+      "source": "산업통상부 2026-09 수출입동향 (통관기준 잠정치 p.1~8)",
+      "sourceUrl": "https://www.motie.go.kr",
+      "metrics": {
+        "headlineMom": null,
+        "headlineYoy": 83.5,
+        "secondaryMom": null,
+        "secondaryYoy": 26.0,
+        "exportAmount": 1209.4,
+        "importAmount": 710.9,
+        "tradeBalance": 498.5,
+        "exportShipmentMom": null,
+        "exportShipmentYoy": null,
+        "exportQuantityMom": null,
+        "exportQuantityYoy": null,
+        "exportPriceMom": null,
+        "exportPriceYoy": null
+      },
+      "sectors": [
+        {
+          "name": "반도체",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 262.8,
+          "page": 6,
+          "amount": 603.0
+        },
+        {
+          "name": "디스플레이",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -9.5,
+          "page": 6,
+          "amount": 15.8
+        },
+        {
+          "name": "무선통신기기",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 23.4,
+          "page": 6,
+          "amount": 21.4
+        },
+        {
+          "name": "컴퓨터",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 435.3,
+          "page": 6,
+          "amount": 70.0
+        },
+        {
+          "name": "자동차",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -5.5,
+          "page": 6,
+          "amount": 60.5
+        },
+        {
+          "name": "자동차부품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -7.2,
+          "page": 6,
+          "amount": 17.7
+        },
+        {
+          "name": "선박",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 29.9,
+          "page": 6,
+          "amount": 37.6
+        },
+        {
+          "name": "석유제품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 72.0,
+          "page": 6,
+          "amount": 72.2
+        },
+        {
+          "name": "석유화학",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 5.1,
+          "page": 6,
+          "amount": 39.5
+        },
+        {
+          "name": "이차전지",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 14.0,
+          "page": 6,
+          "amount": 7.2
+        },
+        {
+          "name": "일반기계",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -3.2,
+          "page": 6,
+          "amount": 40.7
+        },
+        {
+          "name": "전기기기",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 23.4,
+          "page": 6,
+          "amount": 18.3
+        },
+        {
+          "name": "철강",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 3.3,
+          "page": 6,
+          "amount": 22.4
+        },
+        {
+          "name": "비철금속",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 33.6,
+          "page": 6,
+          "amount": 17.4
+        },
+        {
+          "name": "농수산식품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -4.7,
+          "page": 6,
+          "amount": 11.1
+        },
+        {
+          "name": "화장품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": 31.4,
+          "page": 6,
+          "amount": 15.1
+        },
+        {
+          "name": "생활용품",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -5.0,
+          "page": 6,
+          "amount": 7.3
+        },
+        {
+          "name": "섬유",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -6.8,
+          "page": 6,
+          "amount": 8.8
+        },
+        {
+          "name": "가전",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -13.2,
+          "page": 6,
+          "amount": 6.0
+        },
+        {
+          "name": "바이오헬스",
+          "indicator": "통관기준 수출액",
+          "mom": null,
+          "yoy": -8.6,
+          "page": 6,
+          "amount": 15.5
+        }
+      ],
+      "imports": [
+        {
+          "name": "에너지",
+          "amount": 129.6,
+          "yoy": 38.0,
+          "page": 3
+        },
+        {
+          "name": "비에너지",
+          "amount": 581.3,
+          "yoy": 23.6,
+          "page": 3
+        },
+        {
+          "name": "원유",
+          "amount": 80.0,
+          "yoy": 38.4,
+          "quantityYoy": 2.0,
+          "priceYoy": 35.7,
+          "approx": true,
+          "page": 3
+        },
+        {
+          "name": "반도체장비",
+          "amount": 34.4,
+          "yoy": 50.8,
+          "page": 3
+        }
+      ],
+      "tradeComponents": [
+        {
+          "name": "석유제품",
+          "quantity": 570,
+          "unit": "만 톤",
+          "unitPrice": 1267,
+          "priceUnit": "USD/톤",
+          "quantityYoy": -6.9,
+          "priceYoy": 84.7,
+          "page": 8
+        },
+        {
+          "name": "석유화학",
+          "quantity": 279,
+          "unit": "만 톤",
+          "unitPrice": 1416,
+          "priceUnit": "USD/톤",
+          "quantityYoy": -19.1,
+          "priceYoy": 30.0,
+          "page": 8
+        },
+        {
+          "name": "DDR5 16Gb",
+          "unitPrice": 48.0,
+          "priceUnit": "USD",
+          "page": 7
+        },
+        {
+          "name": "NAND 128Gb",
+          "unitPrice": 30.61,
+          "priceUnit": "USD",
+          "page": 7
+        }
+      ],
+      "previousMonthApprox": {},
+      "notes": "9월 수출·수입은 각각 전년동월대비 +83.5%, +26.0%. 반도체 금액 급증, 자동차 수출은 전년비 -5.5%이나 8월보다 수출액 증가. 석유제품과 석유화학은 금액 상승에도 수출물량 하락. 월간 증감은 8월과 9월 금액에서 별도 계산."
+    },
+    {
+      "id": "seed-cpi-2026-05",
+      "kind": "CPI",
+      "month": "2026-05",
+      "releaseDate": "2026-06-02",
+      "filename": "2026년 5월 소비자물가동향 보도자료 (첨부)",
+      "importedAt": "2026-10-20T00:00:00Z",
+      "origin": "uploaded-pdf",
+      "verification": "verified",
+      "source": "국가데이터처 2026년 5월 소비자물가동향, 1~7쪽",
+      "sourceUrl": "https://mods.go.kr",
+      "metrics": {
+        "headlineMom": 0.5,
+        "headlineYoy": 3.1,
+        "secondaryMom": 0.5,
+        "secondaryYoy": 2.5,
+        "exportShipmentMom": null,
+        "exportShipmentYoy": null,
+        "exportQuantityMom": null,
+        "exportQuantityYoy": null,
+        "exportPriceMom": null,
+        "exportPriceYoy": null
+      },
+      "sectors": [
+        {
+          "name": "공업제품",
+          "indicator": "소비자가격",
+          "mom": 0.5,
+          "yoy": 4.2,
+          "page": 6
+        },
+        {
+          "name": "서비스업",
+          "indicator": "소비자가격",
+          "mom": 0.5,
+          "yoy": 2.8,
+          "page": 6
+        },
+        {
+          "name": "석유류",
+          "indicator": "소비자가격",
+          "mom": 1.5,
+          "yoy": 24.2,
+          "page": 6
+        },
+        {
+          "name": "교통",
+          "indicator": "소비자가격",
+          "mom": 1.5,
+          "yoy": 11.6,
+          "page": 4
+        },
+        {
+          "name": "식료품·비주류음료",
+          "indicator": "소비자가격",
+          "mom": 0.0,
+          "yoy": 1.6,
+          "page": 4
+        },
+        {
+          "name": "생활물가",
+          "indicator": "소비자가격",
+          "mom": 0.3,
+          "yoy": 3.3,
+          "page": 1
+        },
+        {
+          "name": "신선식품",
+          "indicator": "소비자가격",
+          "mom": -1.4,
+          "yoy": -1.4,
+          "page": 1
+        },
+        {
+          "name": "전기·가스·수도",
+          "indicator": "소비자가격",
+          "mom": 0.0,
+          "yoy": 0.1,
+          "page": 6
+        },
+        {
+          "name": "음식·숙박",
+          "indicator": "소비자가격",
+          "mom": 0.3,
+          "yoy": 2.7,
+          "page": 4
+        }
+      ],
+      "notes": "전체 CPI 전월 +0.5%, 전년동월 +3.1%. 공업제품 전년동월 +4.2%, 석유류 +24.2%. 소비자 가격 자료를 수출단가와 혼동하지 않습니다. CPI는 무역·산업 1개월 시차 비교에서 제외하고 독립적으로 관리합니다."
+    }
+  ]
+}
