@@ -113,12 +113,44 @@
       "label": "연방기금금리 목표범위",
       "unit": "%",
       "current": {
-        "date": "2026-09-16",
+        "date": "2026-10-19",
         "lower": 3.75,
         "upper": 4.0,
-        "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+        "source_url": "https://fred.stlouisfed.org/series/DFEDTARU"
       },
       "history": [
+        {
+          "date": "2025-01-01",
+          "lower": 4.25,
+          "upper": 4.5,
+          "event": "목표범위 유효일(FRED 관측)",
+          "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
+          "source_type": "fred-observation"
+        },
+        {
+          "date": "2025-09-18",
+          "lower": 4.0,
+          "upper": 4.25,
+          "event": "목표범위 유효일(FRED 관측)",
+          "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
+          "source_type": "fred-observation"
+        },
+        {
+          "date": "2025-10-30",
+          "lower": 3.75,
+          "upper": 4.0,
+          "event": "목표범위 유효일(FRED 관측)",
+          "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
+          "source_type": "fred-observation"
+        },
+        {
+          "date": "2025-12-11",
+          "lower": 3.5,
+          "upper": 3.75,
+          "event": "목표범위 유효일(FRED 관측)",
+          "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
+          "source_type": "fred-observation"
+        },
         {
           "date": "2026-01-28",
           "lower": 3.5,
@@ -166,9 +198,17 @@
           "event": "인상",
           "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
           "source_type": "official"
+        },
+        {
+          "date": "2026-09-17",
+          "lower": 3.75,
+          "upper": 4.0,
+          "event": "목표범위 유효일(FRED 관측)",
+          "source_url": "https://fred.stlouisfed.org/series/DFEDTARU",
+          "source_type": "fred-observation"
         }
       ],
-      "retrieval": "공식 FOMC 발표·초기값"
+      "retrieval": "FRED 연방기금금리 목표범위 일별 관측(발표일과 유효일 상이 가능)"
     }
   },
   "cpi": {
@@ -209,7 +249,160 @@
         "source": "2026년 5월 소비자물가동향, p.2"
       }
     ],
-    "US": []
+    "US": [
+      {
+        "month": "2025-01",
+        "mom": 0.43,
+        "yoy": 3.0,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-02",
+        "mom": 0.23,
+        "yoy": 2.82,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-03",
+        "mom": 0.03,
+        "yoy": 2.39,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-04",
+        "mom": 0.16,
+        "yoy": 2.31,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-05",
+        "mom": 0.1,
+        "yoy": 2.35,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-06",
+        "mom": 0.25,
+        "yoy": 2.67,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-07",
+        "mom": 0.23,
+        "yoy": 2.7,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-08",
+        "mom": 0.35,
+        "yoy": 2.92,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-09",
+        "mom": 0.3,
+        "yoy": 3.01,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2025-12",
+        "mom": 0.3,
+        "yoy": 2.68,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-01",
+        "mom": 0.17,
+        "yoy": 2.39,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-02",
+        "mom": 0.27,
+        "yoy": 2.41,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-03",
+        "mom": 0.87,
+        "yoy": 3.26,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-04",
+        "mom": 0.64,
+        "yoy": 3.81,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-05",
+        "mom": 0.47,
+        "yoy": 4.25,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-06",
+        "mom": -0.42,
+        "yoy": 3.53,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-07",
+        "mom": 0.07,
+        "yoy": 3.36,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-08",
+        "mom": 0.4,
+        "yoy": 3.4,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      },
+      {
+        "month": "2026-09",
+        "mom": 0.65,
+        "yoy": 3.74,
+        "source_type": "FRED derived from official BLS CPI",
+        "source": "https://fred.stlouisfed.org/series/CPIAUCSL; https://fred.stlouisfed.org/series/CPIAUCNS",
+        "note": "전월비: 계절조정 CPIAUCSL / 전년동월비: 비계절조정 CPIAUCNS"
+      }
+    ]
   },
   "projections": [
     {
@@ -688,5 +881,7 @@
     "시장 컨센서스는 별도 제공처 없이는 자동 생성하지 않습니다. 예상치는 사용자가 출처와 함께 직접 입력할 수 있습니다.",
     "미국 금리 목표범위는 상단·하단으로 표시하고, 한국 기준금리는 단일 값입니다.",
     "PDF에서 읽은 한국 CPI 최신값은 2026년 5월 자료이며 10월 현재 최신 수치라는 뜻이 아닙니다."
-  ]
+  ],
+  "last_refresh_attempt": "2026-10-20T08:27:16.148994+00:00",
+  "refresh_warnings": []
 }
