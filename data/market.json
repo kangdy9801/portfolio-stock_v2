@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-20T08:29:13+00:00",
+  "updated_at": "2026-10-20T09:11:17+00:00",
   "fear_greed": {
-    "score": 23.45,
+    "score": 23.34,
     "rating": "extreme fear",
-    "timestamp": "2026-10-20T08:08:46+00:00",
+    "timestamp": "2026-10-20T08:54:01+00:00",
     "previous_close": 23.11,
     "previous_1_week": 44.11,
     "previous_1_month": 30.43,
@@ -30,7 +30,7 @@
         "rating": "neutral"
       },
       "market_volatility_vix": {
-        "score": 20.77,
+        "score": 20.0,
         "rating": "extreme fear"
       },
       "safe_haven_demand": {
@@ -1041,26 +1041,26 @@
       },
       {
         "date": "2026-10-20",
-        "score": 23.45
+        "score": 23.34
       }
     ],
     "source_url": "https://edition.cnn.com/markets/fear-and-greed",
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1330.8,
+    "rate": 1330.67,
     "quote_date": "2026-10-20",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
   "indices": {},
   "stocks": {
     "005930.KS": {
-      "price": 210500.0,
+      "price": 209500.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 223500.0,
-      "change": -13000.0,
-      "change_pct": -5.8166,
+      "change": -14000.0,
+      "change_pct": -6.264,
       "history": [
         {
           "date": "2026-07-14",
@@ -1320,21 +1320,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 210500.0
+          "close": 209500.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 9.4,
+          "pb": 2.43,
+          "forward_pe": 4.6,
+          "eps": 22292.0,
+          "bps": 86052.0,
+          "roe": 0.1085,
+          "profit_margin": 0.13550959380514555,
+          "revenue": 333605900000000.0,
+          "net_income": 45206800000000.0,
+          "operating_margin": 0.13069642952957367,
+          "operating_income": 43601100000000.0,
+          "market_cap": 1224795400000000.0,
+          "dividend_yield": 0.008
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 258935500000000.0,
+            "operating_income": 6567000000000.0,
+            "net_income": 15487100000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 300870900000000.0,
+            "operating_income": 32726000000000.0,
+            "net_income": 34451400000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 333605900000000.0,
+            "operating_income": 43601100000000.0,
+            "net_income": 45206800000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:19+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/005930/finance"
+      }
     },
     "000660.KS": {
-      "price": 1207000.0,
+      "price": 1203000.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 1304000.0,
-      "change": -97000.0,
-      "change_pct": -7.4387,
+      "change": -101000.0,
+      "change_pct": -7.7454,
       "history": [
         {
           "date": "2026-07-14",
@@ -1594,21 +1634,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 1207000.0
+          "close": 1203000.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 5.36,
+          "pb": 3.26,
+          "forward_pe": 3.4,
+          "eps": 224313.0,
+          "bps": 368998.0,
+          "roe": 0.4415,
+          "profit_margin": 0.4420932466053916,
+          "revenue": 97146700000000.0,
+          "net_income": 42947900000000.0,
+          "operating_margin": 0.48592798314301977,
+          "operating_income": 47206300000000.0,
+          "market_cap": 878782300000000.0,
+          "dividend_yield": 0.0025
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 32765700000000.0,
+            "operating_income": -7730300000000.0,
+            "net_income": -9137500000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 66193000000000.0,
+            "operating_income": 23467300000000.0,
+            "net_income": 19796900000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 97146700000000.0,
+            "operating_income": 47206300000000.0,
+            "net_income": 42947900000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:20+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/000660/finance"
+      }
     },
     "000990.KS": {
-      "price": 99900.0,
+      "price": 99800.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 109300.0,
-      "change": -9400.0,
-      "change_pct": -8.6002,
+      "change": -9500.0,
+      "change_pct": -8.6917,
       "history": [
         {
           "date": "2026-07-14",
@@ -1868,21 +1948,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 99900.0
+          "close": 99800.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 12.66,
+          "pb": 1.77,
+          "forward_pe": null,
+          "eps": 7886.0,
+          "bps": 56254.0,
+          "roe": 0.1252,
+          "profit_margin": 0.1807901517320355,
+          "revenue": 1397200000000.0,
+          "net_income": 252600000000.0,
+          "operating_margin": 0.19846836530203263,
+          "operating_income": 277300000000.0,
+          "market_cap": 4341800000000.0,
+          "dividend_yield": 0.008100000000000001
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 1154200000000.0,
+            "operating_income": 265400000000.0,
+            "net_income": 264100000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 1131200000000.0,
+            "operating_income": 190800000000.0,
+            "net_income": 229400000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 1397200000000.0,
+            "operating_income": 277300000000.0,
+            "net_income": 252600000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:22+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/000990/finance"
+      }
     },
     "042700.KS": {
-      "price": 198600.0,
+      "price": 198300.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 216500.0,
-      "change": -17900.0,
-      "change_pct": -8.2679,
+      "change": -18200.0,
+      "change_pct": -8.4065,
       "history": [
         {
           "date": "2026-07-14",
@@ -2142,21 +2262,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 198600.0
+          "close": 198300.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 85.06,
+          "pb": 25.17,
+          "forward_pe": null,
+          "eps": 2330.0,
+          "bps": 7874.0,
+          "roe": 0.34759999999999996,
+          "profit_margin": 0.37107681636899603,
+          "revenue": 576700000000.0,
+          "net_income": 214000000000.0,
+          "operating_margin": 0.4359285590428299,
+          "operating_income": 251400000000.0,
+          "market_cap": 18890900000000.0,
+          "dividend_yield": 0.004
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 159000000000.0,
+            "operating_income": 34600000000.0,
+            "net_income": 267200000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 558900000000.0,
+            "operating_income": 255400000000.0,
+            "net_income": 152600000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 576700000000.0,
+            "operating_income": 251400000000.0,
+            "net_income": 214000000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:23+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/042700/finance"
+      }
     },
     "035420.KS": {
-      "price": 177400.0,
+      "price": 177500.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 182600.0,
-      "change": -5200.0,
-      "change_pct": -2.8478,
+      "change": -5100.0,
+      "change_pct": -2.793,
       "history": [
         {
           "date": "2026-07-14",
@@ -2416,13 +2576,53 @@
         },
         {
           "date": "2026-10-20",
-          "close": 177400.0
+          "close": 177500.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 13.78,
+          "pb": 0.9,
+          "forward_pe": 14.56,
+          "eps": 12885.0,
+          "bps": 197188.0,
+          "roe": 0.0736,
+          "profit_margin": 0.15111757374324886,
+          "revenue": 12035000000000.0,
+          "net_income": 1818700000000.0,
+          "operating_margin": 0.1834732031574574,
+          "operating_income": 2208100000000.0,
+          "market_cap": 26999300000000.0,
+          "dividend_yield": 0.0148
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 9670600000000.0,
+            "operating_income": 1488800000000.0,
+            "net_income": 985000000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 10737700000000.0,
+            "operating_income": 1979300000000.0,
+            "net_income": 1932000000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 12035000000000.0,
+            "operating_income": 2208100000000.0,
+            "net_income": 1818700000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:25+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/035420/finance"
+      }
     },
     "035720.KS": {
       "price": 31400.0,
@@ -2696,15 +2896,55 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 40.1,
+          "pb": 1.18,
+          "forward_pe": 25.16,
+          "eps": 783.0,
+          "bps": 26629.0,
+          "roe": 0.045899999999999996,
+          "profit_margin": 0.0639577236976948,
+          "revenue": 8099100000000.0,
+          "net_income": 518000000000.0,
+          "operating_margin": 0.09038041263844131,
+          "operating_income": 732000000000.0,
+          "market_cap": 13910200000000.0,
+          "dividend_yield": 0.0024
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 7557000000000.0,
+            "operating_income": 460900000000.0,
+            "net_income": -1816700000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 7864000000000.0,
+            "operating_income": 495300000000.0,
+            "net_income": -161900000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 8099100000000.0,
+            "operating_income": 732000000000.0,
+            "net_income": 518000000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:26+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/035720/finance"
+      }
     },
     "005380.KS": {
-      "price": 307000.0,
+      "price": 306500.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 324500.0,
-      "change": -17500.0,
-      "change_pct": -5.3929,
+      "change": -18000.0,
+      "change_pct": -5.547,
       "history": [
         {
           "date": "2026-07-14",
@@ -2964,13 +3204,53 @@
         },
         {
           "date": "2026-10-20",
-          "close": 307000.0
+          "close": 306500.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 9.98,
+          "pb": 0.66,
+          "forward_pe": 8.72,
+          "eps": 30697.0,
+          "bps": 467197.0,
+          "roe": 0.08410000000000001,
+          "profit_margin": 0.05564858835625448,
+          "revenue": 186254500000000.0,
+          "net_income": 10364800000000.0,
+          "operating_margin": 0.06157112982505121,
+          "operating_income": 11467900000000.0,
+          "market_cap": 62362500000000.0,
+          "dividend_yield": 0.0326
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 162663600000000.0,
+            "operating_income": 15126900000000.0,
+            "net_income": 12272300000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 175231200000000.0,
+            "operating_income": 14239600000000.0,
+            "net_income": 13229900000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 186254500000000.0,
+            "operating_income": 11467900000000.0,
+            "net_income": 10364800000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:28+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/005380/finance"
+      }
     },
     "000270.KS": {
       "price": 111400.0,
@@ -3244,15 +3524,55 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 6.19,
+          "pb": 0.67,
+          "forward_pe": 5.39,
+          "eps": 18004.0,
+          "bps": 166439.0,
+          "roe": 0.1292,
+          "profit_margin": 0.0661831122761429,
+          "revenue": 114140900000000.0,
+          "net_income": 7554200000000.0,
+          "operating_margin": 0.07953415471579425,
+          "operating_income": 9078100000000.0,
+          "market_cap": 43492000000000.0,
+          "dividend_yield": 0.061
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 99808400000000.0,
+            "operating_income": 11607900000000.0,
+            "net_income": 8777800000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 107448800000000.0,
+            "operating_income": 12667100000000.0,
+            "net_income": 9775000000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 114140900000000.0,
+            "operating_income": 9078100000000.0,
+            "net_income": 7554200000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:30+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/000270/finance"
+      }
     },
     "012330.KS": {
-      "price": 346500.0,
+      "price": 346000.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 364000.0,
-      "change": -17500.0,
-      "change_pct": -4.8077,
+      "change": -18000.0,
+      "change_pct": -4.9451,
       "history": [
         {
           "date": "2026-07-14",
@@ -3512,13 +3832,53 @@
         },
         {
           "date": "2026-10-20",
-          "close": 346500.0
+          "close": 346000.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 8.68,
+          "pb": 0.59,
+          "forward_pe": 7.77,
+          "eps": 39873.0,
+          "bps": 583823.0,
+          "roe": 0.0768,
+          "profit_margin": 0.059960960828298,
+          "revenue": 61118100000000.0,
+          "net_income": 3664700000000.0,
+          "operating_margin": 0.05493462656725258,
+          "operating_income": 3357500000000.0,
+          "market_cap": 31077900000000.0,
+          "dividend_yield": 0.018799999999999997
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 59254400000000.0,
+            "operating_income": 2295300000000.0,
+            "net_income": 3423300000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 57237000000000.0,
+            "operating_income": 3073500000000.0,
+            "net_income": 4060200000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 61118100000000.0,
+            "operating_income": 3357500000000.0,
+            "net_income": 3664700000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:31+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/012330/finance"
+      }
     },
     "373220.KS": {
       "price": 411500.0,
@@ -3792,15 +4152,55 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": null,
+          "pb": 4.31,
+          "forward_pe": null,
+          "eps": -7193.0,
+          "bps": 95479.0,
+          "roe": -0.0519,
+          "profit_margin": 0.0034133441478890495,
+          "revenue": 23671800000000.0,
+          "net_income": 80800000000.0,
+          "operating_margin": 0.056865130661800115,
+          "operating_income": 1346100000000.0,
+          "market_cap": 96291000000000.0,
+          "dividend_yield": null
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 33745500000000.0,
+            "operating_income": 2163200000000.0,
+            "net_income": 1638000000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 25619600000000.0,
+            "operating_income": 575400000000.0,
+            "net_income": 338600000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 23671800000000.0,
+            "operating_income": 1346100000000.0,
+            "net_income": 80800000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:33+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/373220/finance"
+      }
     },
     "006400.KS": {
-      "price": 553000.0,
+      "price": 552000.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 591000.0,
-      "change": -38000.0,
-      "change_pct": -6.4298,
+      "change": -39000.0,
+      "change_pct": -6.599,
       "history": [
         {
           "date": "2026-07-14",
@@ -4060,21 +4460,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 553000.0
+          "close": 552000.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 1207.42,
+          "pb": 1.79,
+          "forward_pe": 46.17,
+          "eps": 458.0,
+          "bps": 308778.0,
+          "roe": -0.0315,
+          "profit_margin": -0.04408782892505295,
+          "revenue": 13266700000000.0,
+          "net_income": -584900000000.0,
+          "operating_margin": -0.1298288195255791,
+          "operating_income": -1722400000000.0,
+          "market_cap": 44563800000000.0,
+          "dividend_yield": null
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 21436800000000.0,
+            "operating_income": 1545500000000.0,
+            "net_income": 2066000000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 16592200000000.0,
+            "operating_income": 363300000000.0,
+            "net_income": 575500000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 13266700000000.0,
+            "operating_income": -1722400000000.0,
+            "net_income": -584900000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:34+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/006400/finance"
+      }
     },
     "051910.KS": {
-      "price": 253500.0,
+      "price": 252500.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 270000.0,
-      "change": -16500.0,
-      "change_pct": -6.1111,
+      "change": -17500.0,
+      "change_pct": -6.4815,
       "history": [
         {
           "date": "2026-07-14",
@@ -4334,21 +4774,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 253500.0
+          "close": 252500.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": null,
+          "pb": 0.56,
+          "forward_pe": null,
+          "eps": -19319.0,
+          "bps": 452637.0,
+          "roe": -0.055,
+          "profit_margin": -0.021272658396506154,
+          "revenue": 45932200000000.0,
+          "net_income": -977100000000.0,
+          "operating_margin": 0.025709632893699843,
+          "operating_income": 1180900000000.0,
+          "market_cap": 17859900000000.0,
+          "dividend_yield": 0.0079
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 55249800000000.0,
+            "operating_income": 2529200000000.0,
+            "net_income": 2053400000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 48699800000000.0,
+            "operating_income": 874900000000.0,
+            "net_income": 515000000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 45932200000000.0,
+            "operating_income": 1180900000000.0,
+            "net_income": -977100000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:36+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/051910/finance"
+      }
     },
     "247540.KQ": {
-      "price": 105300.0,
+      "price": 105500.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 115600.0,
-      "change": -10300.0,
-      "change_pct": -8.91,
+      "change": -10100.0,
+      "change_pct": -8.737,
       "history": [
         {
           "date": "2026-07-14",
@@ -4608,21 +5088,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 105300.0
+          "close": 105500.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 236.02,
+          "pb": 5.75,
+          "forward_pe": 1648.44,
+          "eps": 447.0,
+          "bps": 18351.0,
+          "roe": 0.0229,
+          "profit_margin": 0.03618265128772318,
+          "revenue": 2531600000000.0,
+          "net_income": 91600000000.0,
+          "operating_margin": 0.05660451888133986,
+          "operating_income": 143300000000.0,
+          "market_cap": 10321100000000.0,
+          "dividend_yield": 0.001
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 6900900000000.0,
+            "operating_income": 156000000000.0,
+            "net_income": 54700000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 2766800000000.0,
+            "operating_income": -34100000000.0,
+            "net_income": -58500000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 2531600000000.0,
+            "operating_income": 143300000000.0,
+            "net_income": 91600000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:37+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/247540/finance"
+      }
     },
     "086520.KQ": {
-      "price": 83200.0,
+      "price": 83000.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 90100.0,
-      "change": -6900.0,
-      "change_pct": -7.6582,
+      "change": -7100.0,
+      "change_pct": -7.8801,
       "history": [
         {
           "date": "2026-07-14",
@@ -4882,21 +5402,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 83200.0
+          "close": 83000.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 80.12,
+          "pb": 5.01,
+          "forward_pe": null,
+          "eps": 1036.0,
+          "bps": 16568.0,
+          "roe": -0.0839,
+          "profit_margin": -0.03091122179900381,
+          "revenue": 3413000000000.0,
+          "net_income": -105500000000.0,
+          "operating_margin": 0.06264283621447407,
+          "operating_income": 213800000000.0,
+          "market_cap": 11269400000000.0,
+          "dividend_yield": 0.0018
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 7260200000000.0,
+            "operating_income": 298200000000.0,
+            "net_income": 135300000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 3127900000000.0,
+            "operating_income": -293000000000.0,
+            "net_income": -295400000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 3413000000000.0,
+            "operating_income": 213800000000.0,
+            "net_income": -105500000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:38+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/086520/finance"
+      }
     },
     "207940.KS": {
-      "price": 1382000.0,
+      "price": 1384000.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 1386000.0,
-      "change": -4000.0,
-      "change_pct": -0.2886,
+      "change": -2000.0,
+      "change_pct": -0.1443,
       "history": [
         {
           "date": "2026-07-14",
@@ -5156,21 +5716,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 1382000.0
+          "close": 1384000.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 38.55,
+          "pb": 7.72,
+          "forward_pe": 34.11,
+          "eps": 35900.0,
+          "bps": 179329.0,
+          "roe": 0.19440000000000002,
+          "profit_margin": 0.3915734035549704,
+          "revenue": 4557000000000.0,
+          "net_income": 1784400000000.0,
+          "operating_margin": 0.4540706605222734,
+          "operating_income": 2069200000000.0,
+          "market_cap": 64066700000000.0,
+          "dividend_yield": null
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 3694600000000.0,
+            "operating_income": 1113700000000.0,
+            "net_income": 857700000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 3497100000000.0,
+            "operating_income": 1321400000000.0,
+            "net_income": 1083300000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 4557000000000.0,
+            "operating_income": 2069200000000.0,
+            "net_income": 1784400000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:40+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/207940/finance"
+      }
     },
     "068270.KS": {
-      "price": 196700.0,
+      "price": 196600.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 196300.0,
-      "change": 400.0,
-      "change_pct": 0.2038,
+      "change": 300.0,
+      "change_pct": 0.1528,
       "history": [
         {
           "date": "2026-07-14",
@@ -5430,21 +6030,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 196700.0
+          "close": 196600.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 29.93,
+          "pb": 2.51,
+          "forward_pe": 28.82,
+          "eps": 6568.0,
+          "bps": 78325.0,
+          "roe": 0.0594,
+          "profit_margin": 0.2478078078078078,
+          "revenue": 4162500000000.0,
+          "net_income": 1031500000000.0,
+          "operating_margin": 0.28072072072072074,
+          "operating_income": 1168500000000.0,
+          "market_cap": 45625500000000.0,
+          "dividend_yield": 0.0036
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 2176400000000.0,
+            "operating_income": 651500000000.0,
+            "net_income": 539700000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 3557300000000.0,
+            "operating_income": 492000000000.0,
+            "net_income": 418900000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 4162500000000.0,
+            "operating_income": 1168500000000.0,
+            "net_income": 1031500000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:41+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/068270/finance"
+      }
     },
     "000100.KS": {
-      "price": 85600.0,
+      "price": 85700.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 86900.0,
-      "change": -1300.0,
-      "change_pct": -1.496,
+      "change": -1200.0,
+      "change_pct": -1.3809,
       "history": [
         {
           "date": "2026-07-14",
@@ -5704,21 +6344,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 85600.0
+          "close": 85700.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 29.24,
+          "pb": 2.68,
+          "forward_pe": 40.67,
+          "eps": 2927.0,
+          "bps": 31931.0,
+          "roe": 0.08810000000000001,
+          "profit_margin": 0.08474343729991768,
+          "revenue": 2186600000000.0,
+          "net_income": 185300000000.0,
+          "operating_margin": 0.04774535809018567,
+          "operating_income": 104400000000.0,
+          "market_cap": 6301500000000.0,
+          "dividend_yield": 0.006999999999999999
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 1859000000000.0,
+            "operating_income": 57000000000.0,
+            "net_income": 134200000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 2067800000000.0,
+            "operating_income": 54900000000.0,
+            "net_income": 55200000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 2186600000000.0,
+            "operating_income": 104400000000.0,
+            "net_income": 185300000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:43+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/000100/finance"
+      }
     },
     "105560.KS": {
-      "price": 160500.0,
+      "price": 160400.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 160700.0,
-      "change": -200.0,
-      "change_pct": -0.1245,
+      "change": -300.0,
+      "change_pct": -0.1867,
       "history": [
         {
           "date": "2026-07-14",
@@ -5978,21 +6658,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 160500.0
+          "close": 160400.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 9.58,
+          "pb": 0.93,
+          "forward_pe": 8.71,
+          "eps": 16744.0,
+          "bps": 172316.0,
+          "roe": 0.0998,
+          "profit_margin": 0.07190261809882224,
+          "revenue": 81230700000000.0,
+          "net_income": 5840700000000.0,
+          "operating_margin": 0.10485813861015601,
+          "operating_income": 8517700000000.0,
+          "market_cap": 56891900000000.0,
+          "dividend_yield": 0.027200000000000002
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 77506400000000.0,
+            "operating_income": 6385000000000.0,
+            "net_income": 4526300000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 85076400000000.0,
+            "operating_income": 8045300000000.0,
+            "net_income": 5028600000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 81230700000000.0,
+            "operating_income": 8517700000000.0,
+            "net_income": 5840700000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:44+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/105560/finance"
+      }
     },
     "055550.KS": {
-      "price": 91300.0,
+      "price": 91100.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 92500.0,
-      "change": -1200.0,
-      "change_pct": -1.2973,
+      "change": -1400.0,
+      "change_pct": -1.5135,
       "history": [
         {
           "date": "2026-07-14",
@@ -6252,21 +6972,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 91300.0
+          "close": 91100.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 8.15,
+          "pb": 0.71,
+          "forward_pe": 7.3,
+          "eps": 11174.0,
+          "bps": 128024.0,
+          "roe": 0.0872,
+          "profit_margin": 0.07860764973253764,
+          "revenue": 64682000000000.0,
+          "net_income": 5084500000000.0,
+          "operating_margin": 0.10858353173989672,
+          "operating_income": 7023400000000.0,
+          "market_cap": 42766900000000.0,
+          "dividend_yield": 0.028399999999999998
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 61332600000000.0,
+            "operating_income": 6100900000000.0,
+            "net_income": 4478000000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 74064300000000.0,
+            "operating_income": 6458700000000.0,
+            "net_income": 4558200000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 64682000000000.0,
+            "operating_income": 7023400000000.0,
+            "net_income": 5084500000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:45+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/055550/finance"
+      }
     },
     "086790.KS": {
-      "price": 121100.0,
+      "price": 121000.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 122100.0,
-      "change": -1000.0,
-      "change_pct": -0.819,
+      "change": -1100.0,
+      "change_pct": -0.9009,
       "history": [
         {
           "date": "2026-07-14",
@@ -6526,13 +7286,53 @@
         },
         {
           "date": "2026-10-20",
-          "close": 121100.0
+          "close": 121000.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 8.21,
+          "pb": 0.69,
+          "forward_pe": 7.55,
+          "eps": 14731.0,
+          "bps": 175497.0,
+          "roe": 0.0917,
+          "profit_margin": 0.05854930696975499,
+          "revenue": 68943600000000.0,
+          "net_income": 4036600000000.0,
+          "operating_margin": 0.07761271532092899,
+          "operating_income": 5350900000000.0,
+          "market_cap": 32787400000000.0,
+          "dividend_yield": 0.0339
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 69693600000000.0,
+            "operating_income": 4693400000000.0,
+            "net_income": 3468400000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 81614300000000.0,
+            "operating_income": 4855200000000.0,
+            "net_income": 3768500000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 68943600000000.0,
+            "operating_income": 5350900000000.0,
+            "net_income": 4036600000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:47+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/086790/finance"
+      }
     },
     "316140.KS": {
       "price": 31700.0,
@@ -6806,15 +7606,55 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 7.33,
+          "pb": 0.59,
+          "forward_pe": 7.26,
+          "eps": 4324.0,
+          "bps": 53410.0,
+          "roe": 0.0891,
+          "profit_margin": 0.077680488297985,
+          "revenue": 41548400000000.0,
+          "net_income": 3227500000000.0,
+          "operating_margin": 0.08844624582414726,
+          "operating_income": 3674800000000.0,
+          "market_cap": 23356100000000.0,
+          "dividend_yield": 0.0429
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 41986300000000.0,
+            "operating_income": 3499000000000.0,
+            "net_income": 2626900000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 46616700000000.0,
+            "operating_income": 4255200000000.0,
+            "net_income": 3171500000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 41548400000000.0,
+            "operating_income": 3674800000000.0,
+            "net_income": 3227500000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:48+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/316140/finance"
+      }
     },
     "017670.KS": {
-      "price": 76700.0,
+      "price": 76600.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 78900.0,
-      "change": -2200.0,
-      "change_pct": -2.7883,
+      "change": -2300.0,
+      "change_pct": -2.9151,
       "history": [
         {
           "date": "2026-07-14",
@@ -7074,13 +7914,53 @@
         },
         {
           "date": "2026-10-20",
-          "close": 76700.0
+          "close": 76600.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 22.01,
+          "pb": 1.06,
+          "forward_pe": 12.21,
+          "eps": 3480.0,
+          "bps": 72456.0,
+          "roe": 0.0333,
+          "profit_margin": 0.021936698792925986,
+          "revenue": 17099200000000.0,
+          "net_income": 375100000000.0,
+          "operating_margin": 0.0627631702067933,
+          "operating_income": 1073200000000.0,
+          "market_cap": 16452900000000.0,
+          "dividend_yield": null
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 17608500000000.0,
+            "operating_income": 1753200000000.0,
+            "net_income": 1145900000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 17940600000000.0,
+            "operating_income": 1823400000000.0,
+            "net_income": 1387100000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 17099200000000.0,
+            "operating_income": 1073200000000.0,
+            "net_income": 375100000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:50+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/017670/finance"
+      }
     },
     "030200.KS": {
       "price": 50700.0,
@@ -7354,7 +8234,47 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 9.86,
+          "pb": 0.65,
+          "forward_pe": 8.98,
+          "eps": 5141.0,
+          "bps": 77912.0,
+          "roe": 0.10220000000000001,
+          "profit_margin": 0.06503282089774183,
+          "revenue": 28244200000000.0,
+          "net_income": 1836800000000.0,
+          "operating_margin": 0.08741971803060451,
+          "operating_income": 2469100000000.0,
+          "market_cap": 12777500000000.0,
+          "dividend_yield": 0.0473
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 26376300000000.0,
+            "operating_income": 1649800000000.0,
+            "net_income": 988700000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 26431200000000.0,
+            "operating_income": 809500000000.0,
+            "net_income": 417100000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 28244200000000.0,
+            "operating_income": 2469100000000.0,
+            "net_income": 1836800000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:51+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/030200/finance"
+      }
     },
     "015760.KS": {
       "price": 28000.0,
@@ -7628,15 +8548,55 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 2.29,
+          "pb": 0.35,
+          "forward_pe": 4.49,
+          "eps": 12213.0,
+          "bps": 78939.0,
+          "roe": 0.19399999999999998,
+          "profit_margin": 0.08895373363043767,
+          "revenue": 97429300000000.0,
+          "net_income": 8666700000000.0,
+          "operating_margin": 0.13846553346888463,
+          "operating_income": 13490600000000.0,
+          "market_cap": 17975000000000.0,
+          "dividend_yield": 0.055099999999999996
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 88219500000000.0,
+            "operating_income": -4541600000000.0,
+            "net_income": -4716100000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 93398900000000.0,
+            "operating_income": 8364700000000.0,
+            "net_income": 3622000000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 97429300000000.0,
+            "operating_income": 13490600000000.0,
+            "net_income": 8666700000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:52+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/015760/finance"
+      }
     },
     "034020.KS": {
-      "price": 62300.0,
+      "price": 62200.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 67100.0,
-      "change": -4800.0,
-      "change_pct": -7.1535,
+      "change": -4900.0,
+      "change_pct": -7.3025,
       "history": [
         {
           "date": "2026-07-14",
@@ -7896,21 +8856,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 62300.0
+          "close": 62200.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 219.43,
+          "pb": 4.86,
+          "forward_pe": 114.58,
+          "eps": 283.0,
+          "bps": 12767.0,
+          "roe": 0.0111,
+          "profit_margin": 0.012029616775804759,
+          "revenue": 17057900000000.0,
+          "net_income": 205200000000.0,
+          "operating_margin": 0.04471242063794488,
+          "operating_income": 762700000000.0,
+          "market_cap": 39778800000000.0,
+          "dividend_yield": null
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 17589900000000.0,
+            "operating_income": 1467300000000.0,
+            "net_income": 517500000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 16233100000000.0,
+            "operating_income": 1017600000000.0,
+            "net_income": 394700000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 17057900000000.0,
+            "operating_income": 762700000000.0,
+            "net_income": 205200000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:54+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/034020/finance"
+      }
     },
     "009540.KS": {
-      "price": 252500.0,
+      "price": 252000.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 268000.0,
-      "change": -15500.0,
-      "change_pct": -5.7836,
+      "change": -16000.0,
+      "change_pct": -5.9701,
       "history": [
         {
           "date": "2026-07-14",
@@ -8170,21 +9170,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 252500.0
+          "close": 252000.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 5.17,
+          "pb": 1.2,
+          "forward_pe": 4.52,
+          "eps": 48724.0,
+          "bps": 209715.0,
+          "roe": 0.1778,
+          "profit_margin": 0.09783117074018147,
+          "revenue": 29933200000000.0,
+          "net_income": 2928400000000.0,
+          "operating_margin": 0.1304404473962022,
+          "operating_income": 3904500000000.0,
+          "market_cap": 17834800000000.0,
+          "dividend_yield": 0.048799999999999996
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 21296200000000.0,
+            "operating_income": 282300000000.0,
+            "net_income": 144900000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 25538600000000.0,
+            "operating_income": 1434100000000.0,
+            "net_income": 1454600000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 29933200000000.0,
+            "operating_income": 3904500000000.0,
+            "net_income": 2928400000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:55+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/009540/finance"
+      }
     },
     "010140.KS": {
-      "price": 17280.0,
+      "price": 17270.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 18370.0,
-      "change": -1090.0,
-      "change_pct": -5.9336,
+      "change": -1100.0,
+      "change_pct": -5.988,
       "history": [
         {
           "date": "2026-07-14",
@@ -8444,13 +9484,53 @@
         },
         {
           "date": "2026-10-20",
-          "close": 17280.0
+          "close": 17270.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 26.9,
+          "pb": 3.09,
+          "forward_pe": 16.29,
+          "eps": 642.0,
+          "bps": 5586.0,
+          "roe": 0.1373,
+          "profit_margin": 0.050309859154929575,
+          "revenue": 10650000000000.0,
+          "net_income": 535800000000.0,
+          "operating_margin": 0.08095774647887324,
+          "operating_income": 862200000000.0,
+          "market_cap": 15197600000000.0,
+          "dividend_yield": null
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 8009400000000.0,
+            "operating_income": 233300000000.0,
+            "net_income": -155600000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 9903100000000.0,
+            "operating_income": 502700000000.0,
+            "net_income": 53900000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 10650000000000.0,
+            "operating_income": 862200000000.0,
+            "net_income": 535800000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:57+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/010140/finance"
+      }
     },
     "042660.KS": {
       "price": 58800.0,
@@ -8724,7 +9804,47 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 8.69,
+          "pb": 2.39,
+          "forward_pe": 9.24,
+          "eps": 6770.0,
+          "bps": 24558.0,
+          "roe": 0.2259,
+          "profit_margin": 0.0974615715570853,
+          "revenue": 12783500000000.0,
+          "net_income": 1245900000000.0,
+          "operating_margin": 0.09133648844213244,
+          "operating_income": 1167600000000.0,
+          "market_cap": 18017100000000.0,
+          "dividend_yield": null
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 7408300000000.0,
+            "operating_income": -196500000000.0,
+            "net_income": 160000000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 10776000000000.0,
+            "operating_income": 237900000000.0,
+            "net_income": 528200000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 12783500000000.0,
+            "operating_income": 1167600000000.0,
+            "net_income": 1245900000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:58+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/042660/finance"
+      }
     },
     "012450.KS": {
       "price": 794000.0,
@@ -8998,7 +10118,47 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 19.8,
+          "pb": 3.4,
+          "forward_pe": 17.98,
+          "eps": 40099.0,
+          "bps": 233220.0,
+          "roe": 0.19140000000000001,
+          "profit_margin": 0.08246295346198353,
+          "revenue": 26702900000000.0,
+          "net_income": 2202000000000.0,
+          "operating_margin": 0.11569155410086544,
+          "operating_income": 3089300000000.0,
+          "market_cap": 40941300000000.0,
+          "dividend_yield": 0.0088
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 7889700000000.0,
+            "operating_income": 594300000000.0,
+            "net_income": 976900000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 11240100000000.0,
+            "operating_income": 1731900000000.0,
+            "net_income": 2539900000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 26702900000000.0,
+            "operating_income": 3089300000000.0,
+            "net_income": 2202000000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:11:59+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/012450/finance"
+      }
     },
     "005490.KS": {
       "price": 300500.0,
@@ -9272,15 +10432,55 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 17.95,
+          "pb": 0.4,
+          "forward_pe": 12.46,
+          "eps": 16737.0,
+          "bps": 759917.0,
+          "roe": 0.0118,
+          "profit_margin": 0.0073001046386925806,
+          "revenue": 69094900000000.0,
+          "net_income": 504400000000.0,
+          "operating_margin": 0.026443340970172906,
+          "operating_income": 1827100000000.0,
+          "market_cap": 23812100000000.0,
+          "dividend_yield": 0.0333
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 77127200000000.0,
+            "operating_income": 3531400000000.0,
+            "net_income": 1845900000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 72688100000000.0,
+            "operating_income": 2173600000000.0,
+            "net_income": 947600000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 69094900000000.0,
+            "operating_income": 1827100000000.0,
+            "net_income": 504400000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:12:01+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/005490/finance"
+      }
     },
     "066570.KS": {
-      "price": 162100.0,
+      "price": 161600.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 171900.0,
-      "change": -9800.0,
-      "change_pct": -5.701,
+      "change": -10300.0,
+      "change_pct": -5.9919,
       "history": [
         {
           "date": "2026-07-14",
@@ -9540,21 +10740,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 162100.0
+          "close": 161600.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 27.97,
+          "pb": 1.08,
+          "forward_pe": 14.17,
+          "eps": 5777.0,
+          "bps": 149377.0,
+          "roe": 0.042800000000000005,
+          "profit_margin": 0.01368147630797447,
+          "revenue": 89200900000000.0,
+          "net_income": 1220400000000.0,
+          "operating_margin": 0.027784473026617445,
+          "operating_income": 2478400000000.0,
+          "market_cap": 26322200000000.0,
+          "dividend_yield": 0.0084
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 82262700000000.0,
+            "operating_income": 3653300000000.0,
+            "net_income": 1150600000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 87728200000000.0,
+            "operating_income": 3419700000000.0,
+            "net_income": 591400000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 89200900000000.0,
+            "operating_income": 2478400000000.0,
+            "net_income": 1220400000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:12:02+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/066570/finance"
+      }
     },
     "352820.KS": {
-      "price": 183400.0,
+      "price": 182600.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 186200.0,
-      "change": -2800.0,
-      "change_pct": -1.5038,
+      "change": -3600.0,
+      "change_pct": -1.9334,
       "history": [
         {
           "date": "2026-07-14",
@@ -9814,21 +11054,61 @@
         },
         {
           "date": "2026-10-20",
-          "close": 183400.0
+          "close": 182600.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": null,
+          "pb": 2.26,
+          "forward_pe": 44.37,
+          "eps": -8743.0,
+          "bps": 80633.0,
+          "roe": -0.0733,
+          "profit_margin": -0.09600362277821804,
+          "revenue": 2649900000000.0,
+          "net_income": -254400000000.0,
+          "operating_margin": 0.01860447564059021,
+          "operating_income": 49300000000.0,
+          "market_cap": 7871300000000.0,
+          "dividend_yield": 0.0027
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 2178100000000.0,
+            "operating_income": 295600000000.0,
+            "net_income": 183500000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 2255600000000.0,
+            "operating_income": 184000000000.0,
+            "net_income": -3400000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 2649900000000.0,
+            "operating_income": 49300000000.0,
+            "net_income": -254400000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:12:04+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/352820/finance"
+      }
     },
     "035900.KQ": {
-      "price": 39550.0,
+      "price": 39500.0,
       "quote_date": "2026-10-20",
       "currency": "KRW",
       "previous_close": 40200.0,
-      "change": -650.0,
-      "change_pct": -1.6169,
+      "change": -700.0,
+      "change_pct": -1.7413,
       "history": [
         {
           "date": "2026-07-14",
@@ -10088,13 +11368,53 @@
         },
         {
           "date": "2026-10-20",
-          "close": 39550.0
+          "close": 39500.0
         }
       ],
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 12.92,
+          "pb": 2.02,
+          "forward_pe": 12.17,
+          "eps": 3057.0,
+          "bps": 19575.0,
+          "roe": 0.2921,
+          "profit_margin": 0.19540090035284097,
+          "revenue": 821900000000.0,
+          "net_income": 160600000000.0,
+          "operating_margin": 0.18883075799975665,
+          "operating_income": 155200000000.0,
+          "market_cap": 1403500000000.0,
+          "dividend_yield": 0.0222
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 566500000000.0,
+            "operating_income": 169400000000.0,
+            "net_income": 105000000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 601800000000.0,
+            "operating_income": 128300000000.0,
+            "net_income": 97700000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 821900000000.0,
+            "operating_income": 155200000000.0,
+            "net_income": 160600000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:12:05+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/035900/finance"
+      }
     },
     "323410.KS": {
       "price": 20150.0,
@@ -10368,7 +11688,47 @@
       "high_52w": null,
       "low_52w": null,
       "source": "Naver Finance daily chart (unofficial)",
-      "fundamentals": null
+      "fundamentals": {
+        "metrics": {
+          "pe": 17.64,
+          "pb": 1.44,
+          "forward_pe": 16.16,
+          "eps": 1142.0,
+          "bps": 14009.0,
+          "roe": 0.0723,
+          "profit_margin": 0.15562323818164145,
+          "revenue": 3086300000000.0,
+          "net_income": 480300000000.0,
+          "operating_margin": 0.2104137640540453,
+          "operating_income": 649400000000.0,
+          "market_cap": 9614000000000.0,
+          "dividend_yield": 0.022799999999999997
+        },
+        "annual_income": [
+          {
+            "year": "2023",
+            "revenue": 2494000000000.0,
+            "operating_income": 478500000000.0,
+            "net_income": 354900000000.0
+          },
+          {
+            "year": "2024",
+            "revenue": 2945600000000.0,
+            "operating_income": 606900000000.0,
+            "net_income": 440100000000.0
+          },
+          {
+            "year": "2025",
+            "revenue": 3086300000000.0,
+            "operating_income": 649400000000.0,
+            "net_income": 480300000000.0
+          }
+        ],
+        "financial_period": "2025",
+        "updated_at": "2026-10-20T09:12:06+00:00",
+        "source": "Naver Finance mobile JSON (unofficial)",
+        "source_url": "https://m.stock.naver.com/domestic/stock/323410/finance"
+      }
     },
     "069500.KS": {
       "price": 86755.0,
