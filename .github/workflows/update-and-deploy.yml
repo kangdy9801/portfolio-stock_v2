@@ -50,6 +50,10 @@ jobs:
           if [ '${{ steps.prices.outcome }}' = 'failure' ]; then
             echo '::warning::Price sources unavailable. Deploying with existing prices; check quote_date and data/market.json warnings.'
           fi
+      - name: Refresh Korean PER PBR and annual financials
+        # Separate from Yahoo quote collection: Yahoo 429 must not block finance.
+        continue-on-error: true
+        run: python scripts/update_fundamentals.py --limit 36 --max-age 5
       - name: Refresh macro rates and official CPI history
         env:
           ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
