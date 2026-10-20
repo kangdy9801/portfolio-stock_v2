@@ -1,0 +1,69 @@
+name: Update Stock Prices and Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # All cron entries below are UTC. 18:40 KST after Korean close.
+    - cron: '40 9 * * 1-5'
+    # 07:35 KST after the US regular session (DST and standard time).
+    - cron: '35 22 * * 0-5'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: stock-portfolio-deploy
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install data dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Create catalog JS
+        run: python scripts/build_catalog.py
+      - name: Fetch latest closing prices and fundamentals
+        run: python scripts/update_market.py
+      - name: Refresh macro rates and official CPI history
+        env:
+          ECOS_API_KEY: ${{ secrets.ECOS_API_KEY }}
+        run: python scripts/update_macro.py
+      - name: Save refreshed public data to main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog.json data/catalog.js data/market.json data/market.js data/macro.json data/macro.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh closing prices and financial metrics [skip ci]'
+            git push
+          fi
+      - name: Prepare public website files
+        run: |
+          mkdir -p public
+          cp index.html .nojekyll public/
+          cp -r assets data public/
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
