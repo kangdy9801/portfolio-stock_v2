@@ -113,7 +113,7 @@
       "label": "연방기금금리 목표범위",
       "unit": "%",
       "current": {
-        "date": "2026-10-20",
+        "date": "2026-10-21",
         "lower": 3.75,
         "upper": 4.0,
         "source_url": "https://fred.stlouisfed.org/series/DFEDTARU"
@@ -882,6 +882,6 @@
     "미국 금리 목표범위는 상단·하단으로 표시하고, 한국 기준금리는 단일 값입니다.",
     "PDF에서 읽은 한국 CPI 최신값은 2026년 5월 자료이며 10월 현재 최신 수치라는 뜻이 아닙니다."
   ],
-  "last_refresh_attempt": "2026-10-21T00:52:16.005949+00:00",
+  "last_refresh_attempt": "2026-10-21T14:39:14.775008+00:00",
   "refresh_warnings": []
 }
