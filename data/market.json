@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-22T14:49:29+00:00",
+  "updated_at": "2026-10-23T00:54:57+00:00",
   "fear_greed": {
-    "score": 20.16,
+    "score": 19.81,
     "rating": "extreme fear",
-    "timestamp": "2026-10-22T14:46:40+00:00",
+    "timestamp": "2026-10-22T23:59:47+00:00",
     "previous_close": 31.37,
     "previous_1_week": 30.34,
     "previous_1_month": 35.03,
     "previous_1_year": 26.37,
     "indicators": {
       "market_momentum_sp500": {
-        "score": 20.6,
+        "score": 22.6,
         "rating": "extreme fear"
       },
       "stock_price_strength": {
@@ -18,31 +18,27 @@
         "rating": "extreme fear"
       },
       "stock_price_breadth": {
-        "score": 20.0,
+        "score": 20.8,
         "rating": "extreme fear"
       },
       "put_call_options": {
-        "score": 21.6,
+        "score": 18.2,
         "rating": "extreme fear"
       },
       "junk_bond_demand": {
-        "score": 34.6,
+        "score": 32.2,
         "rating": "fear"
       },
       "market_volatility_vix": {
-        "score": 16.15,
+        "score": 17.69,
         "rating": "extreme fear"
       },
       "safe_haven_demand": {
-        "score": 10.0,
+        "score": 9.6,
         "rating": "extreme fear"
       }
     },
     "history": [
-      {
-        "date": "2025-10-22",
-        "score": 26.37
-      },
       {
         "date": "2025-10-23",
         "score": 27.57
@@ -1041,14 +1037,14 @@
       },
       {
         "date": "2026-10-22",
-        "score": 20.16
+        "score": 19.81
       }
     ],
     "source_url": "https://edition.cnn.com/markets/fear-and-greed",
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1325.09,
+    "rate": 1324.92,
     "quote_date": "2026-10-22",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
