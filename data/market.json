@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-10-29T16:24:30+00:00",
+  "updated_at": "2026-10-30T02:08:03+00:00",
   "fear_greed": {
-    "score": 35.86,
+    "score": 34.6,
     "rating": "fear",
-    "timestamp": "2026-10-29T16:20:31+00:00",
+    "timestamp": "2026-10-29T23:59:48+00:00",
     "previous_close": 35.86,
     "previous_1_week": 19.99,
     "previous_1_month": 31.06,
     "previous_1_year": 42.11,
     "indicators": {
       "market_momentum_sp500": {
-        "score": 35.2,
+        "score": 35.4,
         "rating": "fear"
       },
       "stock_price_strength": {
-        "score": 32.2,
+        "score": 32.0,
         "rating": "fear"
       },
       "stock_price_breadth": {
-        "score": 34.6,
+        "score": 35.4,
         "rating": "fear"
       },
       "put_call_options": {
-        "score": 37.2,
+        "score": 29.8,
         "rating": "fear"
       },
       "junk_bond_demand": {
-        "score": 52.0,
+        "score": 50.0,
         "rating": "neutral"
       },
       "market_volatility_vix": {
@@ -34,15 +34,11 @@
         "rating": "neutral"
       },
       "safe_haven_demand": {
-        "score": 9.8,
+        "score": 9.6,
         "rating": "extreme fear"
       }
     },
     "history": [
-      {
-        "date": "2025-10-29",
-        "score": 42.11
-      },
       {
         "date": "2025-10-30",
         "score": 37.06
@@ -1041,15 +1037,15 @@
       },
       {
         "date": "2026-10-29",
-        "score": 35.86
+        "score": 34.6
       }
     ],
     "source_url": "https://edition.cnn.com/markets/fear-and-greed",
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1336.01,
-    "quote_date": "2026-10-29",
+    "rate": 1336.28,
+    "quote_date": "2026-10-30",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
   "indices": {},
@@ -7649,12 +7645,12 @@
       }
     },
     "017670.KS": {
-      "price": 76600.0,
+      "price": 76500.0,
       "quote_date": "2026-10-29",
       "currency": "KRW",
       "previous_close": 78300.0,
-      "change": -1700.0,
-      "change_pct": -2.1711,
+      "change": -1800.0,
+      "change_pct": -2.2989,
       "history": [
         {
           "date": "2026-07-24",
@@ -7914,7 +7910,7 @@
         },
         {
           "date": "2026-10-29",
-          "close": 76600.0
+          "close": 76500.0
         }
       ],
       "high_52w": null,
