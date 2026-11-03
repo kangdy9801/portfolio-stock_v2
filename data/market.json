@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-11-02T20:06:32+00:00",
+  "updated_at": "2026-11-03T03:41:57+00:00",
   "fear_greed": {
-    "score": 22.74,
+    "score": 22.73,
     "rating": "extreme fear",
-    "timestamp": "2026-11-02T20:03:07+00:00",
+    "timestamp": "2026-11-02T23:59:46+00:00",
     "previous_close": 26.24,
     "previous_1_week": 29.83,
     "previous_1_month": 38.2,
     "previous_1_year": 34.46,
     "indicators": {
       "market_momentum_sp500": {
-        "score": 13.8,
+        "score": 13.2,
         "rating": "extreme fear"
       },
       "stock_price_strength": {
-        "score": 34.6,
+        "score": 34.0,
         "rating": "fear"
       },
       "stock_price_breadth": {
-        "score": 40.4,
+        "score": 40.8,
         "rating": "fear"
       },
       "put_call_options": {
-        "score": 21.0,
+        "score": 20.4,
         "rating": "extreme fear"
       },
       "junk_bond_demand": {
-        "score": 35.0,
+        "score": 36.4,
         "rating": "fear"
       },
       "market_volatility_vix": {
-        "score": 11.76,
+        "score": 12.5,
         "rating": "extreme fear"
       },
       "safe_haven_demand": {
-        "score": 2.6,
+        "score": 1.8,
         "rating": "extreme fear"
       }
     },
@@ -1037,15 +1037,15 @@
       },
       {
         "date": "2026-11-02",
-        "score": 22.74
+        "score": 22.73
       }
     ],
     "source_url": "https://edition.cnn.com/markets/fear-and-greed",
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1338.54,
-    "quote_date": "2026-11-02",
+    "rate": 1339.43,
+    "quote_date": "2026-11-03",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
   "indices": {},
@@ -12824,40 +12824,40 @@
     }
   },
   "warnings": [
-    "AAPL 종가 미갱신: Yahoo: PROVIDER_RATE_LIMIT_429: https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=6mo&; Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "MSFT 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "NVDA 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "GOOGL 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "AMZN 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "META 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "TSLA 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "AVGO 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "AMD 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "MU 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "TSM 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "ASML 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "PLTR 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "BRK-B 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "JPM 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "KO 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "PEP 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "JNJ 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "WMT 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "COST 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "V 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "XOM 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "VOO 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "QQQ 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "QQQM 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "SPY 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "SCHD 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "JEPQ 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "SGOV 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "VTI 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "SOXX 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "SMH 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "GLD 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
-    "TLT 종가 미갱신: Stooq: HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=",
+    "AAPL 종가 미갱신: Yahoo: PROVIDER_RATE_LIMIT_429: https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=6mo&; Stooq: Stooq CSV unavailable; provider may require an API key or deny CI traffic",
+    "MSFT 종가 미갱신: all providers unavailable",
+    "NVDA 종가 미갱신: all providers unavailable",
+    "GOOGL 종가 미갱신: all providers unavailable",
+    "AMZN 종가 미갱신: all providers unavailable",
+    "META 종가 미갱신: all providers unavailable",
+    "TSLA 종가 미갱신: all providers unavailable",
+    "AVGO 종가 미갱신: all providers unavailable",
+    "AMD 종가 미갱신: all providers unavailable",
+    "MU 종가 미갱신: all providers unavailable",
+    "TSM 종가 미갱신: all providers unavailable",
+    "ASML 종가 미갱신: all providers unavailable",
+    "PLTR 종가 미갱신: all providers unavailable",
+    "BRK-B 종가 미갱신: all providers unavailable",
+    "JPM 종가 미갱신: all providers unavailable",
+    "KO 종가 미갱신: all providers unavailable",
+    "PEP 종가 미갱신: all providers unavailable",
+    "JNJ 종가 미갱신: all providers unavailable",
+    "WMT 종가 미갱신: all providers unavailable",
+    "COST 종가 미갱신: all providers unavailable",
+    "V 종가 미갱신: all providers unavailable",
+    "XOM 종가 미갱신: all providers unavailable",
+    "VOO 종가 미갱신: all providers unavailable",
+    "QQQ 종가 미갱신: all providers unavailable",
+    "QQQM 종가 미갱신: all providers unavailable",
+    "SPY 종가 미갱신: all providers unavailable",
+    "SCHD 종가 미갱신: all providers unavailable",
+    "JEPQ 종가 미갱신: all providers unavailable",
+    "SGOV 종가 미갱신: all providers unavailable",
+    "VTI 종가 미갱신: all providers unavailable",
+    "SOXX 종가 미갱신: all providers unavailable",
+    "SMH 종가 미갱신: all providers unavailable",
+    "GLD 종가 미갱신: all providers unavailable",
+    "TLT 종가 미갱신: all providers unavailable",
     "^KS11 종가 미갱신: all providers unavailable",
     "^KQ11 종가 미갱신: all providers unavailable",
     "^GSPC 종가 미갱신: all providers unavailable",
