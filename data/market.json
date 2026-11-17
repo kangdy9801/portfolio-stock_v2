@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-11-16T19:49:53+00:00",
+  "updated_at": "2026-11-17T04:45:25+00:00",
   "fear_greed": {
-    "score": 30.28,
+    "score": 31.02,
     "rating": "fear",
-    "timestamp": "2026-11-16T19:49:07+00:00",
+    "timestamp": "2026-11-16T23:59:54+00:00",
     "previous_close": 38.6,
     "previous_1_week": 31.51,
     "previous_1_month": 18.21,
     "previous_1_year": 22.06,
     "indicators": {
       "market_momentum_sp500": {
-        "score": 9.0,
+        "score": 9.2,
         "rating": "extreme fear"
       },
       "stock_price_strength": {
-        "score": 41.8,
+        "score": 41.4,
         "rating": "fear"
       },
       "stock_price_breadth": {
@@ -22,19 +22,19 @@
         "rating": "neutral"
       },
       "put_call_options": {
-        "score": 19.8,
+        "score": 19.6,
         "rating": "extreme fear"
       },
       "junk_bond_demand": {
-        "score": 53.2,
+        "score": 52.4,
         "rating": "neutral"
       },
       "market_volatility_vix": {
-        "score": 27.78,
+        "score": 33.33,
         "rating": "fear"
       },
       "safe_haven_demand": {
-        "score": 10.8,
+        "score": 11.8,
         "rating": "extreme fear"
       }
     },
@@ -1037,15 +1037,15 @@
       },
       {
         "date": "2026-11-16",
-        "score": 30.28
+        "score": 31.02
       }
     ],
     "source_url": "https://edition.cnn.com/markets/fear-and-greed",
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1335.95,
-    "quote_date": "2026-11-16",
+    "rate": 1336.5,
+    "quote_date": "2026-11-17",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
   "indices": {},
@@ -9529,12 +9529,12 @@
       }
     },
     "042660.KS": {
-      "price": 46600.0,
+      "price": 46550.0,
       "quote_date": "2026-11-16",
       "currency": "KRW",
       "previous_close": 48900.0,
-      "change": -2300.0,
-      "change_pct": -4.7035,
+      "change": -2350.0,
+      "change_pct": -4.8057,
       "history": [
         {
           "date": "2026-08-11",
@@ -9794,7 +9794,7 @@
         },
         {
           "date": "2026-11-16",
-          "close": 46600.0
+          "close": 46550.0
         }
       ],
       "high_52w": null,
