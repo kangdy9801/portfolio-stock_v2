@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-11-19T03:49:07+00:00",
+  "updated_at": "2026-11-19T18:37:54+00:00",
   "fear_greed": {
-    "score": 24.61,
+    "score": 20.03,
     "rating": "extreme fear",
-    "timestamp": "2026-11-18T23:59:50+00:00",
-    "previous_close": 25.23,
-    "previous_1_week": 35.94,
-    "previous_1_month": 18.21,
-    "previous_1_year": 8.9,
+    "timestamp": "2026-11-19T18:33:56+00:00",
+    "previous_close": 24.61,
+    "previous_1_week": 40.34,
+    "previous_1_month": 19.51,
+    "previous_1_year": 7.86,
     "indicators": {
       "market_momentum_sp500": {
-        "score": 4.8,
+        "score": 1.8,
         "rating": "extreme fear"
       },
       "stock_price_strength": {
-        "score": 34.0,
+        "score": 31.4,
         "rating": "fear"
       },
       "stock_price_breadth": {
-        "score": 40.2,
+        "score": 31.4,
         "rating": "fear"
       },
       "put_call_options": {
-        "score": 10.2,
+        "score": 11.2,
         "rating": "extreme fear"
       },
       "junk_bond_demand": {
-        "score": 41.4,
+        "score": 39.6,
         "rating": "fear"
       },
       "market_volatility_vix": {
-        "score": 29.05,
-        "rating": "fear"
+        "score": 14.0,
+        "rating": "extreme fear"
       },
       "safe_haven_demand": {
-        "score": 12.6,
+        "score": 10.8,
         "rating": "extreme fear"
       }
     },
@@ -1037,31 +1037,31 @@
       },
       {
         "date": "2026-11-18",
-        "score": 24.61
+        "score": 29.89
+      },
+      {
+        "date": "2026-11-19",
+        "score": 20.03
       }
     ],
     "source_url": "https://edition.cnn.com/markets/fear-and-greed",
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1333.26,
+    "rate": 1331.23,
     "quote_date": "2026-11-19",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
   "indices": {},
   "stocks": {
     "005930.KS": {
-      "price": 196400.0,
-      "quote_date": "2026-11-18",
+      "price": 197400.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 189800.0,
-      "change": 6600.0,
-      "change_pct": 3.4773,
+      "previous_close": 196400.0,
+      "change": 1000.0,
+      "change_pct": 0.5092,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 268000.0
-        },
         {
           "date": "2026-08-14",
           "close": 274500.0
@@ -1317,6 +1317,10 @@
         {
           "date": "2026-11-18",
           "close": 196400.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 197400.0
         }
       ],
       "high_52w": null,
@@ -1365,17 +1369,13 @@
       }
     },
     "000660.KS": {
-      "price": 1164000.0,
-      "quote_date": "2026-11-18",
+      "price": 1190000.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 1100000.0,
-      "change": 64000.0,
-      "change_pct": 5.8182,
+      "previous_close": 1164000.0,
+      "change": 26000.0,
+      "change_pct": 2.2337,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 1593000.0
-        },
         {
           "date": "2026-08-14",
           "close": 1645000.0
@@ -1631,6 +1631,10 @@
         {
           "date": "2026-11-18",
           "close": 1164000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 1190000.0
         }
       ],
       "high_52w": null,
@@ -1679,17 +1683,13 @@
       }
     },
     "000990.KS": {
-      "price": 75800.0,
-      "quote_date": "2026-11-18",
+      "price": 76000.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 72000.0,
-      "change": 3800.0,
-      "change_pct": 5.2778,
+      "previous_close": 75800.0,
+      "change": 200.0,
+      "change_pct": 0.2639,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 99700.0
-        },
         {
           "date": "2026-08-14",
           "close": 102800.0
@@ -1945,6 +1945,10 @@
         {
           "date": "2026-11-18",
           "close": 75800.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 76000.0
         }
       ],
       "high_52w": null,
@@ -1993,17 +1997,13 @@
       }
     },
     "042700.KS": {
-      "price": 169800.0,
-      "quote_date": "2026-11-18",
+      "price": 171900.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 164400.0,
-      "change": 5400.0,
-      "change_pct": 3.2847,
+      "previous_close": 169800.0,
+      "change": 2100.0,
+      "change_pct": 1.2367,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 226000.0
-        },
         {
           "date": "2026-08-14",
           "close": 229000.0
@@ -2259,6 +2259,10 @@
         {
           "date": "2026-11-18",
           "close": 169800.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 171900.0
         }
       ],
       "high_52w": null,
@@ -2307,17 +2311,13 @@
       }
     },
     "035420.KS": {
-      "price": 171700.0,
-      "quote_date": "2026-11-18",
+      "price": 169200.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 168600.0,
-      "change": 3100.0,
-      "change_pct": 1.8387,
+      "previous_close": 171700.0,
+      "change": -2500.0,
+      "change_pct": -1.456,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 226500.0
-        },
         {
           "date": "2026-08-14",
           "close": 228000.0
@@ -2573,6 +2573,10 @@
         {
           "date": "2026-11-18",
           "close": 171700.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 169200.0
         }
       ],
       "high_52w": null,
@@ -2621,17 +2625,13 @@
       }
     },
     "035720.KS": {
-      "price": 32000.0,
-      "quote_date": "2026-11-18",
+      "price": 31900.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 31550.0,
-      "change": 450.0,
-      "change_pct": 1.4263,
+      "previous_close": 32000.0,
+      "change": -100.0,
+      "change_pct": -0.3125,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 40100.0
-        },
         {
           "date": "2026-08-14",
           "close": 40000.0
@@ -2887,6 +2887,10 @@
         {
           "date": "2026-11-18",
           "close": 32000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 31900.0
         }
       ],
       "high_52w": null,
@@ -2935,17 +2939,13 @@
       }
     },
     "005380.KS": {
-      "price": 268000.0,
-      "quote_date": "2026-11-18",
+      "price": 267500.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 257000.0,
-      "change": 11000.0,
-      "change_pct": 4.2802,
+      "previous_close": 268000.0,
+      "change": -500.0,
+      "change_pct": -0.1866,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 418500.0
-        },
         {
           "date": "2026-08-14",
           "close": 453000.0
@@ -3201,6 +3201,10 @@
         {
           "date": "2026-11-18",
           "close": 268000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 267500.0
         }
       ],
       "high_52w": null,
@@ -3249,17 +3253,13 @@
       }
     },
     "000270.KS": {
-      "price": 92500.0,
-      "quote_date": "2026-11-18",
+      "price": 91700.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 91700.0,
-      "change": 800.0,
-      "change_pct": 0.8724,
+      "previous_close": 92500.0,
+      "change": -800.0,
+      "change_pct": -0.8649,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 137400.0
-        },
         {
           "date": "2026-08-14",
           "close": 141700.0
@@ -3515,6 +3515,10 @@
         {
           "date": "2026-11-18",
           "close": 92500.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 91700.0
         }
       ],
       "high_52w": null,
@@ -3563,17 +3567,13 @@
       }
     },
     "012330.KS": {
-      "price": 357500.0,
-      "quote_date": "2026-11-18",
+      "price": 343000.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 343000.0,
-      "change": 14500.0,
-      "change_pct": 4.2274,
+      "previous_close": 357500.0,
+      "change": -14500.0,
+      "change_pct": -4.0559,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 511000.0
-        },
         {
           "date": "2026-08-14",
           "close": 547000.0
@@ -3829,6 +3829,10 @@
         {
           "date": "2026-11-18",
           "close": 357500.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 343000.0
         }
       ],
       "high_52w": null,
@@ -3877,17 +3881,13 @@
       }
     },
     "373220.KS": {
-      "price": 307000.0,
-      "quote_date": "2026-11-18",
+      "price": 303500.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 304500.0,
-      "change": 2500.0,
-      "change_pct": 0.821,
+      "previous_close": 307000.0,
+      "change": -3500.0,
+      "change_pct": -1.1401,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 365500.0
-        },
         {
           "date": "2026-08-14",
           "close": 369500.0
@@ -4143,6 +4143,10 @@
         {
           "date": "2026-11-18",
           "close": 307000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 303500.0
         }
       ],
       "high_52w": null,
@@ -4191,17 +4195,13 @@
       }
     },
     "006400.KS": {
-      "price": 440500.0,
-      "quote_date": "2026-11-18",
+      "price": 430000.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 441000.0,
-      "change": -500.0,
-      "change_pct": -0.1134,
+      "previous_close": 440500.0,
+      "change": -10500.0,
+      "change_pct": -2.3837,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 487000.0
-        },
         {
           "date": "2026-08-14",
           "close": 516000.0
@@ -4457,6 +4457,10 @@
         {
           "date": "2026-11-18",
           "close": 440500.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 430000.0
         }
       ],
       "high_52w": null,
@@ -4505,17 +4509,13 @@
       }
     },
     "051910.KS": {
-      "price": 210500.0,
-      "quote_date": "2026-11-18",
+      "price": 210000.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 214500.0,
-      "change": -4000.0,
-      "change_pct": -1.8648,
+      "previous_close": 210500.0,
+      "change": -500.0,
+      "change_pct": -0.2375,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 275500.0
-        },
         {
           "date": "2026-08-14",
           "close": 280500.0
@@ -4771,6 +4771,10 @@
         {
           "date": "2026-11-18",
           "close": 210500.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 210000.0
         }
       ],
       "high_52w": null,
@@ -4819,17 +4823,13 @@
       }
     },
     "247540.KQ": {
-      "price": 86600.0,
-      "quote_date": "2026-11-18",
+      "price": 86900.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 84700.0,
-      "change": 1900.0,
-      "change_pct": 2.2432,
+      "previous_close": 86600.0,
+      "change": 300.0,
+      "change_pct": 0.3464,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 112697.0
-        },
         {
           "date": "2026-08-14",
           "close": 114863.0
@@ -5085,6 +5085,10 @@
         {
           "date": "2026-11-18",
           "close": 86600.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 86900.0
         }
       ],
       "high_52w": null,
@@ -5133,17 +5137,13 @@
       }
     },
     "086520.KQ": {
-      "price": 69400.0,
-      "quote_date": "2026-11-18",
+      "price": 69300.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 67400.0,
-      "change": 2000.0,
-      "change_pct": 2.9674,
+      "previous_close": 69400.0,
+      "change": -100.0,
+      "change_pct": -0.1441,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 92100.0
-        },
         {
           "date": "2026-08-14",
           "close": 93600.0
@@ -5399,6 +5399,10 @@
         {
           "date": "2026-11-18",
           "close": 69400.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 69300.0
         }
       ],
       "high_52w": null,
@@ -5447,17 +5451,13 @@
       }
     },
     "207940.KS": {
-      "price": 1378000.0,
-      "quote_date": "2026-11-18",
+      "price": 1371000.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 1400000.0,
-      "change": -22000.0,
-      "change_pct": -1.5714,
+      "previous_close": 1378000.0,
+      "change": -7000.0,
+      "change_pct": -0.508,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 1551960.0
-        },
         {
           "date": "2026-08-14",
           "close": 1536083.0
@@ -5713,6 +5713,10 @@
         {
           "date": "2026-11-18",
           "close": 1378000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 1371000.0
         }
       ],
       "high_52w": null,
@@ -5761,17 +5765,13 @@
       }
     },
     "068270.KS": {
-      "price": 207500.0,
-      "quote_date": "2026-11-18",
+      "price": 214500.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 211000.0,
-      "change": -3500.0,
-      "change_pct": -1.6588,
+      "previous_close": 207500.0,
+      "change": 7000.0,
+      "change_pct": 3.3735,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 202000.0
-        },
         {
           "date": "2026-08-14",
           "close": 201000.0
@@ -6027,6 +6027,10 @@
         {
           "date": "2026-11-18",
           "close": 207500.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 214500.0
         }
       ],
       "high_52w": null,
@@ -6075,17 +6079,13 @@
       }
     },
     "000100.KS": {
-      "price": 80800.0,
-      "quote_date": "2026-11-18",
+      "price": 80900.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 83100.0,
-      "change": -2300.0,
-      "change_pct": -2.7677,
+      "previous_close": 80800.0,
+      "change": 100.0,
+      "change_pct": 0.1238,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 82500.0
-        },
         {
           "date": "2026-08-14",
           "close": 83700.0
@@ -6341,6 +6341,10 @@
         {
           "date": "2026-11-18",
           "close": 80800.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 80900.0
         }
       ],
       "high_52w": null,
@@ -6389,17 +6393,13 @@
       }
     },
     "105560.KS": {
-      "price": 156200.0,
-      "quote_date": "2026-11-18",
+      "price": 154500.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 156100.0,
-      "change": 100.0,
-      "change_pct": 0.0641,
+      "previous_close": 156200.0,
+      "change": -1700.0,
+      "change_pct": -1.0883,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 168100.0
-        },
         {
           "date": "2026-08-14",
           "close": 168500.0
@@ -6655,6 +6655,10 @@
         {
           "date": "2026-11-18",
           "close": 156200.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 154500.0
         }
       ],
       "high_52w": null,
@@ -6703,17 +6707,13 @@
       }
     },
     "055550.KS": {
-      "price": 87200.0,
-      "quote_date": "2026-11-18",
+      "price": 85900.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 87300.0,
-      "change": -100.0,
-      "change_pct": -0.1145,
+      "previous_close": 87200.0,
+      "change": -1300.0,
+      "change_pct": -1.4908,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 106600.0
-        },
         {
           "date": "2026-08-14",
           "close": 107400.0
@@ -6969,6 +6969,10 @@
         {
           "date": "2026-11-18",
           "close": 87200.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 85900.0
         }
       ],
       "high_52w": null,
@@ -7018,16 +7022,12 @@
     },
     "086790.KS": {
       "price": 124000.0,
-      "quote_date": "2026-11-18",
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 124400.0,
-      "change": -400.0,
-      "change_pct": -0.3215,
+      "previous_close": 124000.0,
+      "change": 0.0,
+      "change_pct": 0.0,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 131000.0
-        },
         {
           "date": "2026-08-14",
           "close": 133000.0
@@ -7283,6 +7283,10 @@
         {
           "date": "2026-11-18",
           "close": 124000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 124000.0
         }
       ],
       "high_52w": null,
@@ -7331,17 +7335,13 @@
       }
     },
     "316140.KS": {
-      "price": 32150.0,
-      "quote_date": "2026-11-18",
+      "price": 31850.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 32450.0,
+      "previous_close": 32150.0,
       "change": -300.0,
-      "change_pct": -0.9245,
+      "change_pct": -0.9331,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 33300.0
-        },
         {
           "date": "2026-08-14",
           "close": 33700.0
@@ -7597,6 +7597,10 @@
         {
           "date": "2026-11-18",
           "close": 32150.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 31850.0
         }
       ],
       "high_52w": null,
@@ -7645,17 +7649,13 @@
       }
     },
     "017670.KS": {
-      "price": 83300.0,
-      "quote_date": "2026-11-18",
+      "price": 82200.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 82900.0,
-      "change": 400.0,
-      "change_pct": 0.4825,
+      "previous_close": 83300.0,
+      "change": -1100.0,
+      "change_pct": -1.3205,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 91100.0
-        },
         {
           "date": "2026-08-14",
           "close": 100500.0
@@ -7911,6 +7911,10 @@
         {
           "date": "2026-11-18",
           "close": 83300.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 82200.0
         }
       ],
       "high_52w": null,
@@ -7959,17 +7963,13 @@
       }
     },
     "030200.KS": {
-      "price": 49950.0,
-      "quote_date": "2026-11-18",
+      "price": 47700.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 50900.0,
-      "change": -950.0,
-      "change_pct": -1.8664,
+      "previous_close": 49950.0,
+      "change": -2250.0,
+      "change_pct": -4.5045,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 52500.0
-        },
         {
           "date": "2026-08-14",
           "close": 53400.0
@@ -8225,6 +8225,10 @@
         {
           "date": "2026-11-18",
           "close": 49950.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 47700.0
         }
       ],
       "high_52w": null,
@@ -8273,17 +8277,13 @@
       }
     },
     "015760.KS": {
-      "price": 25250.0,
-      "quote_date": "2026-11-18",
+      "price": 25350.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 24850.0,
-      "change": 400.0,
-      "change_pct": 1.6097,
+      "previous_close": 25250.0,
+      "change": 100.0,
+      "change_pct": 0.396,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 33100.0
-        },
         {
           "date": "2026-08-14",
           "close": 33250.0
@@ -8539,6 +8539,10 @@
         {
           "date": "2026-11-18",
           "close": 25250.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 25350.0
         }
       ],
       "high_52w": null,
@@ -8587,17 +8591,13 @@
       }
     },
     "034020.KS": {
-      "price": 43400.0,
-      "quote_date": "2026-11-18",
+      "price": 43850.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 42150.0,
-      "change": 1250.0,
-      "change_pct": 2.9656,
+      "previous_close": 43400.0,
+      "change": 450.0,
+      "change_pct": 1.0369,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 80900.0
-        },
         {
           "date": "2026-08-14",
           "close": 82600.0
@@ -8853,6 +8853,10 @@
         {
           "date": "2026-11-18",
           "close": 43400.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 43850.0
         }
       ],
       "high_52w": null,
@@ -8901,17 +8905,13 @@
       }
     },
     "009540.KS": {
-      "price": 231000.0,
-      "quote_date": "2026-11-18",
+      "price": 231500.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 230000.0,
-      "change": 1000.0,
-      "change_pct": 0.4348,
+      "previous_close": 231000.0,
+      "change": 500.0,
+      "change_pct": 0.2165,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 371500.0
-        },
         {
           "date": "2026-08-14",
           "close": 386000.0
@@ -9167,6 +9167,10 @@
         {
           "date": "2026-11-18",
           "close": 231000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 231500.0
         }
       ],
       "high_52w": null,
@@ -9215,17 +9219,13 @@
       }
     },
     "010140.KS": {
-      "price": 15830.0,
-      "quote_date": "2026-11-18",
+      "price": 16090.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 15840.0,
-      "change": -10.0,
-      "change_pct": -0.0631,
+      "previous_close": 15830.0,
+      "change": 260.0,
+      "change_pct": 1.6425,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 22000.0
-        },
         {
           "date": "2026-08-14",
           "close": 22300.0
@@ -9481,6 +9481,10 @@
         {
           "date": "2026-11-18",
           "close": 15830.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 16090.0
         }
       ],
       "high_52w": null,
@@ -9529,17 +9533,13 @@
       }
     },
     "042660.KS": {
-      "price": 45050.0,
-      "quote_date": "2026-11-18",
+      "price": 45100.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 44500.0,
-      "change": 550.0,
-      "change_pct": 1.236,
+      "previous_close": 45050.0,
+      "change": 50.0,
+      "change_pct": 0.111,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 90700.0
-        },
         {
           "date": "2026-08-14",
           "close": 95800.0
@@ -9795,6 +9795,10 @@
         {
           "date": "2026-11-18",
           "close": 45050.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 45100.0
         }
       ],
       "high_52w": null,
@@ -9843,17 +9847,13 @@
       }
     },
     "012450.KS": {
-      "price": 633000.0,
-      "quote_date": "2026-11-18",
+      "price": 630000.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 618000.0,
-      "change": 15000.0,
-      "change_pct": 2.4272,
+      "previous_close": 633000.0,
+      "change": -3000.0,
+      "change_pct": -0.4739,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 1185000.0
-        },
         {
           "date": "2026-08-14",
           "close": 1160000.0
@@ -10109,6 +10109,10 @@
         {
           "date": "2026-11-18",
           "close": 633000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 630000.0
         }
       ],
       "high_52w": null,
@@ -10157,17 +10161,13 @@
       }
     },
     "005490.KS": {
-      "price": 265000.0,
-      "quote_date": "2026-11-18",
+      "price": 261500.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 260500.0,
-      "change": 4500.0,
-      "change_pct": 1.7274,
+      "previous_close": 265000.0,
+      "change": -3500.0,
+      "change_pct": -1.3208,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 325500.0
-        },
         {
           "date": "2026-08-14",
           "close": 334000.0
@@ -10423,6 +10423,10 @@
         {
           "date": "2026-11-18",
           "close": 265000.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 261500.0
         }
       ],
       "high_52w": null,
@@ -10471,17 +10475,13 @@
       }
     },
     "066570.KS": {
-      "price": 137400.0,
-      "quote_date": "2026-11-18",
+      "price": 136800.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 128600.0,
-      "change": 8800.0,
-      "change_pct": 6.8429,
+      "previous_close": 137400.0,
+      "change": -600.0,
+      "change_pct": -0.4367,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 206500.0
-        },
         {
           "date": "2026-08-14",
           "close": 215000.0
@@ -10737,6 +10737,10 @@
         {
           "date": "2026-11-18",
           "close": 137400.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 136800.0
         }
       ],
       "high_52w": null,
@@ -10785,17 +10789,13 @@
       }
     },
     "352820.KS": {
-      "price": 178600.0,
-      "quote_date": "2026-11-18",
+      "price": 187200.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 153800.0,
-      "change": 24800.0,
-      "change_pct": 16.1248,
+      "previous_close": 178600.0,
+      "change": 8600.0,
+      "change_pct": 4.8152,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 176400.0
-        },
         {
           "date": "2026-08-14",
           "close": 179400.0
@@ -11051,6 +11051,10 @@
         {
           "date": "2026-11-18",
           "close": 178600.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 187200.0
         }
       ],
       "high_52w": null,
@@ -11099,17 +11103,13 @@
       }
     },
     "035900.KQ": {
-      "price": 52500.0,
-      "quote_date": "2026-11-18",
+      "price": 47100.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 42650.0,
-      "change": 9850.0,
-      "change_pct": 23.095,
+      "previous_close": 52500.0,
+      "change": -5400.0,
+      "change_pct": -10.2857,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 40850.0
-        },
         {
           "date": "2026-08-14",
           "close": 41050.0
@@ -11365,6 +11365,10 @@
         {
           "date": "2026-11-18",
           "close": 52500.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 47100.0
         }
       ],
       "high_52w": null,
@@ -11413,17 +11417,13 @@
       }
     },
     "323410.KS": {
-      "price": 21050.0,
-      "quote_date": "2026-11-18",
+      "price": 21400.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 20950.0,
-      "change": 100.0,
-      "change_pct": 0.4773,
+      "previous_close": 21050.0,
+      "change": 350.0,
+      "change_pct": 1.6627,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 22150.0
-        },
         {
           "date": "2026-08-14",
           "close": 22200.0
@@ -11679,6 +11679,10 @@
         {
           "date": "2026-11-18",
           "close": 21050.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 21400.0
         }
       ],
       "high_52w": null,
@@ -11727,17 +11731,13 @@
       }
     },
     "069500.KS": {
-      "price": 79400.0,
-      "quote_date": "2026-11-18",
+      "price": 80630.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 77780.0,
-      "change": 1620.0,
-      "change_pct": 2.0828,
+      "previous_close": 79400.0,
+      "change": 1230.0,
+      "change_pct": 1.5491,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 107118.0
-        },
         {
           "date": "2026-08-14",
           "close": 109904.0
@@ -11993,6 +11993,10 @@
         {
           "date": "2026-11-18",
           "close": 79400.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 80630.0
         }
       ],
       "high_52w": null,
@@ -12001,17 +12005,13 @@
       "fundamentals": null
     },
     "360750.KS": {
-      "price": 24305.0,
-      "quote_date": "2026-11-18",
+      "price": 24400.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 24555.0,
-      "change": -250.0,
-      "change_pct": -1.0181,
+      "previous_close": 24305.0,
+      "change": 95.0,
+      "change_pct": 0.3909,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 27216.0
-        },
         {
           "date": "2026-08-14",
           "close": 27345.0
@@ -12267,6 +12267,10 @@
         {
           "date": "2026-11-18",
           "close": 24305.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 24400.0
         }
       ],
       "high_52w": null,
@@ -12275,17 +12279,13 @@
       "fundamentals": null
     },
     "379800.KS": {
-      "price": 22030.0,
-      "quote_date": "2026-11-18",
+      "price": 22120.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 22265.0,
-      "change": -235.0,
-      "change_pct": -1.0555,
+      "previous_close": 22030.0,
+      "change": 90.0,
+      "change_pct": 0.4085,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 24677.0
-        },
         {
           "date": "2026-08-14",
           "close": 24787.0
@@ -12541,6 +12541,10 @@
         {
           "date": "2026-11-18",
           "close": 22030.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 22120.0
         }
       ],
       "high_52w": null,
@@ -12549,17 +12553,13 @@
       "fundamentals": null
     },
     "133690.KS": {
-      "price": 160075.0,
-      "quote_date": "2026-11-18",
+      "price": 162425.0,
+      "quote_date": "2026-11-19",
       "currency": "KRW",
-      "previous_close": 160885.0,
-      "change": -810.0,
-      "change_pct": -0.5035,
+      "previous_close": 160075.0,
+      "change": 2350.0,
+      "change_pct": 1.4681,
       "history": [
-        {
-          "date": "2026-08-13",
-          "close": 186916.0
-        },
         {
           "date": "2026-08-14",
           "close": 188339.0
@@ -12815,6 +12815,10 @@
         {
           "date": "2026-11-18",
           "close": 160075.0
+        },
+        {
+          "date": "2026-11-19",
+          "close": 162425.0
         }
       ],
       "high_52w": null,
