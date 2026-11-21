@@ -1,24 +1,24 @@
 {
-  "updated_at": "2026-11-20T17:59:05+00:00",
+  "updated_at": "2026-11-21T03:26:12+00:00",
   "fear_greed": {
-    "score": 11.18,
+    "score": 9.67,
     "rating": "extreme fear",
-    "timestamp": "2026-11-20T17:55:34+00:00",
+    "timestamp": "2026-11-20T23:59:52+00:00",
     "previous_close": 18.68,
     "previous_1_week": 37.37,
     "previous_1_month": 28.74,
     "previous_1_year": 5.17,
     "indicators": {
       "market_momentum_sp500": {
-        "score": 0.6,
+        "score": 0.2,
         "rating": "extreme fear"
       },
       "stock_price_strength": {
-        "score": 29.2,
+        "score": 27.2,
         "rating": "fear"
       },
       "stock_price_breadth": {
-        "score": 20.6,
+        "score": 20.0,
         "rating": "extreme fear"
       },
       "put_call_options": {
@@ -26,23 +26,19 @@
         "rating": "extreme fear"
       },
       "junk_bond_demand": {
-        "score": 21.2,
+        "score": 16.2,
         "rating": "extreme fear"
       },
       "market_volatility_vix": {
-        "score": 3.29,
+        "score": 1.32,
         "rating": "extreme fear"
       },
       "safe_haven_demand": {
-        "score": 1.4,
+        "score": 0.8,
         "rating": "extreme fear"
       }
     },
     "history": [
-      {
-        "date": "2025-11-20",
-        "score": 5.17
-      },
       {
         "date": "2025-11-21",
         "score": 5.66
@@ -1041,14 +1037,14 @@
       },
       {
         "date": "2026-11-20",
-        "score": 11.18
+        "score": 9.67
       }
     ],
     "source_url": "https://edition.cnn.com/markets/fear-and-greed",
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1334.05,
+    "rate": 1334.29,
     "quote_date": "2026-11-20",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
@@ -1328,19 +1324,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 8.99,
-          "pb": 2.33,
-          "forward_pe": 4.39,
-          "eps": 22292.0,
-          "bps": 86052.0,
+          "pe": 5.69,
+          "pb": 1.95,
+          "forward_pe": 3.97,
+          "eps": 31809.0,
+          "bps": 92903.0,
           "roe": 0.1085,
           "profit_margin": 0.13550959380514555,
           "revenue": 333605900000000.0,
           "net_income": 45206800000000.0,
           "operating_margin": 0.13069642952957367,
           "operating_income": 43601100000000.0,
-          "market_cap": 1172178900000000.0,
-          "dividend_yield": 0.0083
+          "market_cap": 1057591800000000.0,
+          "dividend_yield": 0.0092
         },
         "annual_income": [
           {
@@ -1363,7 +1359,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:22:58+00:00",
+        "updated_at": "2026-11-21T03:26:14+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/005930/finance"
       }
@@ -1642,19 +1638,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 5.19,
-          "pb": 3.15,
-          "forward_pe": 3.28,
-          "eps": 224313.0,
-          "bps": 368998.0,
+          "pe": 4.2,
+          "pb": 2.54,
+          "forward_pe": 3.09,
+          "eps": 261625.0,
+          "bps": 433826.0,
           "roe": 0.4415,
           "profit_margin": 0.4420932466053916,
           "revenue": 97146700000000.0,
           "net_income": 42947900000000.0,
           "operating_margin": 0.48592798314301977,
           "operating_income": 47206300000000.0,
-          "market_cap": 850293100000000.0,
-          "dividend_yield": 0.0026
+          "market_cap": 777479000000000.0,
+          "dividend_yield": 0.0027
         },
         "annual_income": [
           {
@@ -1677,7 +1673,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:00+00:00",
+        "updated_at": "2026-11-21T03:26:16+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/000660/finance"
       }
@@ -1956,9 +1952,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 9.66,
-          "pb": 1.35,
-          "forward_pe": 9.8,
+          "pe": 8.53,
+          "pb": 1.2,
+          "forward_pe": 8.65,
           "eps": 7886.0,
           "bps": 56254.0,
           "roe": 0.1252,
@@ -1967,8 +1963,8 @@
           "net_income": 252600000000.0,
           "operating_margin": 0.19846836530203263,
           "operating_income": 277300000000.0,
-          "market_cap": 3315000000000.0,
-          "dividend_yield": 0.0106
+          "market_cap": 2927900000000.0,
+          "dividend_yield": 0.012
         },
         "annual_income": [
           {
@@ -1991,7 +1987,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:01+00:00",
+        "updated_at": "2026-11-21T03:26:18+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/000990/finance"
       }
@@ -2270,19 +2266,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 74.98,
-          "pb": 22.19,
+          "pe": 75.54,
+          "pb": 18.4,
           "forward_pe": null,
-          "eps": 2330.0,
-          "bps": 7874.0,
+          "eps": 2007.0,
+          "bps": 8240.0,
           "roe": 0.34759999999999996,
           "profit_margin": 0.37107681636899603,
           "revenue": 576700000000.0,
           "net_income": 214000000000.0,
           "operating_margin": 0.4359285590428299,
           "operating_income": 251400000000.0,
-          "market_cap": 16651000000000.0,
-          "dividend_yield": 0.0046
+          "market_cap": 14449300000000.0,
+          "dividend_yield": 0.0053
         },
         "annual_income": [
           {
@@ -2305,7 +2301,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:03+00:00",
+        "updated_at": "2026-11-21T03:26:20+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/042700/finance"
       }
@@ -2584,19 +2580,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 13.43,
-          "pb": 0.88,
-          "forward_pe": 14.76,
-          "eps": 12885.0,
-          "bps": 197188.0,
+          "pe": 14.79,
+          "pb": 0.87,
+          "forward_pe": 13.95,
+          "eps": 10869.0,
+          "bps": 183891.0,
           "roe": 0.0736,
           "profit_margin": 0.15111757374324886,
           "revenue": 12035000000000.0,
           "net_income": 1818700000000.0,
           "operating_margin": 0.1834732031574574,
           "operating_income": 2208100000000.0,
-          "market_cap": 26317900000000.0,
-          "dividend_yield": 0.0152
+          "market_cap": 24461900000000.0,
+          "dividend_yield": 0.016399999999999998
         },
         "annual_income": [
           {
@@ -2619,7 +2615,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:05+00:00",
+        "updated_at": "2026-11-21T03:26:21+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/035420/finance"
       }
@@ -2898,19 +2894,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 41.25,
-          "pb": 1.21,
-          "forward_pe": 27.54,
-          "eps": 783.0,
-          "bps": 26629.0,
+          "pe": 35.64,
+          "pb": 1.15,
+          "forward_pe": 26.33,
+          "eps": 860.0,
+          "bps": 26712.0,
           "roe": 0.045899999999999996,
           "profit_margin": 0.0639577236976948,
           "revenue": 8099100000000.0,
           "net_income": 518000000000.0,
           "operating_margin": 0.09038041263844131,
           "operating_income": 732000000000.0,
-          "market_cap": 14308900000000.0,
-          "dividend_yield": 0.0023
+          "market_cap": 13578000000000.0,
+          "dividend_yield": 0.0025
         },
         "annual_income": [
           {
@@ -2933,7 +2929,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:06+00:00",
+        "updated_at": "2026-11-21T03:26:23+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/035720/finance"
       }
@@ -3212,9 +3208,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 8.67,
-          "pb": 0.57,
-          "forward_pe": 7.95,
+          "pe": 8.24,
+          "pb": 0.54,
+          "forward_pe": 7.57,
           "eps": 30697.0,
           "bps": 467197.0,
           "roe": 0.08410000000000001,
@@ -3223,8 +3219,8 @@
           "net_income": 10364800000000.0,
           "operating_margin": 0.06157112982505121,
           "operating_income": 11467900000000.0,
-          "market_cap": 54122100000000.0,
-          "dividend_yield": 0.037599999999999995
+          "market_cap": 51477000000000.0,
+          "dividend_yield": 0.0395
         },
         "annual_income": [
           {
@@ -3247,7 +3243,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:08+00:00",
+        "updated_at": "2026-11-21T03:26:25+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/005380/finance"
       }
@@ -3526,9 +3522,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 5.27,
-          "pb": 0.57,
-          "forward_pe": 5.33,
+          "pe": 4.85,
+          "pb": 0.53,
+          "forward_pe": 4.91,
           "eps": 18004.0,
           "bps": 166439.0,
           "roe": 0.1292,
@@ -3537,8 +3533,8 @@
           "net_income": 7554200000000.0,
           "operating_margin": 0.07953415471579425,
           "operating_income": 9078100000000.0,
-          "market_cap": 37050200000000.0,
-          "dividend_yield": 0.0717
+          "market_cap": 34122100000000.0,
+          "dividend_yield": 0.07780000000000001
         },
         "annual_income": [
           {
@@ -3561,7 +3557,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:09+00:00",
+        "updated_at": "2026-11-21T03:26:27+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/000270/finance"
       }
@@ -3840,19 +3836,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 8.97,
-          "pb": 0.61,
-          "forward_pe": 8.87,
-          "eps": 39873.0,
-          "bps": 583823.0,
+          "pe": 8.85,
+          "pb": 0.57,
+          "forward_pe": 7.99,
+          "eps": 36399.0,
+          "bps": 560786.0,
           "roe": 0.0768,
           "profit_margin": 0.059960960828298,
           "revenue": 61118100000000.0,
           "net_income": 3664700000000.0,
           "operating_margin": 0.05493462656725258,
           "operating_income": 3357500000000.0,
-          "market_cap": 32110900000000.0,
-          "dividend_yield": 0.0182
+          "market_cap": 28922200000000.0,
+          "dividend_yield": 0.0202
         },
         "annual_income": [
           {
@@ -3875,7 +3871,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:11+00:00",
+        "updated_at": "2026-11-21T03:26:28+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/012330/finance"
       }
@@ -4155,17 +4151,17 @@
       "fundamentals": {
         "metrics": {
           "pe": null,
-          "pb": 3.34,
+          "pb": 3.69,
           "forward_pe": null,
-          "eps": -7193.0,
-          "bps": 95479.0,
+          "eps": -10307.0,
+          "bps": 80543.0,
           "roe": -0.0519,
           "profit_margin": 0.0034133441478890495,
           "revenue": 23671800000000.0,
           "net_income": 80800000000.0,
           "operating_margin": 0.056865130661800115,
           "operating_income": 1346100000000.0,
-          "market_cap": 74529000000000.0,
+          "market_cap": 69615000000000.0,
           "dividend_yield": null
         },
         "annual_income": [
@@ -4189,7 +4185,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:12+00:00",
+        "updated_at": "2026-11-21T03:26:30+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/373220/finance"
       }
@@ -4468,9 +4464,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 1029.48,
-          "pb": 1.53,
-          "forward_pe": 48.25,
+          "pe": 870.09,
+          "pb": 1.29,
+          "forward_pe": 41.66,
           "eps": 458.0,
           "bps": 308778.0,
           "roe": -0.0315,
@@ -4479,7 +4475,7 @@
           "net_income": -584900000000.0,
           "operating_margin": -0.1298288195255791,
           "operating_income": -1722400000000.0,
-          "market_cap": 37996100000000.0,
+          "market_cap": 32113300000000.0,
           "dividend_yield": null
         },
         "annual_income": [
@@ -4503,7 +4499,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:14+00:00",
+        "updated_at": "2026-11-21T03:26:31+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/006400/finance"
       }
@@ -4783,9 +4779,9 @@
       "fundamentals": {
         "metrics": {
           "pe": null,
-          "pb": 0.5,
+          "pb": 0.45,
           "forward_pe": null,
-          "eps": -19319.0,
+          "eps": -23242.0,
           "bps": 452637.0,
           "roe": -0.055,
           "profit_margin": -0.021272658396506154,
@@ -4793,8 +4789,8 @@
           "net_income": -977100000000.0,
           "operating_margin": 0.025709632893699843,
           "operating_income": 1180900000000.0,
-          "market_cap": 15953900000000.0,
-          "dividend_yield": 0.0089
+          "market_cap": 14259700000000.0,
+          "dividend_yield": 0.009899999999999999
         },
         "annual_income": [
           {
@@ -4817,7 +4813,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:15+00:00",
+        "updated_at": "2026-11-21T03:26:33+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/051910/finance"
       }
@@ -5096,10 +5092,10 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 195.97,
-          "pb": 4.77,
+          "pe": 736.04,
+          "pb": 4.45,
           "forward_pe": null,
-          "eps": 447.0,
+          "eps": 111.0,
           "bps": 18351.0,
           "roe": 0.0229,
           "profit_margin": 0.03618265128772318,
@@ -5107,8 +5103,8 @@
           "net_income": 91600000000.0,
           "operating_margin": 0.05660451888133986,
           "operating_income": 143300000000.0,
-          "market_cap": 9437300000000.0,
-          "dividend_yield": 0.0011
+          "market_cap": 8801700000000.0,
+          "dividend_yield": 0.0012
         },
         "annual_income": [
           {
@@ -5131,7 +5127,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:17+00:00",
+        "updated_at": "2026-11-21T03:26:35+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/247540/finance"
       }
@@ -5410,19 +5406,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 68.63,
-          "pb": 4.32,
+          "pe": 62.26,
+          "pb": 3.92,
           "forward_pe": null,
           "eps": 1036.0,
-          "bps": 16462.0,
+          "bps": 16456.0,
           "roe": -0.0839,
           "profit_margin": -0.03091122179900381,
           "revenue": 3413000000000.0,
           "net_income": -105500000000.0,
           "operating_margin": 0.06264283621447407,
           "operating_income": 213800000000.0,
-          "market_cap": 9653700000000.0,
-          "dividend_yield": 0.0021
+          "market_cap": 8757600000000.0,
+          "dividend_yield": 0.0023
         },
         "annual_income": [
           {
@@ -5445,7 +5441,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:18+00:00",
+        "updated_at": "2026-11-21T03:26:36+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/086520/finance"
       }
@@ -5724,10 +5720,10 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 39.3,
-          "pb": 7.87,
-          "forward_pe": 35.69,
-          "eps": 35900.0,
+          "pe": 36.31,
+          "pb": 7.45,
+          "forward_pe": 33.86,
+          "eps": 36792.0,
           "bps": 179329.0,
           "roe": 0.19440000000000002,
           "profit_margin": 0.3915734035549704,
@@ -5735,7 +5731,7 @@
           "net_income": 1784400000000.0,
           "operating_margin": 0.4540706605222734,
           "operating_income": 2069200000000.0,
-          "market_cap": 65316500000000.0,
+          "market_cap": 61844700000000.0,
           "dividend_yield": null
         },
         "annual_income": [
@@ -5759,7 +5755,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:20+00:00",
+        "updated_at": "2026-11-21T03:26:38+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/207940/finance"
       }
@@ -6038,9 +6034,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 32.58,
-          "pb": 2.73,
-          "forward_pe": 34.85,
+          "pe": 32.35,
+          "pb": 2.71,
+          "forward_pe": 35.34,
           "eps": 6568.0,
           "bps": 78325.0,
           "roe": 0.0594,
@@ -6049,8 +6045,8 @@
           "net_income": 1031500000000.0,
           "operating_margin": 0.28072072072072074,
           "operating_income": 1168500000000.0,
-          "market_cap": 49663600000000.0,
-          "dividend_yield": 0.0033
+          "market_cap": 49327500000000.0,
+          "dividend_yield": 0.0034000000000000002
         },
         "annual_income": [
           {
@@ -6073,7 +6069,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:21+00:00",
+        "updated_at": "2026-11-21T03:26:39+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/068270/finance"
       }
@@ -6352,9 +6348,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 27.37,
-          "pb": 2.51,
-          "forward_pe": 40.43,
+          "pe": 27.47,
+          "pb": 2.52,
+          "forward_pe": 40.59,
           "eps": 2927.0,
           "bps": 31931.0,
           "roe": 0.08810000000000001,
@@ -6363,7 +6359,7 @@
           "net_income": 185300000000.0,
           "operating_margin": 0.04774535809018567,
           "operating_income": 104400000000.0,
-          "market_cap": 5896600000000.0,
+          "market_cap": 5918700000000.0,
           "dividend_yield": 0.0075
         },
         "annual_income": [
@@ -6387,7 +6383,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:23+00:00",
+        "updated_at": "2026-11-21T03:26:41+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/000100/finance"
       }
@@ -6666,9 +6662,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 9.55,
-          "pb": 0.93,
-          "forward_pe": 8.6,
+          "pe": 9.14,
+          "pb": 0.89,
+          "forward_pe": 8.23,
           "eps": 16744.0,
           "bps": 172316.0,
           "roe": 0.0998,
@@ -6677,8 +6673,8 @@
           "net_income": 5840700000000.0,
           "operating_margin": 0.10485813861015601,
           "operating_income": 8517700000000.0,
-          "market_cap": 56714600000000.0,
-          "dividend_yield": 0.0273
+          "market_cap": 54302700000000.0,
+          "dividend_yield": 0.0285
         },
         "annual_income": [
           {
@@ -6701,7 +6697,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:25+00:00",
+        "updated_at": "2026-11-21T03:26:43+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/105560/finance"
       }
@@ -6980,9 +6976,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 8.04,
-          "pb": 0.7,
-          "forward_pe": 7.31,
+          "pe": 7.72,
+          "pb": 0.67,
+          "forward_pe": 7.03,
           "eps": 11174.0,
           "bps": 128024.0,
           "roe": 0.0872,
@@ -6991,8 +6987,8 @@
           "net_income": 5084500000000.0,
           "operating_margin": 0.10858353173989672,
           "operating_income": 7023400000000.0,
-          "market_cap": 42156600000000.0,
-          "dividend_yield": 0.0288
+          "market_cap": 39949300000000.0,
+          "dividend_yield": 0.03
         },
         "annual_income": [
           {
@@ -7015,7 +7011,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:26+00:00",
+        "updated_at": "2026-11-21T03:26:44+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/055550/finance"
       }
@@ -7294,9 +7290,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 8.53,
-          "pb": 0.72,
-          "forward_pe": 7.87,
+          "pe": 8.43,
+          "pb": 0.71,
+          "forward_pe": 7.77,
           "eps": 14731.0,
           "bps": 175497.0,
           "roe": 0.0917,
@@ -7305,8 +7301,8 @@
           "net_income": 4036600000000.0,
           "operating_margin": 0.07761271532092899,
           "operating_income": 5350900000000.0,
-          "market_cap": 34060900000000.0,
-          "dividend_yield": 0.0327
+          "market_cap": 33420300000000.0,
+          "dividend_yield": 0.0331
         },
         "annual_income": [
           {
@@ -7329,7 +7325,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:28+00:00",
+        "updated_at": "2026-11-21T03:26:46+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/086790/finance"
       }
@@ -7608,9 +7604,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 7.56,
-          "pb": 0.61,
-          "forward_pe": 7.38,
+          "pe": 7.37,
+          "pb": 0.6,
+          "forward_pe": 7.19,
           "eps": 4324.0,
           "bps": 53410.0,
           "roe": 0.0891,
@@ -7619,8 +7615,8 @@
           "net_income": 3227500000000.0,
           "operating_margin": 0.08844624582414726,
           "operating_income": 3674800000000.0,
-          "market_cap": 24092900000000.0,
-          "dividend_yield": 0.0416
+          "market_cap": 23464800000000.0,
+          "dividend_yield": 0.042699999999999995
         },
         "annual_income": [
           {
@@ -7643,7 +7639,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:29+00:00",
+        "updated_at": "2026-11-21T03:26:47+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/316140/finance"
       }
@@ -7922,9 +7918,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 24.48,
-          "pb": 1.18,
-          "forward_pe": 12.85,
+          "pe": 19.89,
+          "pb": 0.96,
+          "forward_pe": 10.44,
           "eps": 3480.0,
           "bps": 72453.0,
           "roe": 0.0333,
@@ -7933,7 +7929,7 @@
           "net_income": 375100000000.0,
           "operating_margin": 0.0627631702067933,
           "operating_income": 1073200000000.0,
-          "market_cap": 18300100000000.0,
+          "market_cap": 14863500000000.0,
           "dividend_yield": null
         },
         "annual_income": [
@@ -7957,7 +7953,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:31+00:00",
+        "updated_at": "2026-11-21T03:26:49+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/017670/finance"
       }
@@ -8236,10 +8232,10 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 10.08,
-          "pb": 0.66,
-          "forward_pe": 9.35,
-          "eps": 5141.0,
+          "pe": 6.67,
+          "pb": 0.59,
+          "forward_pe": 8.33,
+          "eps": 6869.0,
           "bps": 77912.0,
           "roe": 0.10220000000000001,
           "profit_margin": 0.06503282089774183,
@@ -8247,8 +8243,8 @@
           "net_income": 1836800000000.0,
           "operating_margin": 0.08741971803060451,
           "operating_income": 2469100000000.0,
-          "market_cap": 13054700000000.0,
-          "dividend_yield": 0.0463
+          "market_cap": 11555200000000.0,
+          "dividend_yield": 0.052300000000000006
         },
         "annual_income": [
           {
@@ -8271,7 +8267,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:32+00:00",
+        "updated_at": "2026-11-21T03:26:51+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/030200/finance"
       }
@@ -8550,19 +8546,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 2.17,
-          "pb": 0.34,
-          "forward_pe": 5.61,
-          "eps": 12213.0,
-          "bps": 78939.0,
+          "pe": 3.33,
+          "pb": 0.32,
+          "forward_pe": 5.68,
+          "eps": 7666.0,
+          "bps": 78770.0,
           "roe": 0.19399999999999998,
           "profit_margin": 0.08895373363043767,
           "revenue": 97429300000000.0,
           "net_income": 8666700000000.0,
           "operating_margin": 0.13846553346888463,
           "operating_income": 13490600000000.0,
-          "market_cap": 16996000000000.0,
-          "dividend_yield": 0.0582
+          "market_cap": 16402200000000.0,
+          "dividend_yield": 0.0604
         },
         "annual_income": [
           {
@@ -8585,7 +8581,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:34+00:00",
+        "updated_at": "2026-11-21T03:26:53+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/015760/finance"
       }
@@ -8864,18 +8860,18 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 159.89,
-          "pb": 3.54,
-          "forward_pe": 104.5,
-          "eps": 283.0,
-          "bps": 12767.0,
+          "pe": 118.73,
+          "pb": 3.46,
+          "forward_pe": 93.82,
+          "eps": 339.0,
+          "bps": 11648.0,
           "roe": 0.0111,
           "profit_margin": 0.012029616775804759,
           "revenue": 17057900000000.0,
           "net_income": 205200000000.0,
           "operating_margin": 0.04471242063794488,
           "operating_income": 762700000000.0,
-          "market_cap": 28985400000000.0,
+          "market_cap": 25782600000000.0,
           "dividend_yield": null
         },
         "annual_income": [
@@ -8899,7 +8895,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:35+00:00",
+        "updated_at": "2026-11-21T03:26:54+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/034020/finance"
       }
@@ -9178,10 +9174,10 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 4.91,
-          "pb": 1.14,
-          "forward_pe": 4.51,
-          "eps": 48724.0,
+          "pe": 7.23,
+          "pb": 1.06,
+          "forward_pe": 4.17,
+          "eps": 30639.0,
           "bps": 209715.0,
           "roe": 0.1778,
           "profit_margin": 0.09783117074018147,
@@ -9189,8 +9185,8 @@
           "net_income": 2928400000000.0,
           "operating_margin": 0.1304404473962022,
           "operating_income": 3904500000000.0,
-          "market_cap": 16914800000000.0,
-          "dividend_yield": 0.051500000000000004
+          "market_cap": 15676200000000.0,
+          "dividend_yield": 0.0555
         },
         "annual_income": [
           {
@@ -9213,7 +9209,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:37+00:00",
+        "updated_at": "2026-11-21T03:26:56+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/009540/finance"
       }
@@ -9492,9 +9488,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 26.15,
-          "pb": 3.01,
-          "forward_pe": 13.66,
+          "pe": 23.41,
+          "pb": 2.69,
+          "forward_pe": 12.11,
           "eps": 642.0,
           "bps": 5586.0,
           "roe": 0.1373,
@@ -9503,7 +9499,7 @@
           "net_income": 535800000000.0,
           "operating_margin": 0.08095774647887324,
           "operating_income": 862200000000.0,
-          "market_cap": 14775200000000.0,
+          "market_cap": 13226400000000.0,
           "dividend_yield": null
         },
         "annual_income": [
@@ -9527,7 +9523,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:38+00:00",
+        "updated_at": "2026-11-21T03:26:57+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/010140/finance"
       }
@@ -9806,9 +9802,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 7.46,
-          "pb": 1.96,
-          "forward_pe": 8.55,
+          "pe": 6.58,
+          "pb": 1.73,
+          "forward_pe": 7.55,
           "eps": 6364.0,
           "bps": 24248.0,
           "roe": 0.2259,
@@ -9817,7 +9813,7 @@
           "net_income": 1245900000000.0,
           "operating_margin": 0.09133648844213244,
           "operating_income": 1167600000000.0,
-          "market_cap": 14554600000000.0,
+          "market_cap": 12838700000000.0,
           "dividend_yield": null
         },
         "annual_income": [
@@ -9841,7 +9837,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:40+00:00",
+        "updated_at": "2026-11-21T03:26:59+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/042660/finance"
       }
@@ -10120,19 +10116,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 16.38,
-          "pb": 2.82,
-          "forward_pe": 19.46,
-          "eps": 40099.0,
-          "bps": 233220.0,
+          "pe": 21.26,
+          "pb": 2.79,
+          "forward_pe": 18.47,
+          "eps": 28364.0,
+          "bps": 216471.0,
           "roe": 0.19140000000000001,
           "profit_margin": 0.08246295346198353,
           "revenue": 26702900000000.0,
           "net_income": 2202000000000.0,
           "operating_margin": 0.11569155410086544,
           "operating_income": 3089300000000.0,
-          "market_cap": 33877200000000.0,
-          "dividend_yield": 0.010700000000000001
+          "market_cap": 31092700000000.0,
+          "dividend_yield": 0.0116
         },
         "annual_income": [
           {
@@ -10155,7 +10151,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:41+00:00",
+        "updated_at": "2026-11-21T03:27:00+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/012450/finance"
       }
@@ -10434,19 +10430,19 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 15.98,
-          "pb": 0.35,
-          "forward_pe": 12.43,
-          "eps": 16737.0,
-          "bps": 759917.0,
+          "pe": 17.28,
+          "pb": 0.34,
+          "forward_pe": 11.85,
+          "eps": 14587.0,
+          "bps": 742630.0,
           "roe": 0.0118,
           "profit_margin": 0.0073001046386925806,
           "revenue": 69094900000000.0,
           "net_income": 504400000000.0,
           "operating_margin": 0.026443340970172906,
           "operating_income": 1827100000000.0,
-          "market_cap": 21197100000000.0,
-          "dividend_yield": 0.0374
+          "market_cap": 19968900000000.0,
+          "dividend_yield": 0.0397
         },
         "annual_income": [
           {
@@ -10469,7 +10465,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:43+00:00",
+        "updated_at": "2026-11-21T03:27:02+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/005490/finance"
       }
@@ -10748,10 +10744,10 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 23.06,
-          "pb": 0.89,
-          "forward_pe": 11.99,
-          "eps": 5777.0,
+          "pe": 24.19,
+          "pb": 0.86,
+          "forward_pe": 11.94,
+          "eps": 5321.0,
           "bps": 149377.0,
           "roe": 0.042800000000000005,
           "profit_margin": 0.01368147630797447,
@@ -10759,8 +10755,8 @@
           "net_income": 1220400000000.0,
           "operating_margin": 0.027784473026617445,
           "operating_income": 2478400000000.0,
-          "market_cap": 21696200000000.0,
-          "dividend_yield": 0.0101
+          "market_cap": 20963300000000.0,
+          "dividend_yield": 0.0105
         },
         "annual_income": [
           {
@@ -10783,7 +10779,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:45+00:00",
+        "updated_at": "2026-11-21T03:27:03+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/066570/finance"
       }
@@ -11063,8 +11059,8 @@
       "fundamentals": {
         "metrics": {
           "pe": null,
-          "pb": 1.95,
-          "forward_pe": 135.59,
+          "pb": 2.27,
+          "forward_pe": 160.88,
           "eps": -8743.0,
           "bps": 80965.0,
           "roe": -0.0733,
@@ -11073,8 +11069,8 @@
           "net_income": -254400000000.0,
           "operating_margin": 0.01860447564059021,
           "operating_income": 49300000000.0,
-          "market_cap": 6815200000000.0,
-          "dividend_yield": 0.0032
+          "market_cap": 7905800000000.0,
+          "dividend_yield": 0.0027
         },
         "annual_income": [
           {
@@ -11097,7 +11093,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:46+00:00",
+        "updated_at": "2026-11-21T03:27:05+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/352820/finance"
       }
@@ -11376,9 +11372,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 14.31,
-          "pb": 2.23,
-          "forward_pe": 15.4,
+          "pe": 15.13,
+          "pb": 2.36,
+          "forward_pe": 16.33,
           "eps": 3057.0,
           "bps": 19575.0,
           "roe": 0.2921,
@@ -11387,8 +11383,8 @@
           "net_income": 160600000000.0,
           "operating_margin": 0.18883075799975665,
           "operating_income": 155200000000.0,
-          "market_cap": 1554500000000.0,
-          "dividend_yield": 0.020099999999999996
+          "market_cap": 1643400000000.0,
+          "dividend_yield": 0.019
         },
         "annual_income": [
           {
@@ -11411,7 +11407,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:48+00:00",
+        "updated_at": "2026-11-21T03:27:06+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/035900/finance"
       }
@@ -11690,9 +11686,9 @@
       "source": "Naver Finance daily chart (unofficial)",
       "fundamentals": {
         "metrics": {
-          "pe": 18.39,
-          "pb": 1.5,
-          "forward_pe": 16.6,
+          "pe": 18.96,
+          "pb": 1.55,
+          "forward_pe": 17.11,
           "eps": 1142.0,
           "bps": 14009.0,
           "roe": 0.0723,
@@ -11701,8 +11697,8 @@
           "net_income": 480300000000.0,
           "operating_margin": 0.2104137640540453,
           "operating_income": 649400000000.0,
-          "market_cap": 10019500000000.0,
-          "dividend_yield": 0.0219
+          "market_cap": 10329700000000.0,
+          "dividend_yield": 0.0213
         },
         "annual_income": [
           {
@@ -11725,7 +11721,7 @@
           }
         ],
         "financial_period": "2025",
-        "updated_at": "2026-11-16T02:23:49+00:00",
+        "updated_at": "2026-11-21T03:27:08+00:00",
         "source": "Naver Finance mobile JSON (unofficial)",
         "source_url": "https://m.stock.naver.com/domestic/stock/323410/finance"
       }
