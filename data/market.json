@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T19:16:27+00:00",
+  "updated_at": "2026-11-27T04:30:08+00:00",
   "fear_greed": {
     "score": 15.0,
     "rating": "extreme fear",
@@ -39,10 +39,6 @@
       }
     },
     "history": [
-      {
-        "date": "2025-11-26",
-        "score": 17.66
-      },
       {
         "date": "2025-11-28",
         "score": 21.77
@@ -1048,8 +1044,8 @@
     "source_note": "CNN USA Fear & Greed. KOSPI-specific index not provided."
   },
   "fx": {
-    "rate": 1343.51,
-    "quote_date": "2026-11-26",
+    "rate": 1343.58,
+    "quote_date": "2026-11-27",
     "source": "Frankfurter central-bank reference rates (not broker FX)"
   },
   "indices": {},
